@@ -1,0 +1,149 @@
+.class Lj$/sun/nio/cs/ThreadLocalCoders$1;
+.super Lj$/sun/nio/cs/ThreadLocalCoders$Cache;
+.source "ThreadLocalCoders.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lj$/sun/nio/cs/ThreadLocalCoders;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# static fields
+.field static final synthetic $assertionsDisabled:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 88
+    const-class v0, Lj$/sun/nio/cs/ThreadLocalCoders;
+
+    return-void
+.end method
+
+.method constructor <init>(I)V
+    .locals 0
+    .param p1, "size"    # I
+
+    .line 88
+    invoke-direct {p0, p1}, Lj$/sun/nio/cs/ThreadLocalCoders$Cache;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method create(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .param p1, "name"    # Ljava/lang/Object;
+
+    .line 97
+    instance-of v0, p1, Ljava/nio/charset/Charset;
+
+    if-eqz v0, :cond_0
+
+    .line 98
+    move-object v0, p1
+
+    check-cast v0, Ljava/nio/charset/Charset;
+
+    invoke-virtual {v0}, Ljava/nio/charset/Charset;->newDecoder()Ljava/nio/charset/CharsetDecoder;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 99
+    :cond_0
+    instance-of v0, p1, Ljava/lang/String;
+
+    if-eqz v0, :cond_1
+
+    .line 100
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/nio/charset/Charset;->newDecoder()Ljava/nio/charset/CharsetDecoder;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 101
+    :cond_1
+    nop
+
+    .line 102
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method hasName(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 1
+    .param p1, "ob"    # Ljava/lang/Object;
+    .param p2, "name"    # Ljava/lang/Object;
+
+    .line 90
+    instance-of v0, p2, Ljava/nio/charset/Charset;
+
+    if-eqz v0, :cond_0
+
+    .line 91
+    move-object v0, p1
+
+    check-cast v0, Ljava/nio/charset/CharsetDecoder;
+
+    invoke-virtual {v0}, Ljava/nio/charset/CharsetDecoder;->charset()Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Ljava/nio/charset/Charset;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+
+    .line 92
+    :cond_0
+    instance-of v0, p2, Ljava/lang/String;
+
+    if-eqz v0, :cond_1
+
+    .line 93
+    move-object v0, p1
+
+    check-cast v0, Ljava/nio/charset/CharsetDecoder;
+
+    invoke-virtual {v0}, Ljava/nio/charset/CharsetDecoder;->charset()Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+
+    .line 94
+    :cond_1
+    const/4 v0, 0x0
+
+    return v0
+.end method

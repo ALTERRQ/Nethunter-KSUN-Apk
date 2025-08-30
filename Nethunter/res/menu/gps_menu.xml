@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_wifi_enabled" android:id="@id/action_wifi_status" android:title="@string/wifi_status" app:showAsAction="ifRoom" />
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@id/action_info" android:title="@string/info" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_settings" android:title="@string/gps_settings" app:showAsAction="never" />
+    <item android:id="@id/action_rtlsdr" android:title="@string/gps_rtl_sdr" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/action_rtlamr" android:title="@string/gps_rtl_amr" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/action_rtladsb" android:title="@string/gps_rtl_adsb" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/action_mousejack" android:title="@string/gps_mousejack" android:checkable="true" app:showAsAction="never" />
+</menu>

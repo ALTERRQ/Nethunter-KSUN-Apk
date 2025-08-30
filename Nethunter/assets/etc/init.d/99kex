@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+export DISPLAY=:1
+echo "[*] Starting Kali NetHunter KeX session..."
+nohup startvnc >/dev/null 2>&1 &

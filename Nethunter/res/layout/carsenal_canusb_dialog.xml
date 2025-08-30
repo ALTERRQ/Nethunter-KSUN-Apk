@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/id_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ID" android:layout_weight="1.0" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/id_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="ID Value" android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/usb_id_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/counter_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Counter" android:layout_weight="1.0" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/counter_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Counter Value" android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/usb_counter_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/sleep_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sleep" android:layout_weight="1.0" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/sleep_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Sleep Value" android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/usb_sleep_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/data_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Data" android:layout_weight="1.0" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/data_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Data Value" android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/usb_data_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/mode_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Mode" android:layout_weight="1.0" />
+                <Spinner android:id="@id/usb_mode_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/debug_checkbox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Debug" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/btn_toggle_usb_ttyOutput" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

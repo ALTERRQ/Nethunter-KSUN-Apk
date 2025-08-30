@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_settings" android:id="@id/action_settings" android:title="Settings" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_settings" android:id="@id/action_canusb_settings" android:title="CAN-USB Settings" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_play" android:id="@id/action_play" android:title="Play" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_stop" android:id="@id/action_stop" android:title="Stop" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_floating" android:id="@id/action_floating" android:title="Floating" app:showAsAction="always" />
+    <item android:id="@id/documentation" android:title="Documentation" />
+    <item android:id="@id/setup" android:title="Setup" />
+    <item android:id="@id/update" android:title="Update" />
+    <item android:id="@id/about" android:title="About" />
+</menu>

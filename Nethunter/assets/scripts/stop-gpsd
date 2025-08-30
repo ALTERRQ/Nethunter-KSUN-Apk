@@ -1,0 +1,16 @@
+#!/system/bin/sh
+
+# Use busybox_nh directly for all commands
+busybox_nh chmod 777 /dev/null
+
+# Kill gpsd and socat by name (fallback to manual grep if pkill is missing)
+busybox_nh ps | busybox_nh grep '[g]psd' | busybox_nh awk '{print $1}' | while read pid; do
+    busybox_nh kill -9 "$pid"
+done
+
+busybox_nh ps | busybox_nh grep '[s]ocat' | busybox_nh awk '{print $1}' | while read pid; do
+    busybox_nh kill -9 "$pid"
+done
+
+# Clean up tmp GPS-related files
+busybox_nh rm -f /tmp/gps*

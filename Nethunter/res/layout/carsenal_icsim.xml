@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/icsim" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/can_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/can_icsim_desc" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <View android:id="@id/divider1" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <com.google.android.material.card.MaterialCardView android:id="@id/spinner_iface_card" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0" app:boxStrokeWidthFocused="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:strokeColor="@color/nh_box_stroke_iface" app:strokeWidth="2.0dip">
+                    <Spinner android:id="@id/device_interface" android:layout_width="fill_parent" android:layout_height="48.0dip" android:spinnerMode="dropdown" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:padding="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="8.0dip" app:boxStrokeWidthFocused="3.0dip" app:strokeColor="@color/nh_box_stroke_iface" app:strokeWidth="2.0dip">
+                    <ImageButton android:id="@id/refreshUSB" android:background="?selectableItemBackgroundBorderless" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_action_refresh" android:contentDescription="@string/Refresh" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/icsim_configuration" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                    <Button android:id="@id/run_icsim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Start" android:layout_weight="1.0" />
+                    <Button android:id="@id/stop_icsim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Stop" android:layout_weight="1.0" />
+                    <Button android:id="@id/floating_icsim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Floating" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/icsim_advanced_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/level_container" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                        <com.google.android.material.card.MaterialCardView android:id="@id/spinner_level_card" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" app:boxStrokeWidthFocused="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:strokeColor="@color/nh_box_stroke_spinner" app:strokeWidth="2.0dip">
+                            <Spinner android:id="@id/level_spinner" android:layout_width="fill_parent" android:layout_height="48.0dip" android:spinnerMode="dropdown" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip" app:strokeColor="@color/ifc_box_stroke" app:strokeWidth="2.0dip">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+                    <WebView android:id="@id/icsim" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <View android:id="@id/icsim_overlay" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:boxStrokeWidthFocused="3.0dip" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip" app:strokeColor="@color/ifc_box_stroke" app:strokeWidth="2.0dip">
+                <WebView android:id="@id/controls" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

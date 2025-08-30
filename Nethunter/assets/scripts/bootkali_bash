@@ -1,0 +1,35 @@
+#!/system/bin/sh
+
+######### IMPORT BOOTKALI ENVIRONMENT #########
+SCRIPT_PATH=$(readlink -f "$0")
+. "${SCRIPT_PATH%/*}"/bootkali_init
+. "${SCRIPT_PATH%/*}"/bootkali_log
+
+## Validate busybox path.
+if [ -z "$BUSYBOX" ] || [ ! -x "$BUSYBOX" ]; then
+    bklog "[-] \"busybox_nh\" is either not installed or not executable."
+    bklog "[-] Please symlink it to /system/bin and grant execute permissions."
+    exit 1
+fi
+
+## Validate kali Chroot path.
+if [ -z "$MNT" ]; then
+    bklog "[-] The \$MNT variable is not defined, please run the NetHunter app first."
+    exit 2
+fi
+
+if [ ! -d "$MNT" ]; then
+    bklog "[-] \"$MNT\" directory does not exist!"
+    bklog "[!] Please install the Kali Chroot using the NetHunter app."
+    exit 2
+fi
+
+## Define chroot shell executable path.
+if [ ! -f "$MNT""$CHROOT_EXEC" ] || [ ! -x "$MNT""$CHROOT_EXEC" ]; then
+    bklog "[-] \"$CHROOT_EXEC\" is missing or not executable in the chroot environment."
+    bklog "[-] Please ensure your Kali Chroot is properly installed and not corrupted."
+    exit 2
+fi
+
+clear
+$BUSYBOX chroot "$MNT" "$CHROOT_EXEC" -E PATH="$PATH" su

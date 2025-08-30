@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/easter_egg_button" android:focusable="true" android:clickable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/carsenal_about" />
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" android:paddingEnd="4.0dip">
+            <TextView android:textSize="14.0sp" android:textColorLink="@color/blue" android:linksClickable="true" android:id="@id/about_text" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginBottom="0.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false" android:paddingEnd="4.0dip">
+            <TextView android:textSize="14.0sp" android:textColorLink="@color/blue" android:linksClickable="true" android:id="@id/credits_text" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

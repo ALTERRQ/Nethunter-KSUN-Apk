@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/MainMenu" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/can_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/can_description" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <View android:id="@id/divider1" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/Interface" android:layout_weight="1.0" app:boxBackgroundColor="@color/transparent" app:boxStrokeColor="@color/nh_box_stroke_iface" app:boxStrokeWidth="2.0dip" app:boxStrokeWidthFocused="3.0dip" app:hintTextColor="@color/ifc_hint_text">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/white" android:id="@id/can_iface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/can0" android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.card.MaterialCardView android:id="@id/spinner_card" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="10.0dip" app:boxStrokeWidthFocused="3.0dip" app:strokeColor="@color/nh_box_stroke_iface" app:strokeWidth="2.0dip">
+                    <Spinner android:id="@id/cantype_spinner" android:layout_width="wrap_content" android:layout_height="fill_parent" android:spinnerMode="dropdown" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <Button android:textColor="@color/green" android:id="@id/start_caniface" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/Start" android:layout_weight="1.0" />
+                <Button android:textColor="@color/red" android:id="@id/reset_iface" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/Stop" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:id="@id/btn_toggle_services" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/Services" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/main_services" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <GridLayout android:id="@id/button_row_services" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="3" android:alignmentMode="alignMargins" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_slcand" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="0" android:text="@string/slcand" android:layout_row="0" android:layout_columnWeight="1.0" />
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_hlcand" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="1" android:text="@string/hlcand" android:layout_row="0" android:layout_columnWeight="1.0" />
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_socketcand" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="2" android:text="@string/socketcand" android:layout_row="0" android:layout_columnWeight="1.0" />
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_slcanattach" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="0" android:text="@string/slcan_attach" android:layout_row="1" android:layout_columnWeight="1.0" />
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_ldattach" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="1" android:text="@string/ldattach" android:layout_row="1" android:layout_columnWeight="1.0" />
+                    <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_rfcommbinder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="2" android:text="@string/RfcommBind" android:layout_row="1" android:layout_columnWeight="1.0" />
+                </GridLayout>
+                <Button android:textColor="@android:color/holo_orange_dark" android:id="@id/start_rfcommconnect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/RfcommConnect" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:layout_columnWeight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LongPress" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <View android:id="@id/divider4" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:baselineAligned="false" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/VinInfo" android:layout_weight="1.0" app:boxBackgroundColor="@color/transparent" app:boxStrokeColor="@color/ifc_box_stroke" app:boxStrokeWidthFocused="3.0dip" app:hintTextColor="@color/ifc_hint_text" app:strokeWidth="2.0dip">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/white" android:id="@id/vin_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/VinNumber" android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="3" android:useDefaultMargins="true" android:alignmentMode="alignMargins" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <Button android:id="@id/vin_show" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="0" android:text="@string/Show" android:layout_row="0" android:layout_columnWeight="1.0" />
+                <Button android:id="@id/vin_check" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="1" android:text="@string/Check" android:layout_row="0" android:layout_columnWeight="1.0" />
+            </GridLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:baselineAligned="false" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/Output" android:layout_weight="1.0" app:boxBackgroundColor="@android:color/black" app:boxStrokeColor="@color/ifc_box_stroke" app:boxStrokeWidthFocused="3.0dip" app:hintEnabled="true" app:strokeWidth="2.0dip">
+                    <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:textSize="14.0sp" android:textColor="@android:color/holo_green_light" android:id="@id/TerminalOutputVINInfo" android:padding="16.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/space" android:inputType="textMultiLine" android:fontFamily="monospace" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>
