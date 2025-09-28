@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a018b
+    const v2, 0x7f0a019e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -499,7 +499,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a018b
+    const v3, 0x7f0a019e
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a018b
+    const v2, 0x7f0a019e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -759,7 +759,7 @@
 
     .line 226
     .local v0, "id":I
-    const v1, 0x7f0a0182
+    const v1, 0x7f0a0191
 
     const-string v2, "/scripts/ducky/"
 
@@ -854,7 +854,7 @@
     goto :goto_2
 
     :cond_1
-    const v1, 0x7f0a0183
+    const v1, 0x7f0a0192
 
     if-ne v0, v1, :cond_3
 
@@ -1001,7 +1001,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 67
-    const v0, 0x7f0d004f
+    const v0, 0x7f0d0050
 
     const/4 v1, 0x0
 
@@ -1011,7 +1011,7 @@
 
     .line 68
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a03e0
+    const v1, 0x7f0a0408
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1028,7 +1028,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 71
-    const v2, 0x7f0a018b
+    const v2, 0x7f0a019e
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1048,7 +1048,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 96
-    const v2, 0x7f0a0182
+    const v2, 0x7f0a0191
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1058,7 +1058,7 @@
 
     .line 97
     .local v2, "b":Landroid/widget/Button;
-    const v3, 0x7f0a0183
+    const v3, 0x7f0a0192
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1080,7 +1080,7 @@
 
     .line 103
     .local v4, "duckyscript_file":[Ljava/lang/String;
-    const v5, 0x7f0a0180
+    const v5, 0x7f0a018f
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

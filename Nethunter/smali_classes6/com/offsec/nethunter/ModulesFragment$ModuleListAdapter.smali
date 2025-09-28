@@ -74,7 +74,7 @@
     .line 561
     .local p2, "modules":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .local p3, "moduleStates":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Boolean;>;"
-    const v0, 0x7f0d0083
+    const v0, 0x7f0d0084
 
     invoke-direct {p0, p1, v0, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
@@ -154,7 +154,7 @@
 
     .line 579
     .local v2, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x7f0d0083
+    const v3, 0x7f0d0084
 
     invoke-virtual {v2, v3, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     .line 581
     .local v3, "holder":Lcom/offsec/nethunter/ModulesFragment$ModuleListAdapter$ViewHolder;
-    const v4, 0x7f0a0325
+    const v4, 0x7f0a034a
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
     iput-object v4, v3, Lcom/offsec/nethunter/ModulesFragment$ModuleListAdapter$ViewHolder;->textView:Landroid/widget/TextView;
 
     .line 582
-    const v4, 0x7f0a0326
+    const v4, 0x7f0a034b
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -189,7 +189,7 @@
     iput-object v4, v3, Lcom/offsec/nethunter/ModulesFragment$ModuleListAdapter$ViewHolder;->statusIcon:Landroid/widget/ImageView;
 
     .line 583
-    const v4, 0x7f0a0323
+    const v4, 0x7f0a0348
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
     .line 595
     iget-object v5, v3, Lcom/offsec/nethunter/ModulesFragment$ModuleListAdapter$ViewHolder;->statusIcon:Landroid/widget/ImageView;
 
-    const v6, 0x7f0800cb
+    const v6, 0x7f0800cd
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -266,7 +266,7 @@
     :cond_1
     iget-object v5, v3, Lcom/offsec/nethunter/ModulesFragment$ModuleListAdapter$ViewHolder;->statusIcon:Landroid/widget/ImageView;
 
-    const v6, 0x7f0800cc
+    const v6, 0x7f0800ce
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 

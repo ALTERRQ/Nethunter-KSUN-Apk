@@ -3,17 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-.field public final synthetic f$1:Landroid/widget/LinearLayout;
+.field public final synthetic f$1:Ljava/lang/StringBuilder;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/LinearLayout;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/StringBuilder;)V
     .locals 0
 
     .line 0
@@ -21,22 +21,22 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$1:Landroid/widget/LinearLayout;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$1:Ljava/lang/StringBuilder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final run()V
     .locals 2
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$1:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;->f$1:Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$12$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/LinearLayout;Landroid/view/View;)V
+    invoke-virtual {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$10$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/StringBuilder;)V
 
     return-void
 .end method

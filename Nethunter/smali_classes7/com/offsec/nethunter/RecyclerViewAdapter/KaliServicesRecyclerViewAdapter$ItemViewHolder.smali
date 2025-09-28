@@ -39,7 +39,7 @@
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
     .line 239
-    const v0, 0x7f0a01ff
+    const v0, 0x7f0a0212
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -50,7 +50,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter$ItemViewHolder;->nametextView:Landroid/widget/TextView;
 
     .line 241
-    const v0, 0x7f0a01fd
+    const v0, 0x7f0a0210
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter$ItemViewHolder;->runOnChrootStartCheckbox:Landroid/widget/CheckBox;
 
     .line 242
-    const v0, 0x7f0a0200
+    const v0, 0x7f0a0213
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -72,7 +72,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter$ItemViewHolder;->mSwitch:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 243
-    const v0, 0x7f0a01fe
+    const v0, 0x7f0a0211
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

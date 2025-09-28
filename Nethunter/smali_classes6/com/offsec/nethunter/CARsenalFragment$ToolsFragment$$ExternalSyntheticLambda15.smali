@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-.field public final synthetic f$1:Landroid/widget/EditText;
+.field public final synthetic f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Landroid/widget/EditText;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Lcom/google/android/material/textfield/TextInputEditText;)V
     .locals 0
 
     .line 0
@@ -21,7 +21,7 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$1:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
     return-void
 .end method
@@ -34,9 +34,9 @@
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$1:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda15;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
-    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$30$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/widget/EditText;Landroid/view/View;)V
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$4$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Lcom/google/android/material/textfield/TextInputEditText;Landroid/view/View;)V
 
     return-void
 .end method

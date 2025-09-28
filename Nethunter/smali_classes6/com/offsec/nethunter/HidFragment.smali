@@ -947,7 +947,7 @@
     :goto_1
     iget-object v2, p0, Lcom/offsec/nethunter/HidFragment;->context:Landroid/content/Context;
 
-    const v4, 0x7f130085
+    const v4, 0x7f130088
 
     invoke-virtual {p0, v4}, Lcom/offsec/nethunter/HidFragment;->getString(I)Ljava/lang/String;
 
@@ -1150,7 +1150,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0531
+    const v2, 0x7f0a0571
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1313,7 +1313,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 82
-    const v0, 0x7f0d0056
+    const v0, 0x7f0d0057
 
     const/4 v1, 0x0
 
@@ -1333,7 +1333,7 @@
 
     .line 85
     .local v2, "tabsPagerAdapter":Lcom/offsec/nethunter/HidFragment$TabsPagerAdapter;
-    const v3, 0x7f0a03a9
+    const v3, 0x7f0a03d1
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1416,7 +1416,7 @@
 
     .line 124
     .local v0, "id":I
-    const v1, 0x7f0a0491
+    const v1, 0x7f0a04c6
 
     const/4 v2, 0x1
 
@@ -1503,7 +1503,7 @@
 
     .line 137
     :cond_3
-    const v1, 0x7f0a04a0
+    const v1, 0x7f0a04d5
 
     if-ne v0, v1, :cond_4
 
@@ -1515,7 +1515,7 @@
 
     .line 140
     :cond_4
-    const v1, 0x7f0a0076
+    const v1, 0x7f0a007a
 
     if-ne v0, v1, :cond_5
 
@@ -1527,7 +1527,7 @@
 
     .line 143
     :cond_5
-    const v1, 0x7f0a010c
+    const v1, 0x7f0a011a
 
     if-ne v0, v1, :cond_6
 
@@ -1539,7 +1539,7 @@
 
     .line 146
     :cond_6
-    const v1, 0x7f0a0452
+    const v1, 0x7f0a0481
 
     if-ne v0, v1, :cond_7
 
@@ -1589,7 +1589,7 @@
 
     .line 110
     .local v0, "pageNum":I
-    const v1, 0x7f0a0452
+    const v1, 0x7f0a0481
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

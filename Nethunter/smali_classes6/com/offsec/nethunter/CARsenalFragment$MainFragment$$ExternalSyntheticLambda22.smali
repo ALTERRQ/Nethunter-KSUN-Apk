@@ -30,7 +30,7 @@
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$MainFragment$$ExternalSyntheticLambda22;->f$0:Landroid/app/AlertDialog;
 
-    invoke-static {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$MainFragment;->lambda$onCreateView$24(Landroid/app/AlertDialog;Landroid/content/DialogInterface;)V
+    invoke-static {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$MainFragment;->lambda$onCreateView$23(Landroid/app/AlertDialog;Landroid/content/DialogInterface;)V
 
     return-void
 .end method

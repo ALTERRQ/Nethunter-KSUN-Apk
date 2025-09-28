@@ -28,7 +28,7 @@
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "resource"    # I
 
-    .line 2885
+    .line 3509
     .local p3, "objects":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
@@ -43,18 +43,18 @@
     .param p2, "convertView"    # Landroid/view/View;
     .param p3, "parent"    # Landroid/view/ViewGroup;
 
-    .line 2893
+    .line 3516
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 2894
+    .line 3517
     .local v0, "view":Landroid/view/View;
     move-object v1, v0
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 2895
+    .line 3518
     .local v1, "tv":Landroid/widget/TextView;
     if-nez p1, :cond_0
 
@@ -68,7 +68,7 @@
     :goto_0
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 2896
+    .line 3519
     return-object v0
 .end method
 
@@ -76,7 +76,7 @@
     .locals 1
     .param p1, "position"    # I
 
-    .line 2888
+    .line 3511
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1

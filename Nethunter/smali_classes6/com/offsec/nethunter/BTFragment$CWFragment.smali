@@ -1327,7 +1327,7 @@
 
     .line 851
     .local v11, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v0, 0x7f0a0100
+    const v0, 0x7f0a010e
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1364,7 +1364,7 @@
 
     .line 858
     :cond_0
-    const v0, 0x7f0a02a5
+    const v0, 0x7f0a02b9
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1376,7 +1376,7 @@
 
     .line 861
     .local v14, "cw_interface":Landroid/widget/EditText;
-    const v0, 0x7f0a02a2
+    const v0, 0x7f0a02b6
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1388,7 +1388,7 @@
 
     .line 864
     .local v15, "cw_address":Landroid/widget/EditText;
-    const v0, 0x7f0a04fc
+    const v0, 0x7f0a0538
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1400,7 +1400,7 @@
 
     .line 865
     .local v6, "ttsDropdown":Landroid/widget/Spinner;
-    const v0, 0x7f0a04ff
+    const v0, 0x7f0a053b
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1412,7 +1412,7 @@
 
     .line 866
     .local v16, "ttsVoiceSpinner":Landroid/widget/Spinner;
-    const v0, 0x7f0a04fe
+    const v0, 0x7f0a053a
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1424,7 +1424,7 @@
 
     .line 867
     .local v17, "ttsSpeedSpinner":Landroid/widget/Spinner;
-    const v0, 0x7f0a04fb
+    const v0, 0x7f0a0537
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1436,7 +1436,7 @@
 
     .line 868
     .local v5, "ttsInput":Landroid/widget/EditText;
-    const v0, 0x7f0a0287
+    const v0, 0x7f0a029b
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1460,7 +1460,7 @@
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     .line 877
-    const v0, 0x7f0a043b
+    const v0, 0x7f0a046a
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1524,7 +1524,7 @@
     invoke-virtual {v3, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 909
-    const v0, 0x7f0a02a4
+    const v0, 0x7f0a02b8
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1536,7 +1536,7 @@
 
     .line 912
     .local v19, "hci_channel":Landroid/widget/EditText;
-    const v0, 0x7f0a013d
+    const v0, 0x7f0a014a
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1596,7 +1596,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 928
-    const v2, 0x7f0a02f7
+    const v2, 0x7f0a0311
 
     invoke-virtual {v10, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1608,7 +1608,7 @@
 
     .line 931
     .local v23, "listenfilename":Landroid/widget/EditText;
-    const v2, 0x7f0a02ce
+    const v2, 0x7f0a02e2
 
     invoke-virtual {v10, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1620,7 +1620,7 @@
 
     .line 932
     .local v4, "injectfilename":Landroid/widget/EditText;
-    const v2, 0x7f0a02cd
+    const v2, 0x7f0a02e1
 
     invoke-virtual {v10, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1692,7 +1692,7 @@
     invoke-virtual {v9, v8}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 986
-    const v0, 0x7f0a0480
+    const v0, 0x7f0a04b7
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1729,7 +1729,7 @@
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1007
-    const v0, 0x7f0a049e
+    const v0, 0x7f0a04d3
 
     invoke-virtual {v10, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1746,7 +1746,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1014
-    const v1, 0x7f0a03c6
+    const v1, 0x7f0a03ee
 
     invoke-virtual {v10, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1756,7 +1756,7 @@
 
     .line 1015
     .local v1, "PlayAudioButton":Landroid/widget/ImageButton;
-    const v2, 0x7f0a049d
+    const v2, 0x7f0a04d2
 
     invoke-virtual {v10, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

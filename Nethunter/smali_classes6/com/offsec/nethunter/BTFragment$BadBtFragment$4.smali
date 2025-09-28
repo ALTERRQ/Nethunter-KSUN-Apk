@@ -151,7 +151,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/offsec/nethunter/BTFragment$BadBtFragment$4;->val$badbtstring:Landroid/widget/EditText;
 
-    const v1, 0x7f1300a5
+    const v1, 0x7f1300a8
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(I)V
 
@@ -162,7 +162,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/offsec/nethunter/BTFragment$BadBtFragment$4;->val$badbtstring:Landroid/widget/EditText;
 
-    const v1, 0x7f1300a6
+    const v1, 0x7f1300a9
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(I)V
 

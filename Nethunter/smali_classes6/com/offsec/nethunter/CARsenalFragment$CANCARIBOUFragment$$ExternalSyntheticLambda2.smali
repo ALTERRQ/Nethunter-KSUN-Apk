@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final onInterfaceSelected(Ljava/lang/String;)V
     .locals 1
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$$ExternalSyntheticLambda2;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->lambda$onCreateView$19$com-offsec-nethunter-CARsenalFragment$CANCARIBOUFragment(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->lambda$onCreateView$1$com-offsec-nethunter-CARsenalFragment$CANCARIBOUFragment(Ljava/lang/String;)V
 
     return-void
 .end method

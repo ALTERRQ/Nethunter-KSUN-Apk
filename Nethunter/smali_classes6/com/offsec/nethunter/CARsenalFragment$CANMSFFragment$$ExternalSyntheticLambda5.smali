@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field public final synthetic f$0:Landroid/widget/LinearLayout;
+.field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-.field public final synthetic f$1:Landroid/widget/Button;
+.field public final synthetic f$1:Landroid/widget/EditText;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/widget/LinearLayout;Landroid/widget/Button;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/EditText;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$0:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$1:Landroid/widget/Button;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$1:Landroid/widget/EditText;
 
     return-void
 .end method
@@ -32,11 +32,11 @@
     .locals 2
 
     .line 0
-    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$0:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$1:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;->f$1:Landroid/widget/EditText;
 
-    invoke-static {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$1(Landroid/widget/LinearLayout;Landroid/widget/Button;Landroid/view/View;)V
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$1$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/EditText;Landroid/view/View;)V
 
     return-void
 .end method

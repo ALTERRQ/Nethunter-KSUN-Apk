@@ -68,7 +68,7 @@
     .local p1, "parentView":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment$2;->val$rootView:Landroid/view/View;
 
-    const v1, 0x7f0a0517
+    const v1, 0x7f0a0555
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

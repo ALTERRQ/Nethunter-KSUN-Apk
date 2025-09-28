@@ -69,7 +69,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 614
-    const v0, 0x7f0a03b4
+    const v0, 0x7f0a03dc
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -177,7 +177,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a03ca
+    const v1, 0x7f0a03f2
 
     if-ne v0, v1, :cond_2
 
@@ -207,7 +207,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a03b4
+    const v2, 0x7f0a03dc
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -360,7 +360,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 588
-    const v0, 0x7f0d0057
+    const v0, 0x7f0d0058
 
     const/4 v1, 0x0
 
@@ -370,7 +370,7 @@
 
     .line 589
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a03ca
+    const v1, 0x7f0a03f2
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

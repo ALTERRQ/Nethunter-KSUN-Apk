@@ -1335,7 +1335,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 81
-    const v0, 0x7f0d00e6
+    const v0, 0x7f0d00e7
 
     const/4 v1, 0x0
 
@@ -1403,7 +1403,7 @@
 
     .line 94
     :goto_0
-    const v1, 0x7f0a0543
+    const v1, 0x7f0a0583
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1427,7 +1427,7 @@
     invoke-interface {v1, v3}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
     .line 134
-    const v3, 0x7f0a040b
+    const v3, 0x7f0a0436
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1444,7 +1444,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 137
-    const v4, 0x7f0a0545
+    const v4, 0x7f0a0585
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1483,7 +1483,7 @@
     .line 144
     .end local v4    # "WPSadapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/String;>;"
     :cond_1
-    const v4, 0x7f0a03ef
+    const v4, 0x7f0a0418
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1509,7 +1509,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 170
-    const v5, 0x7f0a03c3
+    const v5, 0x7f0a03eb
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1520,7 +1520,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->PixieCheckbox:Landroid/widget/CheckBox;
 
     .line 171
-    const v5, 0x7f0a03c4
+    const v5, 0x7f0a03ec
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1531,7 +1531,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->PixieForceCheckbox:Landroid/widget/CheckBox;
 
     .line 172
-    const v5, 0x7f0a00bf
+    const v5, 0x7f0a00d1
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1542,7 +1542,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->BruteCheckbox:Landroid/widget/CheckBox;
 
     .line 173
-    const v5, 0x7f0a013b
+    const v5, 0x7f0a0148
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1553,7 +1553,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->CustomPINCheckbox:Landroid/widget/CheckBox;
 
     .line 174
-    const v5, 0x7f0a0546
+    const v5, 0x7f0a0586
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1564,7 +1564,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->CustomPIN:Landroid/widget/TextView;
 
     .line 175
-    const v5, 0x7f0a0149
+    const v5, 0x7f0a0156
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1575,7 +1575,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->DelayCMD:Landroid/widget/CheckBox;
 
     .line 176
-    const v5, 0x7f0a03b5
+    const v5, 0x7f0a03dd
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1586,7 +1586,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->PbcCMD:Landroid/widget/CheckBox;
 
     .line 177
-    const v5, 0x7f0a03c2
+    const v5, 0x7f0a03ea
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1597,7 +1597,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/WPSFragment;->WPSPinLayout:Landroid/widget/LinearLayout;
 
     .line 178
-    const v5, 0x7f0a014e
+    const v5, 0x7f0a015b
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1662,7 +1662,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 230
-    const v5, 0x7f0a0489
+    const v5, 0x7f0a04be
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1672,7 +1672,7 @@
 
     .line 231
     .local v5, "startButton":Landroid/widget/Button;
-    const v6, 0x7f0a014f
+    const v6, 0x7f0a015c
 
     invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 538
+    .line 542
     iput-object p1, p0, Lcom/offsec/nethunter/SettingsFragment$3;->this$0:Lcom/offsec/nethunter/SettingsFragment;
 
     iput-object p2, p0, Lcom/offsec/nethunter/SettingsFragment$3;->val$busybox_file:[Ljava/lang/String;
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    .line 541
+    .line 545
     .local p1, "parentView":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     invoke-virtual {p1, p3}, Landroid/widget/AdapterView;->getItemAtPosition(I)Ljava/lang/Object;
 
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    .line 542
+    .line 546
     .local v0, "selected_version":Ljava/lang/String;
     const-string v1, "1.25"
 
@@ -82,7 +82,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 543
+    .line 547
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment$3;->val$busybox_file:[Ljava/lang/String;
 
     const-string v3, "busybox_nh-1.25"
@@ -91,7 +91,7 @@
 
     goto :goto_0
 
-    .line 544
+    .line 548
     :cond_0
     const-string v1, "1.32"
 
@@ -101,14 +101,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 545
+    .line 549
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment$3;->val$busybox_file:[Ljava/lang/String;
 
     const-string v3, "busybox_nh-1.32"
 
     aput-object v3, v1, v2
 
-    .line 547
+    .line 551
     :cond_1
     :goto_0
     return-void
@@ -124,7 +124,7 @@
         }
     .end annotation
 
-    .line 550
+    .line 554
     .local p1, "parentView":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     return-void
 .end method

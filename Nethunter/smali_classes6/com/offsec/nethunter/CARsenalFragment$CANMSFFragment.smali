@@ -30,17 +30,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 2546
+    .line 3188
     invoke-direct {p0}, Lcom/offsec/nethunter/CARsenalFragment;-><init>()V
 
-    .line 2547
+    .line 3189
     new-instance v0, Lcom/offsec/nethunter/utils/ShellExecuter;
 
     invoke-direct {v0}, Lcom/offsec/nethunter/utils/ShellExecuter;-><init>()V
 
     iput-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->exe:Lcom/offsec/nethunter/utils/ShellExecuter;
 
-    .line 2548
+    .line 3190
     invoke-static {}, Ljava/util/concurrent/Executors;->newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -50,64 +50,23 @@
     return-void
 .end method
 
-.method static synthetic access$602(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$5702(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0, "x0"    # Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
     .param p1, "x1"    # Ljava/lang/String;
 
-    .line 2546
+    .line 3188
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic lambda$onCreateView$1(Landroid/widget/LinearLayout;Landroid/widget/Button;Landroid/view/View;)V
-    .locals 2
-    .param p0, "configurationLayout"    # Landroid/widget/LinearLayout;
-    .param p1, "btnConfigurationToggle"    # Landroid/widget/Button;
-    .param p2, "v"    # Landroid/view/View;
-
-    .line 2587
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getVisibility()I
-
-    move-result v0
-
-    const/16 v1, 0x8
-
-    if-ne v0, v1, :cond_0
-
-    .line 2588
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 2589
-    const v0, 0x7f1300d1
-
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
-
-    goto :goto_0
-
-    .line 2591
-    :cond_0
-    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 2592
-    const v0, 0x7f1300cf
-
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
-
-    .line 2594
-    :goto_0
-    return-void
-.end method
-
-.method static synthetic lambda$onCreateView$5(Landroid/content/DialogInterface;I)V
+.method static synthetic lambda$onCreateView$4(Landroid/content/DialogInterface;I)V
     .locals 0
     .param p0, "dialog"    # Landroid/content/DialogInterface;
     .param p1, "which"    # I
 
-    .line 2696
+    .line 3324
     invoke-interface {p0}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void
@@ -119,49 +78,115 @@
     .locals 0
     .param p1, "iface"    # Ljava/lang/String;
 
-    .line 2579
+    .line 3221
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_caniface:Ljava/lang/String;
 
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$10$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/view/View;)V
-    .locals 2
-    .param p1, "v"    # Landroid/view/View;
+.method synthetic lambda$onCreateView$1$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/EditText;Landroid/view/View;)V
+    .locals 4
+    .param p1, "selected_baud"    # Landroid/widget/EditText;
+    .param p2, "v"    # Landroid/view/View;
 
-    .line 2783
-    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->executorService:Ljava/util/concurrent/ExecutorService;
+    .line 3228
+    invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
-    new-instance v1, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda3;
+    move-result-object v0
 
-    invoke-direct {v1, p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda3;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    move-result-object v0
 
+    .line 3231
+    .local v0, "baudSpeed":Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 3232
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, " -b "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .local v1, "baudValue":Ljava/lang/String;
+    goto :goto_0
+
+    .line 3234
+    .end local v1    # "baudValue":Ljava/lang/String;
+    :cond_0
+    const-string v1, ""
+
+    .line 3237
+    .restart local v1    # "baudValue":Ljava/lang/String;
+    :goto_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "/usr/share/metasploit-framework/tools/hardware/elm327_relay.rb -s "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_caniface:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->run_cmd(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 3238
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$11$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/StringBuilder;)V
+.method synthetic lambda$onCreateView$10$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/StringBuilder;)V
     .locals 1
     .param p1, "msfCmd"    # Ljava/lang/StringBuilder;
 
-    .line 2834
+    .line 3462
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->run_cmd(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 2835
+    .line 3463
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$12$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/LinearLayout;Landroid/view/View;)V
+.method synthetic lambda$onCreateView$11$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/LinearLayout;Landroid/view/View;)V
     .locals 10
     .param p1, "optionsContainer"    # Landroid/widget/LinearLayout;
     .param p2, "v"    # Landroid/view/View;
 
-    .line 2792
+    .line 3420
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
     if-eqz v0, :cond_7
@@ -178,7 +203,7 @@
 
     goto/16 :goto_3
 
-    .line 2798
+    .line 3426
     :cond_0
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->getTag()Ljava/lang/Object;
 
@@ -186,7 +211,7 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 2800
+    .line 3428
     .local v0, "userInputs":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Landroid/widget/EditText;>;"
     if-eqz v0, :cond_6
 
@@ -198,13 +223,13 @@
 
     goto/16 :goto_2
 
-    .line 2805
+    .line 3433
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2806
+    .line 3434
     .local v1, "msfCmd":Ljava/lang/StringBuilder;
     iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
@@ -216,7 +241,7 @@
 
     move-result-object v2
 
-    .line 2807
+    .line 3435
     .local v2, "moduleName":Ljava/lang/String;
     const-string v3, "connect"
 
@@ -228,24 +253,24 @@
 
     if-eqz v3, :cond_2
 
-    .line 2808
+    .line 3436
     const-string v3, "msfsession=$(screen -ls | awk \'/^[[:space:]]*[0-9]+\\.msf/ {print $1}\'\n);screen -S $msfsession -X stuff \"use auxiliary/client/hwbridge/"
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 2809
+    .line 3437
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 2810
+    .line 3438
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 2811
+    .line 3439
     :cond_2
     const-string v3, "local_hwbridge"
 
@@ -255,24 +280,24 @@
 
     if-eqz v3, :cond_3
 
-    .line 2812
+    .line 3440
     const-string v3, "msfsession=$(screen -ls | awk \'/^[[:space:]]*[0-9]+\\.msf/ {print $1}\'\n);screen -S $msfsession -X stuff \"use auxiliary/server/"
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 2813
+    .line 3441
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 2814
+    .line 3442
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 2816
+    .line 3444
     :cond_3
     const-string v3, "msfsession=$(screen -ls | awk \'/^[[:space:]]*[0-9]+\\.msf/ {print $1}\'\n);screen -S $msfsession -X stuff \"use post/hardware/automotive/"
 
@@ -280,15 +305,15 @@
 
     move-result-object v3
 
-    .line 2817
+    .line 3445
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 2818
+    .line 3446
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2821
+    .line 3449
     :goto_0
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -311,7 +336,7 @@
 
     check-cast v4, Ljava/util/Map$Entry;
 
-    .line 2822
+    .line 3450
     .local v4, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/widget/EditText;>;"
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -319,7 +344,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 2823
+    .line 3451
     .local v5, "key":Ljava/lang/String;
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -339,7 +364,7 @@
 
     move-result-object v6
 
-    .line 2825
+    .line 3453
     .local v6, "value":Ljava/lang/String;
     invoke-virtual {v6}, Ljava/lang/String;->isEmpty()Z
 
@@ -347,7 +372,7 @@
 
     if-nez v7, :cond_4
 
-    .line 2826
+    .line 3454
     const-string v7, "\'"
 
     const-string v8, "\'\"\'\"\'"
@@ -356,7 +381,7 @@
 
     move-result-object v7
 
-    .line 2827
+    .line 3455
     .local v7, "sanitized":Ljava/lang/String;
     const-string v8, "set "
 
@@ -386,7 +411,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2829
+    .line 3457
     .end local v4    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/widget/EditText;>;"
     .end local v5    # "key":Ljava/lang/String;
     .end local v6    # "value":Ljava/lang/String;
@@ -394,25 +419,25 @@
     :cond_4
     goto :goto_1
 
-    .line 2831
+    .line 3459
     :cond_5
     const-string v3, "run\"`echo -ne \'\\015\'`;screen -d -r $msfsession;exit"
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2833
+    .line 3461
     iget-object v3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->executorService:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v4, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;
+    new-instance v4, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;
 
-    invoke-direct {v4, p0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/StringBuilder;)V
+    invoke-direct {v4, p0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/StringBuilder;)V
 
     invoke-interface {v3, v4}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
-    .line 2836
+    .line 3464
     return-void
 
-    .line 2801
+    .line 3429
     .end local v1    # "msfCmd":Ljava/lang/StringBuilder;
     .end local v2    # "moduleName":Ljava/lang/String;
     :cond_6
@@ -421,10 +446,10 @@
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->showToast(Ljava/lang/String;)V
 
-    .line 2802
+    .line 3430
     return-void
 
-    .line 2793
+    .line 3421
     .end local v0    # "userInputs":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Landroid/widget/EditText;>;"
     :cond_7
     :goto_3
@@ -432,98 +457,16 @@
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->showToast(Ljava/lang/String;)V
 
-    .line 2794
+    .line 3422
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$2$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/EditText;Landroid/view/View;)V
-    .locals 4
-    .param p1, "selected_baud"    # Landroid/widget/EditText;
-    .param p2, "v"    # Landroid/view/View;
-
-    .line 2600
-    invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2603
-    .local v0, "baudSpeed":Ljava/lang/String;
-    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 2604
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, " -b "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    .local v1, "baudValue":Ljava/lang/String;
-    goto :goto_0
-
-    .line 2606
-    .end local v1    # "baudValue":Ljava/lang/String;
-    :cond_0
-    const-string v1, ""
-
-    .line 2609
-    .restart local v1    # "baudValue":Ljava/lang/String;
-    :goto_0
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "/usr/share/metasploit-framework/tools/hardware/elm327_relay.rb -s "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_caniface:Ljava/lang/String;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {p0, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->run_cmd(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 2610
-    return-void
-.end method
-
-.method synthetic lambda$onCreateView$3$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/util/ArrayList;Landroid/widget/Spinner;)V
+.method synthetic lambda$onCreateView$2$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/util/ArrayList;Landroid/widget/Spinner;)V
     .locals 3
     .param p1, "module"    # Ljava/util/ArrayList;
     .param p2, "modulesList"    # Landroid/widget/Spinner;
 
-    .line 2632
+    .line 3260
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$1;
 
     invoke-virtual {p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
@@ -534,31 +477,31 @@
 
     invoke-direct {v0, p0, v1, v2, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$1;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/content/Context;ILjava/util/List;)V
 
-    .line 2647
+    .line 3275
     .local v0, "adapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/String;>;"
     invoke-virtual {p2, v0}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 2649
+    .line 3277
     const/4 v1, 0x0
 
     invoke-virtual {p2, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
-    .line 2651
+    .line 3279
     new-instance v1, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$2;
 
     invoke-direct {v1, p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$2;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
 
     invoke-virtual {p2, v1}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 2665
+    .line 3293
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$4$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/Spinner;)V
+.method synthetic lambda$onCreateView$3$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/Spinner;)V
     .locals 4
     .param p1, "modulesList"    # Landroid/widget/Spinner;
 
-    .line 2616
+    .line 3244
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->exe:Lcom/offsec/nethunter/utils/ShellExecuter;
 
     const-string v1, "basename /usr/share/metasploit-framework/modules/auxiliary/server/local_hwbridge.rb && basename /usr/share/metasploit-framework/modules/auxiliary/client/hwbridge/connect.rb && ls /usr/share/metasploit-framework/modules/post/hardware/automotive/"
@@ -567,19 +510,19 @@
 
     move-result-object v0
 
-    .line 2622
+    .line 3250
     .local v0, "result":Ljava/lang/String;
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2623
+    .line 3251
     .local v1, "module":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     const-string v2, "MSF Modules"
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2625
+    .line 3253
     if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -594,7 +537,7 @@
 
     goto :goto_0
 
-    .line 2628
+    .line 3256
     :cond_0
     const-string v2, "\n"
 
@@ -610,14 +553,14 @@
 
     goto :goto_1
 
-    .line 2626
+    .line 3254
     :cond_1
     :goto_0
     const-string v2, "Module (None)"
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2631
+    .line 3259
     :goto_1
     new-instance v2, Landroid/os/Handler;
 
@@ -627,78 +570,78 @@
 
     invoke-direct {v2, v3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    new-instance v3, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda1;
+    new-instance v3, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;
 
-    invoke-direct {v3, p0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda1;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/util/ArrayList;Landroid/widget/Spinner;)V
+    invoke-direct {v3, p0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/util/ArrayList;Landroid/widget/Spinner;)V
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 2666
+    .line 3294
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$6$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/String;)V
+.method synthetic lambda$onCreateView$5$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/String;)V
     .locals 4
     .param p1, "moduleInfo"    # Ljava/lang/String;
 
-    .line 2693
+    .line 3321
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->context:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 2694
+    .line 3322
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
     const-string v1, "Module Information"
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 2695
+    .line 3323
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 2696
-    new-instance v1, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda12;
+    .line 3324
+    new-instance v1, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda12;-><init>()V
+    invoke-direct {v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda3;-><init>()V
 
     const-string v2, "Close"
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 2697
+    .line 3325
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
-    .line 2698
+    .line 3326
     .local v1, "dialog":Landroid/app/AlertDialog;
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 2700
+    .line 3328
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v3
 
-    .line 2701
+    .line 3329
     .local v3, "closeButton":Landroid/widget/Button;
     if-eqz v3, :cond_0
 
-    .line 2702
+    .line 3330
     invoke-virtual {v3, v2}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 2704
+    .line 3332
     :cond_0
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$7$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/view/View;)V
+.method synthetic lambda$onCreateView$6$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/view/View;)V
     .locals 6
     .param p1, "v"    # Landroid/view/View;
 
-    .line 2674
+    .line 3302
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
     if-eqz v0, :cond_2
@@ -715,7 +658,7 @@
 
     goto :goto_0
 
-    .line 2679
+    .line 3307
     :cond_0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
@@ -731,7 +674,7 @@
 
     move-result-object v0
 
-    .line 2680
+    .line 3308
     .local v0, "moduleNameKey":Ljava/lang/String;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -751,7 +694,7 @@
 
     move-result-object v1
 
-    .line 2682
+    .line 3310
     .local v1, "resourceKey":Ljava/lang/String;
     invoke-virtual {p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->getResources()Landroid/content/res/Resources;
 
@@ -771,25 +714,25 @@
 
     move-result v2
 
-    .line 2684
+    .line 3312
     .local v2, "resId":I
     if-nez v2, :cond_1
 
-    .line 2685
+    .line 3313
     const-string v3, "No info available for this module"
 
     invoke-virtual {p0, v3}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->showToast(Ljava/lang/String;)V
 
-    .line 2686
+    .line 3314
     return-void
 
-    .line 2689
+    .line 3317
     :cond_1
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 2692
+    .line 3320
     .local v3, "moduleInfo":Ljava/lang/String;
     new-instance v4, Landroid/os/Handler;
 
@@ -805,10 +748,10 @@
 
     invoke-virtual {v4, v5}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 2705
+    .line 3333
     return-void
 
-    .line 2675
+    .line 3303
     .end local v0    # "moduleNameKey":Ljava/lang/String;
     .end local v1    # "resourceKey":Ljava/lang/String;
     .end local v2    # "resId":I
@@ -819,17 +762,17 @@
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->showToast(Ljava/lang/String;)V
 
-    .line 2676
+    .line 3304
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$8$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/TextView;Landroid/widget/LinearLayout;Landroid/view/View;)V
+.method synthetic lambda$onCreateView$7$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/TextView;Landroid/widget/LinearLayout;Landroid/view/View;)V
     .locals 20
     .param p1, "infoText"    # Landroid/widget/TextView;
     .param p2, "optionsContainer"    # Landroid/widget/LinearLayout;
     .param p3, "v"    # Landroid/view/View;
 
-    .line 2710
+    .line 3338
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
@@ -852,13 +795,13 @@
 
     goto/16 :goto_5
 
-    .line 2715
+    .line 3343
     :cond_0
     const/16 v3, 0x8
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 2717
+    .line 3345
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -875,7 +818,7 @@
 
     iget-object v5, v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->selected_module:Ljava/lang/String;
 
-    .line 2718
+    .line 3346
     const-string v6, ".rb"
 
     const-string v7, ""
@@ -900,7 +843,7 @@
 
     move-result-object v4
 
-    .line 2720
+    .line 3348
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v5
@@ -909,37 +852,37 @@
 
     move-result-object v5
 
-    .line 2717
+    .line 3345
     const-string v6, "string"
 
     invoke-virtual {v3, v4, v6, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v3
 
-    .line 2722
+    .line 3350
     .local v3, "optionsStringId":I
     const/4 v4, 0x0
 
     if-nez v3, :cond_1
 
-    .line 2723
+    .line 3351
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 2724
-    const v4, 0x7f1300d5
+    .line 3352
+    const v4, 0x7f1300d7
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 2725
+    .line 3353
     return-void
 
-    .line 2728
+    .line 3356
     :cond_1
     invoke-virtual {v0, v3}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 2729
+    .line 3357
     .local v5, "optionsText":Ljava/lang/String;
     const-string v6, "\n"
 
@@ -947,7 +890,7 @@
 
     move-result-object v6
 
-    .line 2731
+    .line 3359
     .local v6, "optionLines":[Ljava/lang/String;
     new-instance v8, Landroid/widget/LinearLayout;
 
@@ -957,23 +900,23 @@
 
     invoke-direct {v8, v9}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 2732
+    .line 3360
     .local v8, "inputLayout":Landroid/widget/LinearLayout;
     const/4 v9, 0x1
 
     invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 2733
+    .line 3361
     const/16 v10, 0x14
 
     invoke-virtual {v8, v10, v10, v10, v10}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
-    .line 2735
+    .line 3363
     new-instance v10, Ljava/util/LinkedHashMap;
 
     invoke-direct {v10}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 2737
+    .line 3365
     .local v10, "userInputs":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Landroid/widget/EditText;>;"
     array-length v11, v6
 
@@ -984,13 +927,13 @@
 
     aget-object v13, v6, v12
 
-    .line 2738
+    .line 3366
     .local v13, "line":Ljava/lang/String;
     invoke-virtual {v13}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v13
 
-    .line 2739
+    .line 3367
     invoke-virtual {v13}, Ljava/lang/String;->isEmpty()Z
 
     move-result v14
@@ -1005,7 +948,7 @@
 
     goto/16 :goto_4
 
-    .line 2741
+    .line 3369
     :cond_2
     const-string v14, "|"
 
@@ -1015,7 +958,7 @@
 
     if-nez v14, :cond_3
 
-    .line 2742
+    .line 3370
     new-instance v14, Landroid/widget/TextView;
 
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
@@ -1024,11 +967,11 @@
 
     invoke-direct {v14, v15}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 2743
+    .line 3371
     .local v14, "header":Landroid/widget/TextView;
     invoke-virtual {v14, v13}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2744
+    .line 3372
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v15
@@ -1037,22 +980,22 @@
 
     invoke-virtual {v14, v15, v4}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
-    .line 2745
+    .line 3373
     const/4 v4, 0x0
 
     invoke-virtual {v14, v4, v9}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    .line 2746
+    .line 3374
     const/16 v4, 0x1e
 
     const/4 v15, 0x0
 
     invoke-virtual {v14, v15, v4, v15, v4}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 2748
+    .line 3376
     invoke-virtual {v8, v14}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2749
+    .line 3377
     move/from16 v18, v3
 
     move-object/from16 v19, v5
@@ -1061,7 +1004,7 @@
 
     goto/16 :goto_4
 
-    .line 2752
+    .line 3380
     .end local v14    # "header":Landroid/widget/TextView;
     :cond_3
     const-string v4, "\\|"
@@ -1070,7 +1013,7 @@
 
     move-result-object v4
 
-    .line 2753
+    .line 3381
     .local v4, "parts":[Ljava/lang/String;
     array-length v14, v4
 
@@ -1089,7 +1032,7 @@
     :cond_4
     move-object v14, v7
 
-    .line 2754
+    .line 3382
     .local v14, "name":Ljava/lang/String;
     :goto_1
     array-length v15, v4
@@ -1107,7 +1050,7 @@
     :cond_5
     move-object v15, v7
 
-    .line 2755
+    .line 3383
     .local v15, "defaultVal":Ljava/lang/String;
     :goto_2
     array-length v9, v4
@@ -1127,7 +1070,7 @@
     :cond_6
     const-string v9, "optional"
 
-    .line 2757
+    .line 3385
     .local v9, "required":Ljava/lang/String;
     :goto_3
     invoke-virtual {v14}, Ljava/lang/String;->isEmpty()Z
@@ -1144,7 +1087,7 @@
 
     goto :goto_4
 
-    .line 2759
+    .line 3387
     :cond_7
     new-instance v1, Landroid/widget/TextView;
 
@@ -1158,7 +1101,7 @@
 
     invoke-direct {v1, v3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 2760
+    .line 3388
     .local v1, "label":Landroid/widget/TextView;
     const/4 v3, 0x2
 
@@ -1184,12 +1127,12 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2761
+    .line 3389
     const/high16 v3, 0x41600000    # 14.0f
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 2762
+    .line 3390
     const/16 v4, 0xa
 
     const/4 v3, 0x4
@@ -1202,7 +1145,7 @@
     .local v19, "optionsText":Ljava/lang/String;
     invoke-virtual {v1, v5, v4, v5, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 2764
+    .line 3392
     new-instance v3, Landroid/widget/EditText;
 
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
@@ -1211,7 +1154,7 @@
 
     invoke-direct {v3, v4}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 2765
+    .line 3393
     .local v3, "input":Landroid/widget/EditText;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1233,27 +1176,27 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 2766
+    .line 3394
     invoke-virtual {v3, v15}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2767
+    .line 3395
     invoke-virtual {v3, v14}, Landroid/widget/EditText;->setTag(Ljava/lang/Object;)V
 
-    .line 2768
+    .line 3396
     const/high16 v4, 0x41600000    # 14.0f
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setTextSize(F)V
 
-    .line 2770
+    .line 3398
     invoke-virtual {v8, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2771
+    .line 3399
     invoke-virtual {v8, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2773
+    .line 3401
     invoke-interface {v10, v14, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2737
+    .line 3365
     .end local v1    # "label":Landroid/widget/TextView;
     .end local v3    # "input":Landroid/widget/EditText;
     .end local v9    # "required":Ljava/lang/String;
@@ -1276,7 +1219,7 @@
 
     goto/16 :goto_0
 
-    .line 2776
+    .line 3404
     .end local v18    # "optionsStringId":I
     .end local v19    # "optionsText":Ljava/lang/String;
     .local v3, "optionsStringId":I
@@ -1284,21 +1227,21 @@
     :cond_8
     invoke-virtual/range {p2 .. p2}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 2777
+    .line 3405
     invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2778
+    .line 3406
     const/4 v1, 0x0
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 2779
+    .line 3407
     invoke-virtual {v2, v10}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 2780
+    .line 3408
     return-void
 
-    .line 2711
+    .line 3339
     .end local v3    # "optionsStringId":I
     .end local v5    # "optionsText":Ljava/lang/String;
     .end local v6    # "optionLines":[Ljava/lang/String;
@@ -1310,19 +1253,35 @@
 
     invoke-virtual {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->showToast(Ljava/lang/String;)V
 
-    .line 2712
+    .line 3340
     return-void
 .end method
 
-.method synthetic lambda$onCreateView$9$com-offsec-nethunter-CARsenalFragment$CANMSFFragment()V
+.method synthetic lambda$onCreateView$8$com-offsec-nethunter-CARsenalFragment$CANMSFFragment()V
     .locals 1
 
-    .line 2784
+    .line 3412
     const-string v0, "msfsession=$(screen -ls | awk \'/^[[:space:]]*[0-9]+\\.msf/ {print $1}\'\n); if [ -n \"$msfsession\" ]; then screen -wipe; screen -d \"$msfsession\"; screen -r \"$msfsession\"; else screen -wipe; screen -S msf -m msfconsole;exit; fi"
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->run_cmd(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 2788
+    .line 3416
+    return-void
+.end method
+
+.method synthetic lambda$onCreateView$9$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/view/View;)V
+    .locals 2
+    .param p1, "v"    # Landroid/view/View;
+
+    .line 3411
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->executorService:Ljava/util/concurrent/ExecutorService;
+
+    new-instance v1, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda1;
+
+    invoke-direct {v1, p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda1;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
+
+    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
     return-void
 .end method
 
@@ -1330,30 +1289,30 @@
     .locals 1
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
-    .line 2555
+    .line 3197
     invoke-super {p0, p1}, Lcom/offsec/nethunter/CARsenalFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2556
+    .line 3198
     invoke-virtual {p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->context:Landroid/content/Context;
 
-    .line 2557
+    .line 3199
     return-void
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 17
+    .locals 16
     .param p1, "inflater"    # Landroid/view/LayoutInflater;
     .param p2, "container"    # Landroid/view/ViewGroup;
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
-    .line 2562
+    .line 3204
     move-object/from16 v0, p0
 
-    const v1, 0x7f0d002e
+    const v1, 0x7f0d002d
 
     const/4 v2, 0x0
 
@@ -1365,9 +1324,9 @@
 
     move-result-object v1
 
-    .line 2564
+    .line 3206
     .local v1, "rootView":Landroid/view/View;
-    const v2, 0x7f0a00af
+    const v2, 0x7f0a00bf
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1375,9 +1334,9 @@
 
     check-cast v2, Landroid/widget/EditText;
 
-    .line 2567
+    .line 3209
     .local v2, "selected_baud":Landroid/widget/EditText;
-    const v5, 0x7f0a015a
+    const v5, 0x7f0a0167
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1385,9 +1344,9 @@
 
     check-cast v5, Landroid/widget/Spinner;
 
-    .line 2568
+    .line 3210
     .local v5, "spinner":Landroid/widget/Spinner;
-    const v6, 0x7f0a03e8
+    const v6, 0x7f0a0410
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1397,11 +1356,11 @@
 
     check-cast v15, Landroid/widget/ImageButton;
 
-    .line 2570
+    .line 3212
     .local v15, "refreshBtn":Landroid/widget/ImageButton;
     nop
 
-    .line 2571
+    .line 3213
     invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v6
@@ -1410,8 +1369,8 @@
 
     iget-object v8, v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->exe:Lcom/offsec/nethunter/utils/ShellExecuter;
 
-    .line 2576
-    invoke-static {}, Lcom/offsec/nethunter/CARsenalFragment;->access$300()Landroid/content/SharedPreferences;
+    .line 3218
+    invoke-static {}, Lcom/offsec/nethunter/CARsenalFragment;->access$400()Landroid/content/SharedPreferences;
 
     move-result-object v11
 
@@ -1419,7 +1378,7 @@
 
     invoke-direct {v14, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda4;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
 
-    .line 2570
+    .line 3212
     const-string v12, "selected_usb"
 
     const/4 v13, 0x0
@@ -1430,91 +1389,98 @@
 
     invoke-static/range {v6 .. v14}, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils;->setupDeviceInterfaceSpinner(Landroid/content/Context;Ljava/util/concurrent/ExecutorService;Lcom/offsec/nethunter/utils/ShellExecuter;Landroid/widget/Spinner;Landroid/view/View;Landroid/content/SharedPreferences;Ljava/lang/String;ZLcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;)V
 
-    .line 2583
-    const v6, 0x7f0a00d6
+    .line 3225
+    const v6, 0x7f0a042f
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
-    check-cast v6, Landroid/widget/Button;
+    check-cast v6, Landroid/widget/ImageButton;
 
-    .line 2584
-    .local v6, "btnConfigurationToggle":Landroid/widget/Button;
-    const v7, 0x7f0a033f
+    .line 3227
+    .local v6, "elm327relayButton":Landroid/widget/ImageButton;
+    new-instance v7, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;
+
+    invoke-direct {v7, v0, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/EditText;)V
+
+    invoke-virtual {v6, v7}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 3241
+    const v7, 0x7f0a0365
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
-    check-cast v7, Landroid/widget/LinearLayout;
+    check-cast v7, Landroid/widget/Spinner;
 
-    .line 2586
-    .local v7, "configurationLayout":Landroid/widget/LinearLayout;
-    new-instance v8, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;
+    .line 3243
+    .local v7, "modulesList":Landroid/widget/Spinner;
+    iget-object v8, v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->executorService:Ljava/util/concurrent/ExecutorService;
 
-    invoke-direct {v8, v7, v6}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda5;-><init>(Landroid/widget/LinearLayout;Landroid/widget/Button;)V
+    new-instance v9, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda6;
 
-    invoke-virtual {v6, v8}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {v9, v0, v7}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda6;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/Spinner;)V
 
-    .line 2597
-    const v8, 0x7f0a0404
+    invoke-interface {v8, v9}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    .line 3296
+    const v8, 0x7f0a034c
 
     invoke-virtual {v1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v8
 
-    check-cast v8, Landroid/widget/Button;
+    check-cast v8, Landroid/widget/TextView;
 
-    .line 2599
-    .local v8, "elm327relayButton":Landroid/widget/Button;
-    new-instance v9, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda6;
-
-    invoke-direct {v9, v0, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda6;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/EditText;)V
-
-    invoke-virtual {v8, v9}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 2613
-    const v9, 0x7f0a0340
+    .line 3297
+    .local v8, "infoText":Landroid/widget/TextView;
+    const v9, 0x7f0a034d
 
     invoke-virtual {v1, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
-    check-cast v9, Landroid/widget/Spinner;
+    check-cast v9, Landroid/widget/LinearLayout;
 
-    .line 2615
-    .local v9, "modulesList":Landroid/widget/Spinner;
-    iget-object v10, v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->executorService:Ljava/util/concurrent/ExecutorService;
-
-    new-instance v11, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda7;
-
-    invoke-direct {v11, v0, v9}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda7;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/Spinner;)V
-
-    invoke-interface {v10, v11}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
-
-    .line 2668
-    const v10, 0x7f0a0327
+    .line 3300
+    .local v9, "optionsContainer":Landroid/widget/LinearLayout;
+    const v10, 0x7f0a02e0
 
     invoke-virtual {v1, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v10
 
-    check-cast v10, Landroid/widget/TextView;
+    check-cast v10, Landroid/widget/Button;
 
-    .line 2669
-    .local v10, "infoText":Landroid/widget/TextView;
-    const v11, 0x7f0a0328
+    .line 3301
+    .local v10, "infoBtn":Landroid/widget/Button;
+    new-instance v11, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda7;
+
+    invoke-direct {v11, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda7;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
+
+    invoke-virtual {v10, v11}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 3336
+    const v11, 0x7f0a0466
 
     invoke-virtual {v1, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v11
 
-    check-cast v11, Landroid/widget/LinearLayout;
+    check-cast v11, Landroid/widget/Button;
 
-    .line 2672
-    .local v11, "optionsContainer":Landroid/widget/LinearLayout;
-    const v12, 0x7f0a02cc
+    .line 3337
+    .local v11, "setBtn":Landroid/widget/Button;
+    new-instance v12, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda8;
+
+    invoke-direct {v12, v0, v8, v9}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda8;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/TextView;Landroid/widget/LinearLayout;)V
+
+    invoke-virtual {v11, v12}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 3410
+    const v12, 0x7f0a0366
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1522,16 +1488,16 @@
 
     check-cast v12, Landroid/widget/Button;
 
-    .line 2673
-    .local v12, "infoBtn":Landroid/widget/Button;
-    new-instance v13, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda8;
+    .line 3411
+    .local v12, "msfBtn":Landroid/widget/Button;
+    new-instance v13, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda9;
 
-    invoke-direct {v13, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda8;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
+    invoke-direct {v13, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda9;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
 
     invoke-virtual {v12, v13}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2708
-    const v13, 0x7f0a0437
+    .line 3418
+    const v13, 0x7f0a042e
 
     invoke-virtual {v1, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1539,52 +1505,14 @@
 
     check-cast v13, Landroid/widget/Button;
 
-    .line 2709
-    .local v13, "setBtn":Landroid/widget/Button;
-    new-instance v14, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda9;
+    .line 3419
+    .local v13, "runBtn":Landroid/widget/Button;
+    new-instance v14, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;
 
-    invoke-direct {v14, v0, v10, v11}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda9;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/TextView;Landroid/widget/LinearLayout;)V
+    invoke-direct {v14, v0, v9}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/LinearLayout;)V
 
     invoke-virtual {v13, v14}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2782
-    const v14, 0x7f0a0341
-
-    invoke-virtual {v1, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v14
-
-    check-cast v14, Landroid/widget/Button;
-
-    .line 2783
-    .local v14, "msfBtn":Landroid/widget/Button;
-    move-object/from16 v16, v2
-
-    .end local v2    # "selected_baud":Landroid/widget/EditText;
-    .local v16, "selected_baud":Landroid/widget/EditText;
-    new-instance v2, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;
-
-    invoke-direct {v2, v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
-
-    invoke-virtual {v14, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 2790
-    const v2, 0x7f0a0403
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/widget/Button;
-
-    .line 2791
-    .local v2, "runBtn":Landroid/widget/Button;
-    new-instance v3, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;
-
-    invoke-direct {v3, v0, v11}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda11;-><init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/LinearLayout;)V
-
-    invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 2838
+    .line 3466
     return-object v1
 .end method

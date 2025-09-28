@@ -79,7 +79,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/EditSourceActivity;->configFilePath:Ljava/lang/String;
 
     .line 32
-    const v1, 0x7f0d00de
+    const v1, 0x7f0d00df
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/EditSourceActivity;->setContentView(I)V
 
@@ -97,7 +97,7 @@
     invoke-virtual {v1, v2}, Landroid/view/Window;->setStatusBarColor(I)V
 
     .line 35
-    const v1, 0x7f0a0451
+    const v1, 0x7f0a0480
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/EditSourceActivity;->findViewById(I)Landroid/view/View;
 
@@ -111,7 +111,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f130190
+    const v3, 0x7f130192
 
     invoke-virtual {p0, v3}, Lcom/offsec/nethunter/EditSourceActivity;->getString(I)Ljava/lang/String;
 
@@ -209,7 +209,7 @@
     .param p1, "view"    # Landroid/view/View;
 
     .line 70
-    const v0, 0x7f0a0451
+    const v0, 0x7f0a0480
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/EditSourceActivity;->findViewById(I)Landroid/view/View;
 

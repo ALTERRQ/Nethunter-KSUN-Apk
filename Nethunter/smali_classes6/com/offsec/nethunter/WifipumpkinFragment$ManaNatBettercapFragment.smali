@@ -24,7 +24,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 680
+    .line 673
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
     return-void
@@ -36,23 +36,23 @@
     .locals 5
     .param p1, "v"    # Landroid/view/View;
 
-    .line 706
+    .line 699
     invoke-virtual {p0}, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 707
+    .line 700
     return-void
 
-    .line 709
+    .line 702
     :cond_0
     invoke-virtual {p0}, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f0a0451
+    const v1, 0x7f0a0480
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -60,7 +60,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    .line 710
+    .line 703
     .local v0, "source1":Landroid/widget/EditText;
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -70,26 +70,26 @@
 
     move-result-object v1
 
-    .line 711
+    .line 704
     .local v1, "newSource":Ljava/lang/String;
     new-instance v2, Lcom/offsec/nethunter/utils/ShellExecuter;
 
     invoke-direct {v2}, Lcom/offsec/nethunter/utils/ShellExecuter;-><init>()V
 
-    .line 712
+    .line 705
     .local v2, "exe1":Lcom/offsec/nethunter/utils/ShellExecuter;
     iget-object v3, p0, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->configFilePath:Ljava/lang/String;
 
     invoke-virtual {v2, v1, v3}, Lcom/offsec/nethunter/utils/ShellExecuter;->SaveFileContents(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 713
+    .line 706
     iget-object v3, p0, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->context:Landroid/content/Context;
 
     const-string v4, "Source updated"
 
     invoke-static {v3, v4}, Lcom/offsec/nethunter/utils/NhPaths;->showMessage(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 714
+    .line 707
     return-void
 .end method
 
@@ -97,17 +97,17 @@
     .locals 2
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
-    .line 686
+    .line 679
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 687
+    .line 680
     invoke-virtual {p0}, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->context:Landroid/content/Context;
 
-    .line 688
+    .line 681
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -132,7 +132,7 @@
 
     iput-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->configFilePath:Ljava/lang/String;
 
-    .line 689
+    .line 682
     return-void
 .end method
 
@@ -142,8 +142,8 @@
     .param p2, "container"    # Landroid/view/ViewGroup;
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
-    .line 694
-    const v0, 0x7f0d00df
+    .line 687
+    const v0, 0x7f0d00e0
 
     const/4 v1, 0x0
 
@@ -151,21 +151,21 @@
 
     move-result-object v0
 
-    .line 696
+    .line 689
     .local v0, "rootView":Landroid/view/View;
     invoke-virtual {p0}, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f1301ac
+    const v2, 0x7f1301ae
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 697
+    .line 690
     .local v1, "description":Ljava/lang/String;
-    const v2, 0x7f0a0153
+    const v2, 0x7f0a0160
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -173,12 +173,12 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 698
+    .line 691
     .local v2, "desc":Landroid/widget/TextView;
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 700
-    const v3, 0x7f0a0451
+    .line 693
+    const v3, 0x7f0a0480
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -186,20 +186,20 @@
 
     check-cast v3, Landroid/widget/EditText;
 
-    .line 701
+    .line 694
     .local v3, "source":Landroid/widget/EditText;
     new-instance v4, Lcom/offsec/nethunter/utils/ShellExecuter;
 
     invoke-direct {v4}, Lcom/offsec/nethunter/utils/ShellExecuter;-><init>()V
 
-    .line 702
+    .line 695
     .local v4, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     iget-object v5, p0, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment;->configFilePath:Ljava/lang/String;
 
     invoke-virtual {v4, v5, v3}, Lcom/offsec/nethunter/utils/ShellExecuter;->ReadFile_ASYNC(Ljava/lang/String;Landroid/widget/EditText;)V
 
-    .line 704
-    const v5, 0x7f0a050a
+    .line 697
+    const v5, 0x7f0a0548
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -207,7 +207,7 @@
 
     check-cast v5, Landroid/widget/Button;
 
-    .line 705
+    .line 698
     .local v5, "button":Landroid/widget/Button;
     new-instance v6, Lcom/offsec/nethunter/WifipumpkinFragment$ManaNatBettercapFragment$$ExternalSyntheticLambda0;
 
@@ -215,6 +215,6 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 715
+    .line 708
     return-object v0
 .end method

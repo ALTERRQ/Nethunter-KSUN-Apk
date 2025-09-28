@@ -715,7 +715,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 410
-    const v0, 0x7f1300bc
+    const v0, 0x7f1300bf
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -725,7 +725,7 @@
 
     .line 408
     :pswitch_0
-    const v0, 0x7f1300bb
+    const v0, 0x7f1300be
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -735,7 +735,7 @@
 
     .line 406
     :pswitch_1
-    const v0, 0x7f1300ba
+    const v0, 0x7f1300bd
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -745,7 +745,7 @@
 
     .line 404
     :pswitch_2
-    const v0, 0x7f1300b6
+    const v0, 0x7f1300b9
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -755,7 +755,7 @@
 
     .line 402
     :pswitch_3
-    const v0, 0x7f1300b9
+    const v0, 0x7f1300bc
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -765,7 +765,7 @@
 
     .line 400
     :pswitch_4
-    const v0, 0x7f1300b8
+    const v0, 0x7f1300bb
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/AudioFragment;->getString(I)Ljava/lang/String;
 
@@ -869,14 +869,14 @@
     .line 280
     iget-object v0, p0, Lcom/offsec/nethunter/AudioFragment;->serverInput:Landroid/widget/EditText;
 
-    const v1, 0x7f13008f
+    const v1, 0x7f130092
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(I)V
 
     .line 281
     iget-object v0, p0, Lcom/offsec/nethunter/AudioFragment;->portInput:Landroid/widget/EditText;
 
-    const v1, 0x7f13008d
+    const v1, 0x7f130090
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(I)V
 
@@ -1376,7 +1376,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0800c0
+    const v2, 0x7f0800c2
 
     invoke-static {v0, v2, v1}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -1401,7 +1401,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0800be
+    const v2, 0x7f0800c0
 
     invoke-static {v0, v2, v1}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -1458,7 +1458,7 @@
     :cond_2
     iget-object v0, p0, Lcom/offsec/nethunter/AudioFragment;->errorText:Landroid/widget/TextView;
 
-    const v1, 0x7f130091
+    const v1, 0x7f130094
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1577,7 +1577,7 @@
 
     .line 177
     .local v0, "view":Landroid/view/View;
-    const v2, 0x7f0a008e
+    const v2, 0x7f0a009c
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1587,7 +1587,7 @@
 
     .line 178
     .local v2, "audioSettingsHeader":Landroid/widget/TextView;
-    const v3, 0x7f0a008d
+    const v3, 0x7f0a009b
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1651,7 +1651,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/AudioFragment;->portInput:Landroid/widget/EditText;
 
     .line 210
-    const v1, 0x7f0a0098
+    const v1, 0x7f0a00a8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1662,7 +1662,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/AudioFragment;->autoStartCheckBox:Landroid/widget/CheckBox;
 
     .line 211
-    const v1, 0x7f0a0198
+    const v1, 0x7f0a01ab
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1673,7 +1673,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/AudioFragment;->errorText:Landroid/widget/TextView;
 
     .line 212
-    const v1, 0x7f0a00df
+    const v1, 0x7f0a00e7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1709,7 +1709,7 @@
     invoke-virtual {v5, v4}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 217
-    const v5, 0x7f0a04bc
+    const v5, 0x7f0a04f6
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1745,7 +1745,7 @@
     invoke-virtual {v7, v6}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 222
-    const v7, 0x7f0a0285
+    const v7, 0x7f0a0299
 
     invoke-virtual {v0, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1756,7 +1756,7 @@
     iput-object v7, p0, Lcom/offsec/nethunter/AudioFragment;->fullScrollView:Landroid/widget/ScrollView;
 
     .line 224
-    const v7, 0x7f0a0110
+    const v7, 0x7f0a011e
 
     invoke-virtual {v0, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2046,7 +2046,7 @@
     :cond_3
     iget-object v3, p0, Lcom/offsec/nethunter/AudioFragment;->errorText:Landroid/widget/TextView;
 
-    const v4, 0x7f130090
+    const v4, 0x7f130093
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

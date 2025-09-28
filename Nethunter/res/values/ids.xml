@@ -71,6 +71,7 @@
     <item type="id" name="action_canusb_settings" />
     <item type="id" name="action_container" />
     <item type="id" name="action_context_bar" />
+    <item type="id" name="action_controller" />
     <item type="id" name="action_divider" />
     <item type="id" name="action_enable_faulty_check" />
     <item type="id" name="action_floating" />
@@ -91,15 +92,26 @@
     <item type="id" name="action_sort" />
     <item type="id" name="action_stop" />
     <item type="id" name="action_text" />
+    <item type="id" name="action_tools_settings" />
     <item type="id" name="action_wifi_status" />
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
     <item type="id" name="addCommand" />
     <item type="id" name="add_lauchner_btn_execmode_text" />
+    <item type="id" name="addrByteSize_container" />
+    <item type="id" name="addrByteSize_value" />
     <item type="id" name="admin" />
     <item type="id" name="advanced_row_1" />
+    <item type="id" name="advanced_row_10" />
+    <item type="id" name="advanced_row_11" />
     <item type="id" name="advanced_row_2" />
     <item type="id" name="advanced_row_3" />
+    <item type="id" name="advanced_row_4" />
+    <item type="id" name="advanced_row_5" />
+    <item type="id" name="advanced_row_6" />
+    <item type="id" name="advanced_row_7" />
+    <item type="id" name="advanced_row_8" />
+    <item type="id" name="advanced_row_9" />
     <item type="id" name="alertTitle" />
     <item type="id" name="android_ver" />
     <item type="id" name="androidx_window_activity_scope" />
@@ -107,11 +119,15 @@
     <item type="id" name="ap_interface" />
     <item type="id" name="apply_prompt" />
     <item type="id" name="apply_spoof" />
+    <item type="id" name="arbID_container" />
+    <item type="id" name="arbID_value" />
     <item type="id" name="audioSettingsContent" />
     <item type="id" name="audioSettingsHeader" />
     <item type="id" name="audio_buttons_title" />
     <item type="id" name="audio_item" />
     <item type="id" name="author" />
+    <item type="id" name="autoBlacklist_container" />
+    <item type="id" name="autoBlacklist_value" />
     <item type="id" name="auto_start" />
     <item type="id" name="backup" />
     <item type="id" name="badbt_address" />
@@ -134,6 +150,8 @@
     <item type="id" name="baud_speed" />
     <item type="id" name="baudrate_usb" />
     <item type="id" name="bb_spinner" />
+    <item type="id" name="blacklist_container" />
+    <item type="id" name="blacklist_value" />
     <item type="id" name="bluebinder" />
     <item type="id" name="bluebinder_button" />
     <item type="id" name="bootanimation_path" />
@@ -146,27 +164,17 @@
     <item type="id" name="bt_maindesc" />
     <item type="id" name="bt_service" />
     <item type="id" name="bt_time" />
-    <item type="id" name="btn_toggle_advanced" />
     <item type="id" name="btn_toggle_candump" />
-    <item type="id" name="btn_toggle_config_tools" />
-    <item type="id" name="btn_toggle_delay" />
-    <item type="id" name="btn_toggle_dst" />
-    <item type="id" name="btn_toggle_id" />
     <item type="id" name="btn_toggle_interactive" />
-    <item type="id" name="btn_toggle_length" />
     <item type="id" name="btn_toggle_loop" />
     <item type="id" name="btn_toggle_loopback" />
-    <item type="id" name="btn_toggle_max" />
-    <item type="id" name="btn_toggle_min" />
     <item type="id" name="btn_toggle_output" />
     <item type="id" name="btn_toggle_pad" />
-    <item type="id" name="btn_toggle_relay" />
+    <item type="id" name="btn_toggle_requests" />
+    <item type="id" name="btn_toggle_responses" />
     <item type="id" name="btn_toggle_reverse" />
-    <item type="id" name="btn_toggle_seed" />
-    <item type="id" name="btn_toggle_separateLine" />
-    <item type="id" name="btn_toggle_services" />
-    <item type="id" name="btn_toggle_src" />
-    <item type="id" name="btn_toggle_start_addr" />
+    <item type="id" name="btn_toggle_skipverify" />
+    <item type="id" name="btn_toggle_spr" />
     <item type="id" name="btn_toggle_usb_ttyOutput" />
     <item type="id" name="btn_toggle_verbose" />
     <item type="id" name="bufferHeadroomSpinner" />
@@ -178,24 +186,30 @@
     <item type="id" name="button" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="button_row" />
+    <item type="id" name="button_row10" />
+    <item type="id" name="button_row11" />
     <item type="id" name="button_row2" />
-    <item type="id" name="button_row3" />
     <item type="id" name="button_row4" />
     <item type="id" name="button_row6" />
     <item type="id" name="button_row7" />
+    <item type="id" name="button_row8" />
+    <item type="id" name="button_row9" />
     <item type="id" name="button_row_services" />
+    <item type="id" name="button_row_verbose" />
     <item type="id" name="can_desc" />
     <item type="id" name="can_iface" />
     <item type="id" name="can_item" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
+    <item type="id" name="candump_container" />
+    <item type="id" name="cannelloniConf" />
     <item type="id" name="cannelloni_lport" />
     <item type="id" name="cannelloni_rhost" />
     <item type="id" name="cannelloni_rport" />
     <item type="id" name="cansend_sequence" />
     <item type="id" name="canspeed_usb" />
     <item type="id" name="cantype_spinner" />
-    <item type="id" name="caribou_advanced_options" />
+    <item type="id" name="caribou_advanced_options_card" />
     <item type="id" name="caribou_file" />
     <item type="id" name="caribou_message" />
     <item type="id" name="cariboufilebrowse" />
@@ -215,10 +229,9 @@
     <item type="id" name="content" />
     <item type="id" name="contentPanel" />
     <item type="id" name="contentText" />
-    <item type="id" name="controls" />
+    <item type="id" name="controls_container" />
     <item type="id" name="convert" />
     <item type="id" name="coordinator" />
-    <item type="id" name="counter_checkbox" />
     <item type="id" name="counter_input_layout" />
     <item type="id" name="createchroot_item" />
     <item type="id" name="credits_text" />
@@ -237,11 +250,11 @@
     <item type="id" name="custompin" />
     <item type="id" name="cwmode" />
     <item type="id" name="dataBinding" />
-    <item type="id" name="data_checkbox" />
+    <item type="id" name="data_container" />
     <item type="id" name="data_input_layout" />
+    <item type="id" name="data_value" />
     <item type="id" name="date_picker_actions" />
     <item type="id" name="dbus_button" />
-    <item type="id" name="debug_checkbox" />
     <item type="id" name="decor_content_parent" />
     <item type="id" name="default_activity_button" />
     <item type="id" name="delay" />
@@ -279,13 +292,19 @@
     <item type="id" name="drawer_layout" />
     <item type="id" name="dst_container" />
     <item type="id" name="dst_value" />
+    <item type="id" name="dtype_container" />
+    <item type="id" name="dtype_value" />
     <item type="id" name="duckConvertAttack" />
     <item type="id" name="duckhunter_item" />
     <item type="id" name="duckhunter_preset_spinner" />
     <item type="id" name="duckyInject" />
     <item type="id" name="duckyLoad" />
     <item type="id" name="duckySave" />
+    <item type="id" name="duration_container" />
+    <item type="id" name="duration_value" />
     <item type="id" name="easter_egg_button" />
+    <item type="id" name="ecureset_methode_spinner" />
+    <item type="id" name="ecureset_type_spinner" />
     <item type="id" name="editBadBT" />
     <item type="id" name="editSource" />
     <item type="id" name="editText_launcher_btn_label" />
@@ -500,6 +519,7 @@
     <item type="id" name="f_usbarsenal_tv_current_usb_state" />
     <item type="id" name="f_usbarsenal_tv_mount_state" />
     <item type="id" name="f_wps_viewlogger" />
+    <item type="id" name="file_container" />
     <item type="id" name="final_height" />
     <item type="id" name="final_width" />
     <item type="id" name="finalresminus" />
@@ -549,11 +569,9 @@
     <item type="id" name="icon" />
     <item type="id" name="icon_frame" />
     <item type="id" name="icon_group" />
-    <item type="id" name="icsim" />
     <item type="id" name="icsim_advanced_options" />
     <item type="id" name="icsim_configuration" />
-    <item type="id" name="icsim_overlay" />
-    <item type="id" name="id_checkbox" />
+    <item type="id" name="icsim_container" />
     <item type="id" name="id_container" />
     <item type="id" name="id_input_layout" />
     <item type="id" name="id_value" />
@@ -564,6 +582,8 @@
     <item type="id" name="imageresminus" />
     <item type="id" name="imageresplus" />
     <item type="id" name="immersionSwitch" />
+    <item type="id" name="index_container" />
+    <item type="id" name="index_value" />
     <item type="id" name="info" />
     <item type="id" name="info_fab" />
     <item type="id" name="info_module" />
@@ -575,8 +595,12 @@
     <item type="id" name="installButton" />
     <item type="id" name="installdeps_item" />
     <item type="id" name="intent_toggle_service" />
+    <item type="id" name="interDelay_container" />
+    <item type="id" name="interDelay_value" />
     <item type="id" name="ipaddress" />
     <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="iterations_container" />
+    <item type="id" name="iterations_value" />
     <item type="id" name="kaliservices_item" />
     <item type="id" name="kernel_desc" />
     <item type="id" name="kernel_description" />
@@ -590,6 +614,8 @@
     <item type="id" name="length_container" />
     <item type="id" name="length_value" />
     <item type="id" name="level_container" />
+    <item type="id" name="level_input" />
+    <item type="id" name="level_input_container" />
     <item type="id" name="level_spinner" />
     <item type="id" name="line1" />
     <item type="id" name="line3" />
@@ -597,6 +623,7 @@
     <item type="id" name="linearLayout2" />
     <item type="id" name="list_item" />
     <item type="id" name="listenfilename" />
+    <item type="id" name="loop_container" />
     <item type="id" name="lsmod" />
     <item type="id" name="m3_side_sheet" />
     <item type="id" name="macchanger_item" />
@@ -624,14 +651,24 @@
     <item type="id" name="material_timepicker_view" />
     <item type="id" name="material_value_index" />
     <item type="id" name="max_container" />
+    <item type="id" name="max_did_container" />
+    <item type="id" name="max_did_value" />
     <item type="id" name="max_value" />
     <item type="id" name="media_actions" />
+    <item type="id" name="memLengthByteSize_container" />
+    <item type="id" name="memLengthByteSize_value" />
+    <item type="id" name="memLength_container" />
+    <item type="id" name="memLength_value" />
+    <item type="id" name="memSize_container" />
+    <item type="id" name="memSize_value" />
     <item type="id" name="message" />
+    <item type="id" name="message_container" />
     <item type="id" name="metapackageLinearLayout" />
     <item type="id" name="metapackagesWeb" />
     <item type="id" name="min_container" />
+    <item type="id" name="min_did_container" />
+    <item type="id" name="min_did_value" />
     <item type="id" name="min_value" />
-    <item type="id" name="mode_checkbox" />
     <item type="id" name="moduleAutoLoad" />
     <item type="id" name="moduleInfoLabel" />
     <item type="id" name="moduleName" />
@@ -660,7 +697,7 @@
     <item type="id" name="mpc_port" />
     <item type="id" name="mpc_stage_spinner" />
     <item type="id" name="mpc_type_spinner" />
-    <item type="id" name="msf_elmconfig" />
+    <item type="id" name="msf_elmconfig_card" />
     <item type="id" name="msf_modules_spinner" />
     <item type="id" name="msfconsole_start" />
     <item type="id" name="mtrl_calendar_day_selector_frame" />
@@ -685,7 +722,6 @@
     <item type="id" name="mtrl_picker_text_input_range_start" />
     <item type="id" name="mtrl_picker_title_text" />
     <item type="id" name="mtrl_view_tag_bottom_padding" />
-    <item type="id" name="mtu_checkbox" />
     <item type="id" name="mtu_input_layout" />
     <item type="id" name="mtu_value" />
     <item type="id" name="mybrowser" />
@@ -724,6 +760,8 @@
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
+    <item type="id" name="number_container" />
+    <item type="id" name="number_value" />
     <item type="id" name="numex" />
     <item type="id" name="off" />
     <item type="id" name="on" />
@@ -747,8 +785,10 @@
     <item type="id" name="open_search_view_text_container" />
     <item type="id" name="open_search_view_toolbar" />
     <item type="id" name="open_search_view_toolbar_container" />
+    <item type="id" name="output_container" />
     <item type="id" name="outputfilebrowse" />
     <item type="id" name="outputfilepath" />
+    <item type="id" name="pad_container" />
     <item type="id" name="pagerBt" />
     <item type="id" name="pagerCAN" />
     <item type="id" name="pagerDuckHunter" />
@@ -805,15 +845,18 @@
     <item type="id" name="refreshUSB" />
     <item type="id" name="repo_list" />
     <item type="id" name="report_drawn" />
+    <item type="id" name="requests_container" />
     <item type="id" name="reset_hdmi" />
     <item type="id" name="reset_iface" />
     <item type="id" name="reset_mac" />
     <item type="id" name="reset_template" />
     <item type="id" name="resetinterface" />
     <item type="id" name="resolution" />
+    <item type="id" name="responses_container" />
     <item type="id" name="restore" />
     <item type="id" name="restorefilebrowse" />
     <item type="id" name="restorefilename" />
+    <item type="id" name="reverse_container" />
     <item type="id" name="right_icon" />
     <item type="id" name="right_side" />
     <item type="id" name="row_index_key" />
@@ -851,6 +894,8 @@
     <item type="id" name="search_voice_btn" />
     <item type="id" name="searchsploit_item" />
     <item type="id" name="searchsploit_sendhid_button" />
+    <item type="id" name="seedTarget_container" />
+    <item type="id" name="seedTarget_value" />
     <item type="id" name="seed_container" />
     <item type="id" name="seed_value" />
     <item type="id" name="seekbar" />
@@ -865,6 +910,8 @@
     <item type="id" name="separate_line_container" />
     <item type="id" name="separate_line_value" />
     <item type="id" name="serchsploit_loadDB" />
+    <item type="id" name="sessionSeq_container" />
+    <item type="id" name="sessionSeq_value" />
     <item type="id" name="sessions" />
     <item type="id" name="set_bootanimation" />
     <item type="id" name="set_item" />
@@ -879,7 +926,7 @@
     <item type="id" name="settings_item" />
     <item type="id" name="setup" />
     <item type="id" name="shortcut" />
-    <item type="id" name="sleep_checkbox" />
+    <item type="id" name="skipverify_container" />
     <item type="id" name="sleep_input_layout" />
     <item type="id" name="snackbar_action" />
     <item type="id" name="snackbar_text" />
@@ -892,12 +939,20 @@
     <item type="id" name="spinnerExecMode" />
     <item type="id" name="spinnerRun_in_shell" />
     <item type="id" name="spinner_card" />
+    <item type="id" name="spinner_ecureset_methode_card" />
+    <item type="id" name="spinner_ecureset_type_card" />
     <item type="id" name="spinner_iface_card" />
     <item type="id" name="spinner_level_card" />
     <item type="id" name="spinner_modules_card" />
+    <item type="id" name="spinner_row_ecureset" />
+    <item type="id" name="spinner_row_ecuresetmethode" />
+    <item type="id" name="spinner_row_level" />
+    <item type="id" name="spinner_row_stype" />
+    <item type="id" name="spinner_stype_card" />
     <item type="id" name="spinner_submodules_card" />
     <item type="id" name="split_action_bar" />
     <item type="id" name="spoof_interface" />
+    <item type="id" name="spr_container" />
     <item type="id" name="src_container" />
     <item type="id" name="src_value" />
     <item type="id" name="ssid" />
@@ -918,12 +973,10 @@
     <item type="id" name="start_customcmd" />
     <item type="id" name="start_cw" />
     <item type="id" name="start_diagtest" />
-    <item type="id" name="start_dump" />
     <item type="id" name="start_freediag" />
     <item type="id" name="start_hlcand" />
     <item type="id" name="start_l2ping" />
     <item type="id" name="start_ldattach" />
-    <item type="id" name="start_listener" />
     <item type="id" name="start_log2asc" />
     <item type="id" name="start_oneshot" />
     <item type="id" name="start_redfang" />
@@ -947,6 +1000,11 @@
     <item type="id" name="stop_icsim" />
     <item type="id" name="stop_service" />
     <item type="id" name="stop_vnc" />
+    <item type="id" name="stype_container" />
+    <item type="id" name="stype_input" />
+    <item type="id" name="stype_input_container" />
+    <item type="id" name="stype_spinner" />
+    <item type="id" name="stype_value" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
     <item type="id" name="submodule_spinner" />
@@ -1006,6 +1064,8 @@
     <item type="id" name="textinput_prefix_text" />
     <item type="id" name="textinput_suffix_text" />
     <item type="id" name="time" />
+    <item type="id" name="timeout_container" />
+    <item type="id" name="timeout_value" />
     <item type="id" name="title" />
     <item type="id" name="title2" />
     <item type="id" name="title3" />
@@ -1029,11 +1089,13 @@
     <item type="id" name="tts_settings_layout" />
     <item type="id" name="tts_speed_spinner" />
     <item type="id" name="tts_voice_spinner" />
-    <item type="id" name="txq_checkbox" />
     <item type="id" name="txq_input_layout" />
     <item type="id" name="txq_value" />
     <item type="id" name="type" />
     <item type="id" name="uac_bypass" />
+    <item type="id" name="udsim_config_browse" />
+    <item type="id" name="udsim_config_path" />
+    <item type="id" name="udsim_container" />
     <item type="id" name="uninstall_nh" />
     <item type="id" name="up" />
     <item type="id" name="update" />
@@ -1065,6 +1127,8 @@
     <item type="id" name="vnc_item" />
     <item type="id" name="vnc_serviceCheckBox" />
     <item type="id" name="vncresolution" />
+    <item type="id" name="whitelist_arbID_container" />
+    <item type="id" name="whitelist_arbID_value" />
     <item type="id" name="width" />
     <item type="id" name="wifipumpkin_item" />
     <item type="id" name="windowsCmdLoad" />

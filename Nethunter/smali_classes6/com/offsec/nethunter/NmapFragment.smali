@@ -267,7 +267,7 @@
     .param p2, "rootView"    # Landroid/view/View;
 
     .line 445
-    const v0, 0x7f0a037a
+    const v0, 0x7f0a039e
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -876,7 +876,7 @@
     .line 84
     move-object/from16 v0, p0
 
-    const v1, 0x7f0d00ae
+    const v1, 0x7f0d00af
 
     const/4 v2, 0x0
 
@@ -890,7 +890,7 @@
 
     .line 86
     .local v1, "rootView":Landroid/view/View;
-    const v5, 0x7f0a0370
+    const v5, 0x7f0a0394
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -915,7 +915,7 @@
 
     .line 91
     .local v6, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v7, 0x7f0a0371
+    const v7, 0x7f0a0395
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -935,7 +935,7 @@
     invoke-virtual {v7, v2}, Landroidx/appcompat/widget/SwitchCompat;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 103
-    const v2, 0x7f0a037a
+    const v2, 0x7f0a039e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -952,7 +952,7 @@
     invoke-virtual {v2, v8}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 108
-    const v8, 0x7f0a0374
+    const v8, 0x7f0a0398
 
     invoke-virtual {v1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -994,7 +994,7 @@
     invoke-virtual {v8, v12}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 154
-    const v12, 0x7f0a037b
+    const v12, 0x7f0a039f
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1034,7 +1034,7 @@
     invoke-direct {v0, v14, v1}, Lcom/offsec/nethunter/NmapFragment;->addClickListener(Landroid/view/View$OnClickListener;Landroid/view/View;)V
 
     .line 222
-    const v14, 0x7f0a037d
+    const v14, 0x7f0a03a1
 
     invoke-virtual {v1, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1069,7 +1069,7 @@
     invoke-virtual {v14, v11}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 276
-    const v11, 0x7f0a0372
+    const v11, 0x7f0a0396
 
     invoke-virtual {v1, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1086,7 +1086,7 @@
     invoke-virtual {v11, v15}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 290
-    const v15, 0x7f0a0373
+    const v15, 0x7f0a0397
 
     invoke-virtual {v1, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1113,7 +1113,7 @@
 
     .end local v2    # "checkBoxListener":Landroid/view/View$OnClickListener;
     .local v17, "checkBoxListener":Landroid/view/View$OnClickListener;
-    const v2, 0x7f0a0378
+    const v2, 0x7f0a039c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1137,7 +1137,7 @@
 
     .end local v2    # "pingCheckbox":Landroid/widget/CheckBox;
     .local v17, "pingCheckbox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a037e
+    const v2, 0x7f0a03a2
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1165,7 +1165,7 @@
 
     .end local v2    # "topportsCheckbox":Landroid/widget/CheckBox;
     .local v18, "topportsCheckbox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a037f
+    const v2, 0x7f0a03a3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1193,7 +1193,7 @@
 
     .end local v2    # "udpCheckbox":Landroid/widget/CheckBox;
     .local v19, "udpCheckbox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a0375
+    const v2, 0x7f0a0399
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1221,7 +1221,7 @@
 
     .end local v2    # "ipv6box":Landroid/widget/CheckBox;
     .local v20, "ipv6box":Landroid/widget/CheckBox;
-    const v2, 0x7f0a036f
+    const v2, 0x7f0a0393
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1249,7 +1249,7 @@
 
     .end local v2    # "svbox":Landroid/widget/CheckBox;
     .local v21, "svbox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a0377
+    const v2, 0x7f0a039b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1277,7 +1277,7 @@
 
     .end local v2    # "osdetectbox":Landroid/widget/CheckBox;
     .local v22, "osdetectbox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a037c
+    const v2, 0x7f0a03a0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1301,7 +1301,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 394
-    const v2, 0x7f0a0379
+    const v2, 0x7f0a039d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

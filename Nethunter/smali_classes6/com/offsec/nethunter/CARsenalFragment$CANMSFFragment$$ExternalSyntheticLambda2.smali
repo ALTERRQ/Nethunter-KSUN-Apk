@@ -36,7 +36,7 @@
 
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda2;->f$1:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$6$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$5$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/String;)V
 
     return-void
 .end method

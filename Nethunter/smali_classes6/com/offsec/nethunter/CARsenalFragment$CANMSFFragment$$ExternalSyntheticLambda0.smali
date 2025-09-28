@@ -9,11 +9,13 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-.field public final synthetic f$1:Ljava/lang/StringBuilder;
+.field public final synthetic f$1:Ljava/util/ArrayList;
+
+.field public final synthetic f$2:Landroid/widget/Spinner;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/lang/StringBuilder;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Ljava/util/ArrayList;Landroid/widget/Spinner;)V
     .locals 0
 
     .line 0
@@ -21,7 +23,9 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$1:Ljava/lang/StringBuilder;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$1:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$2:Landroid/widget/Spinner;
 
     return-void
 .end method
@@ -29,14 +33,16 @@
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 3
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$1:Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$1:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$11$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/lang/StringBuilder;)V
+    iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda0;->f$2:Landroid/widget/Spinner;
+
+    invoke-virtual {v0, v1, v2}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$2$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Ljava/util/ArrayList;Landroid/widget/Spinner;)V
 
     return-void
 .end method

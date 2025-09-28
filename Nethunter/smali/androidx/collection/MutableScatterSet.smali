@@ -287,7 +287,7 @@
     const/4 v4, 0x0
 
     :goto_0
-    const v5, -0x3361d2af    # -8.2930312E7f
+    const v5, -0x3361d2af    # -8.293031E7f
 
     mul-int v4, v4, v5
 
@@ -1472,7 +1472,7 @@
     move-result v9
 
     :cond_1
-    const v8, -0x3361d2af    # -8.2930312E7f
+    const v8, -0x3361d2af    # -8.293031E7f
 
     mul-int v9, v9, v8
 
@@ -2584,7 +2584,7 @@
     const/4 v6, 0x0
 
     :goto_0
-    const v7, -0x3361d2af    # -8.2930312E7f
+    const v7, -0x3361d2af    # -8.293031E7f
 
     mul-int v6, v6, v7
 
@@ -3666,7 +3666,7 @@
     const/4 v6, 0x0
 
     :goto_0
-    const v7, -0x3361d2af    # -8.2930312E7f
+    const v7, -0x3361d2af    # -8.293031E7f
 
     mul-int v6, v6, v7
 

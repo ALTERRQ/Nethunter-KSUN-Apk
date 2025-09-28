@@ -167,7 +167,7 @@
 
     .line 1420
     .local v0, "BadBTServerStatus":Landroid/widget/TextView;
-    const v1, 0x7f0a00a9
+    const v1, 0x7f0a00b9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1017,12 +1017,12 @@
     if-nez v1, :cond_0
 
     .line 1426
-    const v1, 0x7f1300b3
+    const v1, 0x7f1300b6
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 1427
-    const v1, 0x7f1300b1
+    const v1, 0x7f1300b4
 
     invoke-virtual {p2, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -1030,12 +1030,12 @@
 
     .line 1430
     :cond_0
-    const v1, 0x7f1300ad
+    const v1, 0x7f1300b0
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 1431
-    const v1, 0x7f1300b2
+    const v1, 0x7f1300b5
 
     invoke-virtual {p2, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -1085,7 +1085,7 @@
 
     .line 1100
     .local v12, "rootView":Landroid/view/View;
-    const v0, 0x7f0a00a9
+    const v0, 0x7f0a00b9
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1123,7 +1123,7 @@
 
     .line 1105
     .local v15, "iswatch":Z
-    const v0, 0x7f0a009f
+    const v0, 0x7f0a00af
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1144,7 +1144,7 @@
 
     .line 1111
     :cond_0
-    const v0, 0x7f0a00a0
+    const v0, 0x7f0a00b0
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1156,7 +1156,7 @@
 
     .line 1112
     .local v7, "badbt_interface":Landroid/widget/EditText;
-    const v0, 0x7f0a00a1
+    const v0, 0x7f0a00b1
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1168,7 +1168,7 @@
 
     .line 1113
     .local v6, "badbt_name":Landroid/widget/EditText;
-    const v0, 0x7f0a009c
+    const v0, 0x7f0a00ac
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1180,7 +1180,7 @@
 
     .line 1114
     .local v5, "badbt_bdaddr":Landroid/widget/EditText;
-    const v0, 0x7f0a009d
+    const v0, 0x7f0a00ad
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1192,7 +1192,7 @@
 
     .line 1117
     .local v4, "badbt_class":Landroid/widget/EditText;
-    const v0, 0x7f0a009e
+    const v0, 0x7f0a00ae
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1357,7 +1357,7 @@
 
     .line 1176
     :cond_4
-    const v0, 0x7f0a03e2
+    const v0, 0x7f0a040a
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1378,7 +1378,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1180
-    const v1, 0x7f0a018a
+    const v1, 0x7f0a019d
 
     invoke-virtual {v12, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1404,7 +1404,7 @@
 
     move/from16 v22, v15
 
-    const v15, 0x7f0a018a
+    const v15, 0x7f0a019d
 
     .end local v15    # "iswatch":Z
     .local v22, "iswatch":Z
@@ -1455,7 +1455,7 @@
     invoke-virtual {v13, v11}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1217
-    const v0, 0x7f0a00a3
+    const v0, 0x7f0a00b3
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1467,7 +1467,7 @@
 
     .line 1218
     .local v6, "badbtmode":Landroid/widget/Spinner;
-    const v0, 0x7f0a00aa
+    const v0, 0x7f0a00ba
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1513,7 +1513,7 @@
     invoke-virtual {v6, v0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 1239
-    const v0, 0x7f0a0504
+    const v0, 0x7f0a053f
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1525,7 +1525,7 @@
 
     .line 1240
     .local v11, "uacCheckBox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a00ab
+    const v0, 0x7f0a00bb
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1533,7 +1533,7 @@
 
     .line 1241
     .local v30, "BadBTUACView":Landroid/view/View;
-    const v0, 0x7f0a00a4
+    const v0, 0x7f0a00b4
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1545,7 +1545,7 @@
 
     .line 1242
     .local v5, "badbtprefix":Landroid/widget/Spinner;
-    const v0, 0x7f0a00a8
+    const v0, 0x7f0a00b8
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1662,7 +1662,7 @@
     invoke-virtual {v7, v15}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 1314
-    const v0, 0x7f0a00a7
+    const v0, 0x7f0a00b7
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1672,7 +1672,7 @@
 
     .line 1315
     .local v0, "badbtpresets":Landroid/widget/Spinner;
-    const v1, 0x7f0a018a
+    const v1, 0x7f0a019d
 
     invoke-virtual {v12, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1743,7 +1743,7 @@
     invoke-virtual {v4, v3}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 1383
-    const v3, 0x7f0a02cf
+    const v3, 0x7f0a02e3
 
     invoke-virtual {v12, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1760,7 +1760,7 @@
     invoke-virtual {v3, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 1393
-    const v6, 0x7f0a0473
+    const v6, 0x7f0a04aa
 
     invoke-virtual {v12, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

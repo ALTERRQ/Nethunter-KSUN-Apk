@@ -9,9 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
+.field public final synthetic f$1:Landroid/widget/LinearLayout;
+
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;Landroid/widget/LinearLayout;)V
     .locals 0
 
     .line 0
@@ -19,18 +21,22 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;->f$1:Landroid/widget/LinearLayout;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 2
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
-    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$10$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/view/View;)V
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment$$ExternalSyntheticLambda10;->f$1:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;->lambda$onCreateView$11$com-offsec-nethunter-CARsenalFragment$CANMSFFragment(Landroid/widget/LinearLayout;Landroid/view/View;)V
 
     return-void
 .end method

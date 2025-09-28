@@ -120,7 +120,7 @@
 
     .line 540
     .local v16, "HCIstatus":Landroid/widget/TextView;
-    const v2, 0x7f0a00b8
+    const v2, 0x7f0a00ca
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -132,7 +132,7 @@
 
     .line 541
     .local v17, "bluebinderButton":Landroid/widget/Button;
-    const v2, 0x7f0a0143
+    const v2, 0x7f0a0151
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -144,7 +144,7 @@
 
     .line 542
     .local v18, "dbusButton":Landroid/widget/Button;
-    const v2, 0x7f0a00c1
+    const v2, 0x7f0a00d3
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -156,7 +156,7 @@
 
     .line 543
     .local v19, "btButton":Landroid/widget/Button;
-    const v2, 0x7f0a02a3
+    const v2, 0x7f0a02b7
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
 
     .line 544
     .local v20, "hciButton":Landroid/widget/Button;
-    const v2, 0x7f0a02a5
+    const v2, 0x7f0a02b9
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2042,7 +2042,7 @@
 
     move-result v14
 
-    const v1, 0x7f1300b1
+    const v1, 0x7f1300b4
 
     if-nez v14, :cond_2
 
@@ -2054,7 +2054,7 @@
     if-eqz v14, :cond_1
 
     .line 563
-    const v14, 0x7f1300b3
+    const v14, 0x7f1300b6
 
     invoke-virtual {v2, v14}, Landroid/widget/TextView;->setText(I)V
 
@@ -2065,12 +2065,12 @@
 
     .line 567
     :cond_1
-    const v14, 0x7f1300ad
+    const v14, 0x7f1300b0
 
     invoke-virtual {v2, v14}, Landroid/widget/TextView;->setText(I)V
 
     .line 568
-    const v14, 0x7f1300b2
+    const v14, 0x7f1300b5
 
     invoke-virtual {v3, v14}, Landroid/widget/Button;->setText(I)V
 
@@ -2078,7 +2078,7 @@
 
     .line 571
     :cond_2
-    const v14, 0x7f1300b2
+    const v14, 0x7f1300b5
 
     const-string v1, "hci0"
 
@@ -2089,7 +2089,7 @@
     if-eqz v1, :cond_3
 
     .line 572
-    const v1, 0x7f1300ab
+    const v1, 0x7f1300ae
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2100,12 +2100,12 @@
 
     .line 575
     :cond_3
-    const v1, 0x7f1300a9
+    const v1, 0x7f1300ac
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 576
-    const v1, 0x7f1300b1
+    const v1, 0x7f1300b4
 
     invoke-virtual {v3, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -2148,12 +2148,12 @@
     if-eqz v2, :cond_4
 
     .line 581
-    const v2, 0x7f1300b1
+    const v2, 0x7f1300b4
 
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 582
-    const v14, 0x7f1300b2
+    const v14, 0x7f1300b5
 
     invoke-virtual {v5, v14}, Landroid/widget/Button;->setText(I)V
 
@@ -2161,9 +2161,9 @@
 
     .line 585
     :cond_4
-    const v2, 0x7f1300b1
+    const v2, 0x7f1300b4
 
-    const v14, 0x7f1300b3
+    const v14, 0x7f1300b6
 
     invoke-virtual {v4, v14}, Landroid/widget/TextView;->setText(I)V
 
@@ -2213,12 +2213,12 @@
     if-eqz v2, :cond_5
 
     .line 590
-    const v2, 0x7f1300ad
+    const v2, 0x7f1300b0
 
     invoke-virtual {v6, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 591
-    const v2, 0x7f1300b2
+    const v2, 0x7f1300b5
 
     invoke-virtual {v7, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -2226,12 +2226,12 @@
 
     .line 594
     :cond_5
-    const v2, 0x7f1300b3
+    const v2, 0x7f1300b6
 
     invoke-virtual {v6, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 595
-    const v2, 0x7f1300b1
+    const v2, 0x7f1300b4
 
     invoke-virtual {v7, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -2290,12 +2290,12 @@
     if-eqz v2, :cond_6
 
     .line 599
-    const v2, 0x7f1300b5
+    const v2, 0x7f1300b8
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 600
-    const v2, 0x7f1300b2
+    const v2, 0x7f1300b5
 
     invoke-virtual {v9, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -2303,12 +2303,12 @@
 
     .line 603
     :cond_6
-    const v2, 0x7f1300aa
+    const v2, 0x7f1300ad
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 604
-    const v2, 0x7f1300b1
+    const v2, 0x7f1300b4
 
     invoke-virtual {v9, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -2368,7 +2368,7 @@
 
     .line 299
     .local v10, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v0, 0x7f0a00c5
+    const v0, 0x7f0a00d7
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2380,7 +2380,7 @@
 
     .line 300
     .local v9, "BTMainDesc":Landroid/widget/TextView;
-    const v0, 0x7f0a00c2
+    const v0, 0x7f0a00d4
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2392,7 +2392,7 @@
 
     .line 301
     .local v8, "BTIface":Landroid/widget/TextView;
-    const v0, 0x7f0a00c6
+    const v0, 0x7f0a00d8
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2428,12 +2428,12 @@
     invoke-virtual {v9, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 306
-    const v0, 0x7f1300ac
+    const v0, 0x7f1300af
 
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 307
-    const v0, 0x7f1300ae
+    const v0, 0x7f1300b1
 
     invoke-virtual {v7, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -2481,7 +2481,7 @@
     .line 317
     :cond_2
     :goto_0
-    const v0, 0x7f0a02a5
+    const v0, 0x7f0a02b9
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2493,7 +2493,7 @@
 
     .line 320
     .local v6, "ifaces":Landroid/widget/Spinner;
-    const v0, 0x7f0a00b7
+    const v0, 0x7f0a00c9
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2520,7 +2520,7 @@
     if-eqz v0, :cond_3
 
     .line 323
-    const v0, 0x7f1300af
+    const v0, 0x7f1300b2
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -2544,7 +2544,7 @@
     invoke-virtual {v6, v0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 352
-    const v0, 0x7f0a03e6
+    const v0, 0x7f0a040e
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2574,7 +2574,7 @@
     invoke-interface {v0, v4}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
     .line 357
-    const v0, 0x7f0a00b8
+    const v0, 0x7f0a00ca
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2584,7 +2584,7 @@
 
     .line 358
     .local v0, "bluebinderButton":Landroid/widget/Button;
-    const v4, 0x7f0a0143
+    const v4, 0x7f0a0151
 
     invoke-virtual {v15, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2596,7 +2596,7 @@
 
     .line 359
     .local v5, "dbusButton":Landroid/widget/Button;
-    const v4, 0x7f0a00c1
+    const v4, 0x7f0a00d3
 
     invoke-virtual {v15, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2610,7 +2610,7 @@
 
     .end local v0    # "bluebinderButton":Landroid/widget/Button;
     .local v17, "bluebinderButton":Landroid/widget/Button;
-    const v0, 0x7f0a02a3
+    const v0, 0x7f0a02b7
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2732,7 +2732,7 @@
     invoke-virtual {v13, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 477
-    const v1, 0x7f0a048e
+    const v1, 0x7f0a04c3
 
     invoke-virtual {v15, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2742,7 +2742,7 @@
 
     .line 478
     .local v1, "StartScanButton":Landroid/widget/Button;
-    const v2, 0x7f0a00c7
+    const v2, 0x7f0a00d9
 
     invoke-virtual {v15, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2752,7 +2752,7 @@
 
     .line 479
     .local v2, "BTtime":Landroid/widget/TextView;
-    const v6, 0x7f0a04be
+    const v6, 0x7f0a04f8
 
     invoke-virtual {v15, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

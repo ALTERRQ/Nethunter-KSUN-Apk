@@ -132,7 +132,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 290
-    const v0, 0x7f0a0339
+    const v0, 0x7f0a035e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -142,7 +142,7 @@
 
     .line 291
     .local v0, "ipaddress":Landroid/widget/EditText;
-    const v1, 0x7f0a033c
+    const v1, 0x7f0a0361
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -445,7 +445,7 @@
     .line 64
     move-object/from16 v0, p0
 
-    const v1, 0x7f0d00bf
+    const v1, 0x7f0d00c0
 
     const/4 v2, 0x0
 
@@ -469,7 +469,7 @@
 
     .line 68
     .local v2, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v5, 0x7f0a033e
+    const v5, 0x7f0a0363
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -483,7 +483,7 @@
 
     const v7, 0x7f03000e
 
-    const v8, 0x7f0d00c0
+    const v8, 0x7f0d00c1
 
     invoke-static {v6, v7, v8}, Landroid/widget/ArrayAdapter;->createFromResource(Landroid/content/Context;II)Landroid/widget/ArrayAdapter;
 
@@ -506,7 +506,7 @@
     invoke-virtual {v5, v7}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 131
-    const v7, 0x7f0a033b
+    const v7, 0x7f0a0360
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -541,7 +541,7 @@
     invoke-virtual {v7, v10}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 157
-    const v10, 0x7f0a0337
+    const v10, 0x7f0a035c
 
     invoke-virtual {v1, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -576,7 +576,7 @@
     invoke-virtual {v10, v12}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 183
-    const v12, 0x7f0a033d
+    const v12, 0x7f0a0362
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -611,7 +611,7 @@
     invoke-virtual {v12, v14}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 209
-    const v14, 0x7f0a0338
+    const v14, 0x7f0a035d
 
     invoke-virtual {v1, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -650,7 +650,7 @@
     invoke-virtual {v14, v8}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 245
-    const v8, 0x7f0a033c
+    const v8, 0x7f0a0361
 
     invoke-virtual {v1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -660,7 +660,7 @@
 
     .line 246
     .local v8, "port":Landroid/widget/EditText;
-    const v15, 0x7f1301f1
+    const v15, 0x7f1301f3
 
     invoke-virtual {v8, v15}, Landroid/widget/EditText;->setText(I)V
 
@@ -699,7 +699,7 @@
 
     invoke-direct {v2, v0, v1}, Lcom/offsec/nethunter/MPCFragment$$ExternalSyntheticLambda0;-><init>(Lcom/offsec/nethunter/MPCFragment;Landroid/view/View;)V
 
-    const v3, 0x7f0a0336
+    const v3, 0x7f0a035b
 
     invoke-direct {v0, v3, v2, v1}, Lcom/offsec/nethunter/MPCFragment;->addClickListener(ILandroid/view/View$OnClickListener;Landroid/view/View;)V
 
@@ -708,7 +708,7 @@
 
     invoke-direct {v2, v0, v1}, Lcom/offsec/nethunter/MPCFragment$$ExternalSyntheticLambda1;-><init>(Lcom/offsec/nethunter/MPCFragment;Landroid/view/View;)V
 
-    const v3, 0x7f0a0335
+    const v3, 0x7f0a035a
 
     invoke-direct {v0, v3, v2, v1}, Lcom/offsec/nethunter/MPCFragment;->addClickListener(ILandroid/view/View$OnClickListener;Landroid/view/View;)V
 

@@ -1196,7 +1196,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    const v6, -0x3361d2af    # -8.2930312E7f
+    const v6, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v6
 
@@ -1573,7 +1573,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    const v6, -0x3361d2af    # -8.2930312E7f
+    const v6, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v6
 
@@ -2877,7 +2877,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    const v6, -0x3361d2af    # -8.2930312E7f
+    const v6, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v6
 
@@ -4026,7 +4026,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    const v6, -0x3361d2af    # -8.2930312E7f
+    const v6, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v6
 
@@ -4423,7 +4423,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    const v6, -0x3361d2af    # -8.2930312E7f
+    const v6, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v6
 

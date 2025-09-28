@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 2914
+    .line 3537
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$2;->val$sharedPreferences:Landroid/content/SharedPreferences;
 
     iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$2;->val$sharedPrefKey:Ljava/lang/String;
@@ -67,11 +67,11 @@
         }
     .end annotation
 
-    .line 2917
+    .line 3540
     .local p1, "parentView":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     if-eqz p3, :cond_0
 
-    .line 2918
+    .line 3541
     invoke-virtual {p1, p3}, Landroid/widget/AdapterView;->getItemAtPosition(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    .line 2919
+    .line 3542
     .local v0, "selected":Ljava/lang/String;
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$2;->val$sharedPreferences:Landroid/content/SharedPreferences;
 
@@ -108,20 +108,18 @@
 
     move-result-object v2
 
-    .line 2920
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 
-    .line 2921
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 2922
+    .line 3543
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$2;->val$callback:Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;
 
     invoke-interface {v1, v0}, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;->onInterfaceSelected(Ljava/lang/String;)V
 
-    .line 2924
+    .line 3545
     .end local v0    # "selected":Ljava/lang/String;
     :cond_0
     return-void
@@ -137,7 +135,7 @@
         }
     .end annotation
 
-    .line 2928
+    .line 3548
     .local p1, "parentView":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$2;->val$callback:Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;
 
@@ -153,6 +151,6 @@
 
     invoke-interface {v0, v1}, Lcom/offsec/nethunter/CARsenalFragment$SpinnerUtils$SelectionCallback;->onInterfaceSelected(Ljava/lang/String;)V
 
-    .line 2929
+    .line 3549
     return-void
 .end method

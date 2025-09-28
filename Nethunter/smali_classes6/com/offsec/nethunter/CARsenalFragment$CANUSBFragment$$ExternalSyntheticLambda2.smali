@@ -3,34 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic f$0:Landroid/widget/EditText;
+.field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/widget/EditText;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment$$ExternalSyntheticLambda2;->f$0:Landroid/widget/EditText;
+    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment$$ExternalSyntheticLambda2;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final onClick(Landroid/view/View;)V
     .locals 1
 
     .line 0
-    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment$$ExternalSyntheticLambda2;->f$0:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment$$ExternalSyntheticLambda2;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;
 
-    invoke-static {v0, p1, p2}, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;->lambda$showCanUsbConfig$4(Landroid/widget/EditText;Landroid/widget/CompoundButton;Z)V
+    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;->lambda$onCreateView$1$com-offsec-nethunter-CARsenalFragment$CANUSBFragment(Landroid/view/View;)V
 
     return-void
 .end method

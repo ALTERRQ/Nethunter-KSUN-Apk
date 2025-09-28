@@ -722,7 +722,7 @@
 
     .line 446
     :cond_0
-    const v1, 0x7f0a032a
+    const v1, 0x7f0a034f
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -732,7 +732,7 @@
 
     .line 448
     .local v1, "modules":Landroid/widget/ListView;
-    const v2, 0x7f0a032b
+    const v2, 0x7f0a0350
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -873,7 +873,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 236
-    const v0, 0x7f0a032a
+    const v0, 0x7f0a034f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1360,7 +1360,7 @@
     if-eqz v2, :cond_2
 
     .line 400
-    const v8, 0x7f0800cc
+    const v8, 0x7f0800ce
 
     invoke-virtual {v2, v8}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1632,7 +1632,7 @@
     if-eqz v2, :cond_5
 
     .line 420
-    const v3, 0x7f0800cb
+    const v3, 0x7f0800cd
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1773,7 +1773,7 @@
     if-eqz v2, :cond_8
 
     .line 428
-    const v3, 0x7f0800cb
+    const v3, 0x7f0800cd
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2162,7 +2162,7 @@
 
     .line 335
     .local v8, "isModuleLoaded":Ljava/lang/String;
-    const v9, 0x7f0a0326
+    const v9, 0x7f0a034b
 
     move-object/from16 v10, p4
 
@@ -2293,7 +2293,7 @@
     if-eqz v9, :cond_2
 
     .line 343
-    const v11, 0x7f0800cc
+    const v11, 0x7f0800ce
 
     invoke-virtual {v9, v11}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2574,7 +2574,7 @@
     if-eqz v9, :cond_5
 
     .line 363
-    const v3, 0x7f0800cb
+    const v3, 0x7f0800cd
 
     invoke-virtual {v9, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2719,7 +2719,7 @@
     if-eqz v9, :cond_7
 
     .line 371
-    const v3, 0x7f0800cb
+    const v3, 0x7f0800cd
 
     invoke-virtual {v9, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -4165,7 +4165,7 @@
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 78
-    const v0, 0x7f0a0069
+    const v0, 0x7f0a006a
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -4185,7 +4185,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a032a
+    const v3, 0x7f0a034f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4221,7 +4221,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 288
-    const v0, 0x7f0d0084
+    const v0, 0x7f0d0085
 
     const/4 v1, 0x0
 
@@ -4231,7 +4231,7 @@
 
     .line 290
     .local v0, "rootView":Landroid/view/View;
-    const v2, 0x7f0a032a
+    const v2, 0x7f0a034f
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4241,7 +4241,7 @@
 
     .line 293
     .local v2, "modules":Landroid/widget/ListView;
-    const v3, 0x7f0a02f9
+    const v3, 0x7f0a0314
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4258,7 +4258,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 297
-    const v4, 0x7f0a032b
+    const v4, 0x7f0a0350
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4310,7 +4310,7 @@
     invoke-virtual {v2, v5}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     .line 322
-    const v5, 0x7f0a03e1
+    const v5, 0x7f0a0409
 
     invoke-virtual {v0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4477,8 +4477,8 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f0a005b -> :sswitch_1
-        0x7f0a006b -> :sswitch_0
+        0x7f0a005c -> :sswitch_1
+        0x7f0a006c -> :sswitch_0
     .end sparse-switch
 .end method
 

@@ -26,9 +26,7 @@
 
 .field public static final cacerts:I = 0x7f120005
 
-.field public static final secret_angry:I = 0x7f120006
-
-.field public static final secret_vroom:I = 0x7f120007
+.field public static final secret_vroom:I = 0x7f120006
 
 
 # direct methods

@@ -31,7 +31,7 @@
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
     .line 189
-    const v0, 0x7f0a022e
+    const v0, 0x7f0a0241
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -42,7 +42,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/NethunterRecyclerViewAdapter$ItemViewHolder;->titleTextView:Landroid/widget/TextView;
 
     .line 190
-    const v0, 0x7f0a022b
+    const v0, 0x7f0a023e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -53,7 +53,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/NethunterRecyclerViewAdapter$ItemViewHolder;->resultRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 191
-    const v0, 0x7f0a022d
+    const v0, 0x7f0a0240
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

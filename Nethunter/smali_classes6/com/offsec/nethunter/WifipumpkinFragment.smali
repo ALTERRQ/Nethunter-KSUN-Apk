@@ -397,7 +397,7 @@
     .param p1, "WifipumpkinFragment"    # Landroid/view/View;
 
     .line 306
-    const v0, 0x7f0a04c0
+    const v0, 0x7f0a04fa
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -519,48 +519,6 @@
 
 
 # virtual methods
-.method public Firstrun()V
-    .locals 3
-
-    .line 380
-    iget-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->activity:Landroid/app/Activity;
-
-    const-string v1, "com.offsec.nethunter"
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->sharedpreferences:Landroid/content/SharedPreferences;
-
-    .line 381
-    const-string v0, "echo -ne \"\\033]0;Mana first setup\\007\"apt update && apt install mana-toolkit hostapd hostapd-wpe"
-
-    invoke-virtual {p0, v0}, Lcom/offsec/nethunter/WifipumpkinFragment;->run_cmd(Ljava/lang/String;)V
-
-    .line 383
-    iget-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->sharedpreferences:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    const-string v1, "wp3_setup_done"
-
-    const/4 v2, 0x1
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 384
-    return-void
-.end method
-
 .method public RunSetup()V
     .locals 3
 
@@ -578,7 +536,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     .line 299
-    const-string v0, "echo -ne \"\\033]0;Wifipumpkin3 Setup\\007\" && clear;apt update && apt install wifipumpkin3 dnschef -y;echo \'Done!\'; echo \'Closing in 3secs..\'; sleep 3 && exit "
+    const-string v0, "echo -ne \"\\033]0;Wifipumpkin3 Setup\\007\" && clear;apt update && apt install wifipumpkin3 dnschef -y; wp3; echo \'Done!\'; echo \'Closing in 3secs..\'; sleep 3 && exit "
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/WifipumpkinFragment;->run_cmd(Ljava/lang/String;)V
 
@@ -1768,7 +1726,7 @@
     :goto_0
     iget-object v0, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->context:Landroid/content/Context;
 
-    const v1, 0x7f130085
+    const v1, 0x7f130088
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/WifipumpkinFragment;->getString(I)Ljava/lang/String;
 
@@ -1904,7 +1862,7 @@
     .line 97
     move-object/from16 v12, p0
 
-    const v0, 0x7f0d00e5
+    const v0, 0x7f0d00e6
 
     const/4 v1, 0x0
 
@@ -1918,7 +1876,7 @@
 
     .line 98
     .local v15, "rootView":Landroid/view/View;
-    const v0, 0x7f0a053a
+    const v0, 0x7f0a057a
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1956,7 +1914,7 @@
 
     .line 101
     .local v16, "iswatch":Z
-    const v0, 0x7f0a03d1
+    const v0, 0x7f0a03f9
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2002,7 +1960,7 @@
 
     .line 111
     :cond_0
-    const v0, 0x7f0a0539
+    const v0, 0x7f0a0579
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2023,7 +1981,7 @@
 
     .line 117
     :cond_1
-    const v0, 0x7f0a0087
+    const v0, 0x7f0a0093
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2035,7 +1993,7 @@
 
     .line 118
     .local v5, "APinterface":Landroid/widget/EditText;
-    const v0, 0x7f0a036a
+    const v0, 0x7f0a038e
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2047,7 +2005,7 @@
 
     .line 119
     .local v4, "NETinterface":Landroid/widget/EditText;
-    const v0, 0x7f0a046a
+    const v0, 0x7f0a04a1
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2059,7 +2017,7 @@
 
     .line 120
     .local v3, "SSID":Landroid/widget/EditText;
-    const v0, 0x7f0a00c0
+    const v0, 0x7f0a00d2
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2071,7 +2029,7 @@
 
     .line 121
     .local v2, "BSSID":Landroid/widget/EditText;
-    const v0, 0x7f0a0109
+    const v0, 0x7f0a0117
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2083,7 +2041,7 @@
 
     .line 122
     .local v1, "Channel":Landroid/widget/EditText;
-    const v0, 0x7f0a0537
+    const v0, 0x7f0a0577
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2096,7 +2054,7 @@
     invoke-direct {v12, v15}, Lcom/offsec/nethunter/WifipumpkinFragment;->refresh_wp3_templates(Landroid/view/View;)V
 
     .line 126
-    const v9, 0x7f0a04c0
+    const v9, 0x7f0a04fa
 
     invoke-virtual {v15, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2110,7 +2068,7 @@
 
     .end local v6    # "Wp3desc":Landroid/widget/TextView;
     .local v18, "Wp3desc":Landroid/widget/TextView;
-    const v6, 0x7f0a035c
+    const v6, 0x7f0a0380
 
     invoke-virtual {v15, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2148,7 +2106,7 @@
     invoke-direct/range {p0 .. p0}, Lcom/offsec/nethunter/WifipumpkinFragment;->checkiptables()V
 
     .line 169
-    const v7, 0x7f0a0536
+    const v7, 0x7f0a0576
 
     invoke-virtual {v15, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2184,7 +2142,7 @@
 
     if-eqz v9, :cond_2
 
-    const v9, 0x7f13031a
+    const v9, 0x7f13031d
 
     invoke-virtual {v7, v9}, Landroid/widget/TextView;->setText(I)V
 
@@ -2192,7 +2150,7 @@
 
     .line 172
     :cond_2
-    const v9, 0x7f130319
+    const v9, 0x7f13031c
 
     invoke-virtual {v7, v9}, Landroid/widget/TextView;->setText(I)V
 
@@ -2201,7 +2159,7 @@
     invoke-direct {v12, v15}, Lcom/offsec/nethunter/WifipumpkinFragment;->refresh_wp3_templates(Landroid/view/View;)V
 
     .line 176
-    const v9, 0x7f0a03e7
+    const v9, 0x7f0a040f
 
     invoke-virtual {v15, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2487,7 +2445,7 @@
     .local v9, "Wlan0to1_string":[Ljava/lang/String;
     .local v19, "TemplatesSpinner":Landroid/widget/Spinner;
     .local v22, "RefreshTemplates":Landroid/widget/ImageButton;
-    const v1, 0x7f0a03cc
+    const v1, 0x7f0a03f4
 
     invoke-virtual {v15, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2576,7 +2534,7 @@
     invoke-virtual {v13, v14}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 238
-    const v0, 0x7f0a04bf
+    const v0, 0x7f0a04f9
 
     invoke-virtual {v15, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2633,19 +2591,19 @@
     .locals 2
     .param p1, "cmd"    # Ljava/lang/String;
 
-    .line 805
+    .line 798
     const-string v0, "/data/data/com.offsec.nhterm/files/usr/bin/kali"
 
     invoke-static {v0, p1}, Lcom/offsec/nethunter/bridge/Bridge;->createExecuteIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 806
+    .line 799
     .local v0, "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/offsec/nethunter/WifipumpkinFragment;->activity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 807
+    .line 800
     return-void
 .end method

@@ -239,7 +239,7 @@
 
     .line 1016
     .local v2, "$i$f$hash":I
-    const v3, -0x3361d2af    # -8.2930312E7f
+    const v3, -0x3361d2af    # -8.293031E7f
 
     mul-int v3, v3, v1
 
@@ -1551,7 +1551,7 @@
 
     .line 1056
     .local v7, "$i$f$hash":I
-    const v8, -0x3361d2af    # -8.2930312E7f
+    const v8, -0x3361d2af    # -8.293031E7f
 
     mul-int v8, v8, v6
 
@@ -2048,7 +2048,7 @@
 
     .line 930
     .local v4, "$i$f$hash":I
-    const v5, -0x3361d2af    # -8.2930312E7f
+    const v5, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v1
 
@@ -3066,7 +3066,7 @@
 
     .line 891
     .local v4, "$i$f$hash":I
-    const v5, -0x3361d2af    # -8.2930312E7f
+    const v5, -0x3361d2af    # -8.293031E7f
 
     mul-int v5, v5, v1
 

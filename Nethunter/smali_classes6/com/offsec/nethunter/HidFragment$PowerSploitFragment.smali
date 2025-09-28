@@ -80,7 +80,7 @@
 
     .line 421
     .local v0, "ipValue":Ljava/lang/String;
-    const v2, 0x7f0a02d7
+    const v2, 0x7f0a02ed
 
     invoke-virtual {p3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -159,7 +159,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 385
-    const v0, 0x7f0a03b4
+    const v0, 0x7f0a03dc
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
 
     .line 386
     .local v0, "payloadUrl":Landroid/widget/EditText;
-    const v1, 0x7f0a03c7
+    const v1, 0x7f0a03ef
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -181,7 +181,7 @@
 
     .line 387
     .local v8, "port":Landroid/widget/EditText;
-    const v1, 0x7f0a03b3
+    const v1, 0x7f0a03db
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -408,7 +408,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a03cb
+    const v1, 0x7f0a03f3
 
     if-ne v0, v1, :cond_2
 
@@ -434,7 +434,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02d7
+    const v2, 0x7f0a02ed
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -448,7 +448,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a03c7
+    const v3, 0x7f0a03ef
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -462,7 +462,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a03b3
+    const v4, 0x7f0a03db
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -490,7 +490,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a03b4
+    const v6, 0x7f0a03dc
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +706,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 352
-    const v0, 0x7f0d0058
+    const v0, 0x7f0d0059
 
     const/4 v1, 0x0
 
@@ -716,7 +716,7 @@
 
     .line 353
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a03cb
+    const v1, 0x7f0a03f3
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

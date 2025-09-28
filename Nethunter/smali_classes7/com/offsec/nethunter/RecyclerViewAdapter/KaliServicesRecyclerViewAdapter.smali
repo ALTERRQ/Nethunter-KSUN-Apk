@@ -201,7 +201,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 80
-    const v3, 0x7f130170
+    const v3, 0x7f130172
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -316,7 +316,7 @@
 
     .line 66
     .local v12, "mInflater":Landroid/view/LayoutInflater;
-    const v0, 0x7f0d0062
+    const v0, 0x7f0d0063
 
     invoke-virtual {v12, v0, v11}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -324,7 +324,7 @@
 
     .line 67
     .local v13, "promptViewEdit":Landroid/view/View;
-    const v0, 0x7f0a01ed
+    const v0, 0x7f0a0200
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -336,7 +336,7 @@
 
     .line 68
     .local v14, "titleEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01eb
+    const v0, 0x7f0a01fe
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -348,7 +348,7 @@
 
     .line 69
     .local v15, "startCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01ec
+    const v0, 0x7f0a01ff
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -360,7 +360,7 @@
 
     .line 70
     .local v8, "stopCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01ea
+    const v0, 0x7f0a01fd
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -372,7 +372,7 @@
 
     .line 71
     .local v7, "checkstatusCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01e9
+    const v0, 0x7f0a01fc
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -384,7 +384,7 @@
 
     .line 72
     .local v6, "runOnChrootStartCheckbox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a01ee
+    const v0, 0x7f0a0201
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -396,7 +396,7 @@
 
     .line 73
     .local v5, "readmeButton1":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01ef
+    const v0, 0x7f0a0202
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -408,7 +408,7 @@
 
     .line 74
     .local v4, "readmeButton2":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01f0
+    const v0, 0x7f0a0203
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -420,7 +420,7 @@
 
     .line 75
     .local v3, "readmeButton3":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01f1
+    const v0, 0x7f0a0204
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -962,7 +962,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 90
-    const v3, 0x7f130171
+    const v3, 0x7f130173
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1023,7 +1023,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 100
-    const v3, 0x7f13016e
+    const v3, 0x7f130170
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1084,7 +1084,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 110
-    const v3, 0x7f13016f
+    const v3, 0x7f130171
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1566,7 +1566,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0066
+    const v1, 0x7f0d0067
 
     const/4 v2, 0x0
 

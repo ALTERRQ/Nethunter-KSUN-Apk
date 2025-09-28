@@ -848,7 +848,7 @@
 
     .line 52
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a0182
+    const v1, 0x7f0a0191
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -858,7 +858,7 @@
 
     .line 53
     .local v1, "loadButton":Landroid/widget/Button;
-    const v2, 0x7f0a0183
+    const v2, 0x7f0a0192
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -868,7 +868,7 @@
 
     .line 54
     .local v2, "saveButton":Landroid/widget/Button;
-    const v3, 0x7f0a0181
+    const v3, 0x7f0a0190
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -878,7 +878,7 @@
 
     .line 55
     .local v3, "injectButton":Landroid/widget/Button;
-    const v4, 0x7f0a018b
+    const v4, 0x7f0a019e
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -901,7 +901,7 @@
 
     .line 59
     .local v5, "duckyscript_file":[Ljava/lang/String;
-    const v6, 0x7f0a0180
+    const v6, 0x7f0a018f
 
     invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

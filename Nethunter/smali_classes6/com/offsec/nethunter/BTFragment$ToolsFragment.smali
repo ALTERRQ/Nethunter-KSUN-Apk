@@ -54,7 +54,7 @@
     .param p1, "BTFragment"    # Landroid/view/View;
 
     .line 719
-    const v0, 0x7f0a0413
+    const v0, 0x7f0a043e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -64,7 +64,7 @@
 
     .line 720
     .local v0, "sdp_address":Landroid/widget/EditText;
-    const v1, 0x7f0a02a5
+    const v1, 0x7f0a02b9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -811,7 +811,7 @@
 
     .line 627
     .local v9, "rootView":Landroid/view/View;
-    const v0, 0x7f0a02a5
+    const v0, 0x7f0a02b9
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -823,7 +823,7 @@
 
     .line 628
     .local v10, "hci_interface":Landroid/widget/EditText;
-    const v0, 0x7f0a02e3
+    const v0, 0x7f0a02fb
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -835,7 +835,7 @@
 
     .line 629
     .local v11, "floodCheckBox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a02e4
+    const v0, 0x7f0a02fc
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -847,7 +847,7 @@
 
     .line 632
     .local v12, "reverseCheckBox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a0413
+    const v0, 0x7f0a043e
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -859,7 +859,7 @@
 
     .line 635
     .local v13, "sdp_address":Landroid/widget/EditText;
-    const v0, 0x7f0a043b
+    const v0, 0x7f0a046a
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -878,7 +878,7 @@
     invoke-virtual {v14, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 643
-    const v0, 0x7f0a0485
+    const v0, 0x7f0a04bb
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -890,7 +890,7 @@
 
     .line 644
     .local v15, "StartL2ping":Landroid/widget/Button;
-    const v0, 0x7f0a02e5
+    const v0, 0x7f0a02fd
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -902,7 +902,7 @@
 
     .line 645
     .local v16, "l2ping_Size":Landroid/widget/EditText;
-    const v0, 0x7f0a02e2
+    const v0, 0x7f0a02fa
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -914,7 +914,7 @@
 
     .line 646
     .local v17, "l2ping_Count":Landroid/widget/EditText;
-    const v0, 0x7f0a03df
+    const v0, 0x7f0a0407
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -926,7 +926,7 @@
 
     .line 647
     .local v5, "redfang_Range":Landroid/widget/EditText;
-    const v0, 0x7f0a03de
+    const v0, 0x7f0a0406
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -984,7 +984,7 @@
     invoke-virtual {v15, v7}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 676
-    const v0, 0x7f0a048d
+    const v0, 0x7f0a04c2
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1001,7 +1001,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 687
-    const v1, 0x7f0a048a
+    const v1, 0x7f0a04bf
 
     invoke-virtual {v9, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1018,7 +1018,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 699
-    const v2, 0x7f0a0474
+    const v2, 0x7f0a04ab
 
     invoke-virtual {v9, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1035,7 +1035,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 710
-    const v3, 0x7f0a048f
+    const v3, 0x7f0a04c4
 
     invoke-virtual {v9, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

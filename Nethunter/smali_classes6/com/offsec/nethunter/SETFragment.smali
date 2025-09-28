@@ -286,7 +286,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 61
-    const v0, 0x7f0d00d9
+    const v0, 0x7f0d00da
 
     const/4 v1, 0x0
 
@@ -306,7 +306,7 @@
 
     .line 64
     .local v2, "tabsPagerAdapter":Lcom/offsec/nethunter/SETFragment$TabsPagerAdapter;
-    const v3, 0x7f0a03a6
+    const v3, 0x7f0a03ce
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -361,7 +361,7 @@
 
     .line 86
     .local v0, "id":I
-    const v1, 0x7f0a043f
+    const v1, 0x7f0a046e
 
     const/4 v2, 0x1
 
@@ -375,7 +375,7 @@
 
     .line 89
     :cond_0
-    const v1, 0x7f0a050a
+    const v1, 0x7f0a0548
 
     if-ne v0, v1, :cond_1
 

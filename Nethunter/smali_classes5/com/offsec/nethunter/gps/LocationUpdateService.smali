@@ -1811,7 +1811,7 @@
     .local v8, "resultIntent":Landroid/content/Intent;
     const-string v9, "menuFragment"
 
-    const v10, 0x7f0a0291
+    const v10, 0x7f0a02a5
 
     invoke-virtual {v8, v9, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1839,7 +1839,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f0d0055
+    const v14, 0x7f0d0056
 
     invoke-direct {v11, v13, v14}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -1865,7 +1865,7 @@
 
     move-result-object v13
 
-    const v15, 0x7f0a0294
+    const v15, 0x7f0a02a8
 
     invoke-virtual {v11, v15, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
@@ -1894,7 +1894,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0a0295
+    const v13, 0x7f0a02a9
 
     invoke-virtual {v11, v13, v12}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
@@ -1919,19 +1919,19 @@
 
     move-result-object v12
 
-    const v13, 0x7f0a0292
+    const v13, 0x7f0a02a6
 
     invoke-virtual {v11, v13, v12}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 385
-    const v12, 0x7f0a0297
+    const v12, 0x7f0a02ab
 
     iget-object v13, v0, Lcom/offsec/nethunter/gps/LocationUpdateService;->lastLocationSourcePublished:Ljava/lang/String;
 
     invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 386
-    const v12, 0x7f0a0293
+    const v12, 0x7f0a02a7
 
     invoke-virtual {v11, v12, v4}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
@@ -1944,7 +1944,7 @@
 
     move-result v12
 
-    const v13, 0x7f0a0296
+    const v13, 0x7f0a02aa
 
     if-eqz v12, :cond_4
 
@@ -2845,7 +2845,7 @@
     .local v5, "resultIntent":Landroid/content/Intent;
     const-string v6, "menuFragment"
 
-    const v7, 0x7f0a0291
+    const v7, 0x7f0a02a5
 
     invoke-virtual {v5, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

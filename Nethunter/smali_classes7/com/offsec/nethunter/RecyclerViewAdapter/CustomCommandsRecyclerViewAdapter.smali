@@ -371,7 +371,7 @@
 
     .line 57
     .local v12, "mInflater":Landroid/view/LayoutInflater;
-    const v0, 0x7f0d003b
+    const v0, 0x7f0d003c
 
     invoke-virtual {v12, v0, v11}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -379,7 +379,7 @@
 
     .line 58
     .local v13, "promptViewEdit":Landroid/view/View;
-    const v0, 0x7f0a01c3
+    const v0, 0x7f0a01d6
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -391,7 +391,7 @@
 
     .line 59
     .local v14, "commandLabelEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01c2
+    const v0, 0x7f0a01d5
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -403,7 +403,7 @@
 
     .line 60
     .local v15, "commandEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01c5
+    const v0, 0x7f0a01d8
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -415,7 +415,7 @@
 
     .line 61
     .local v8, "sendToSpinner":Landroid/widget/Spinner;
-    const v0, 0x7f0a01c4
+    const v0, 0x7f0a01d7
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -427,7 +427,7 @@
 
     .line 62
     .local v7, "execModeSpinner":Landroid/widget/Spinner;
-    const v0, 0x7f0a01c1
+    const v0, 0x7f0a01d4
 
     invoke-virtual {v13, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -930,7 +930,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d003e
+    const v1, 0x7f0d003f
 
     const/4 v2, 0x0
 

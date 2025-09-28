@@ -70,7 +70,7 @@
     .line 58
     iget-object v0, p0, Lcom/offsec/nethunter/audio/AudioBufferSizeAdapter;->context:Landroid/content/Context;
 
-    const v1, 0x7f1300bd
+    const v1, 0x7f1300c0
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -87,7 +87,7 @@
     .line 61
     iget-object v0, p0, Lcom/offsec/nethunter/audio/AudioBufferSizeAdapter;->context:Landroid/content/Context;
 
-    const v1, 0x7f1300be
+    const v1, 0x7f1300c1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -266,7 +266,7 @@
     move-result-object v0
 
     .line 45
-    const v1, 0x7f0d00dd
+    const v1, 0x7f0d00de
 
     const/4 v2, 0x0
 
@@ -285,7 +285,7 @@
     .line 50
     .restart local v0    # "view":Landroid/view/View;
     :goto_0
-    const v1, 0x7f0a0120
+    const v1, 0x7f0a012e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

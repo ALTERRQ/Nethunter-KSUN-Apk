@@ -38,7 +38,7 @@
     .param p1, "position"    # I
 
     .line 112
-    const v0, 0x7f0a017e
+    const v0, 0x7f0a018d
 
     const/4 v1, 0x1
 

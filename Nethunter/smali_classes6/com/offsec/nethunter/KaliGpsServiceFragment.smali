@@ -795,7 +795,7 @@
     .local v0, "e":Ljava/lang/Exception;
     iget-object v1, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->context:Landroid/content/Context;
 
-    const v2, 0x7f1302c4
+    const v2, 0x7f1302c7
 
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/KaliGpsServiceFragment;->getString(I)Ljava/lang/String;
 
@@ -1751,7 +1751,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 129
-    const v0, 0x7f0d0052
+    const v0, 0x7f0d0053
 
     const/4 v1, 0x0
 
@@ -2056,7 +2056,7 @@
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 210
-    const v0, 0x7f0a028d
+    const v0, 0x7f0a02a1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2067,7 +2067,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->satellitesEditText:Lcom/google/android/material/textfield/TextInputEditText;
 
     .line 211
-    const v0, 0x7f0a0298
+    const v0, 0x7f0a02ac
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2087,7 +2087,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 213
-    const v0, 0x7f0a028f
+    const v0, 0x7f0a02a3
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2097,7 +2097,7 @@
 
     .line 214
     .local v0, "gpsHelpView":Landroid/widget/TextView;
-    const v1, 0x7f0a04a8
+    const v1, 0x7f0a04e2
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2108,7 +2108,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->switch_gps_provider:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 215
-    const v1, 0x7f0a0405
+    const v1, 0x7f0a0430
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2119,7 +2119,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->satelliteSignalContainer:Landroid/widget/LinearLayout;
 
     .line 216
-    const v1, 0x7f0a04a9
+    const v1, 0x7f0a04e3
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2130,7 +2130,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->switch_gpsd:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 217
-    const v1, 0x7f0a028b
+    const v1, 0x7f0a029f
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2146,7 +2146,7 @@
 
     .line 219
     .local v2, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
-    const v3, 0x7f0a0538
+    const v3, 0x7f0a0578
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2156,7 +2156,7 @@
 
     .line 220
     .local v3, "wlan_interface":Landroid/widget/EditText;
-    const v4, 0x7f0a00c3
+    const v4, 0x7f0a00d5
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2166,7 +2166,7 @@
 
     .line 223
     .local v4, "bt_interface":Landroid/widget/EditText;
-    const v5, 0x7f0a03ff
+    const v5, 0x7f0a042a
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2177,7 +2177,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->sdrcheckbox:Landroid/widget/CheckBox;
 
     .line 224
-    const v5, 0x7f0a03fe
+    const v5, 0x7f0a0429
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2188,7 +2188,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->sdramrcheckbox:Landroid/widget/CheckBox;
 
     .line 225
-    const v5, 0x7f0a03fd
+    const v5, 0x7f0a0428
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2199,7 +2199,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->sdradsbcheckbox:Landroid/widget/CheckBox;
 
     .line 226
-    const v5, 0x7f0a0334
+    const v5, 0x7f0a0359
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2210,7 +2210,7 @@
     iput-object v5, p0, Lcom/offsec/nethunter/KaliGpsServiceFragment;->mousejackcheckbox:Landroid/widget/CheckBox;
 
     .line 228
-    const v5, 0x7f130184
+    const v5, 0x7f130186
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setText(I)V
 

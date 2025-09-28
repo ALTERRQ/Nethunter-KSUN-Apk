@@ -107,7 +107,7 @@
 
     move-object/from16 v1, p1
 
-    const v2, 0x7f0a035c
+    const v2, 0x7f0a0380
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
 
     .line 249
     .local v3, "template_path":Ljava/lang/String;
-    const v4, 0x7f0a0436
+    const v4, 0x7f0a0465
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -155,7 +155,7 @@
 
     .line 250
     .local v4, "PhishLink":Landroid/widget/EditText;
-    const v5, 0x7f0a0438
+    const v5, 0x7f0a0467
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     .line 251
     .local v5, "PhishName":Landroid/widget/EditText;
-    const v6, 0x7f0a0439
+    const v6, 0x7f0a0468
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     .line 252
     .local v6, "PhishPic":Landroid/widget/EditText;
-    const v7, 0x7f0a043a
+    const v7, 0x7f0a0469
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -894,7 +894,7 @@
     .line 167
     move-object/from16 v0, p0
 
-    const v1, 0x7f0d00da
+    const v1, 0x7f0d00db
 
     const/4 v2, 0x0
 
@@ -918,7 +918,7 @@
 
     .line 169
     .local v5, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v6, 0x7f0a0438
+    const v6, 0x7f0a0467
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -928,7 +928,7 @@
 
     .line 170
     .local v6, "PhishName":Landroid/widget/EditText;
-    const v7, 0x7f0a043a
+    const v7, 0x7f0a0469
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -979,7 +979,7 @@
 
     .line 179
     .local v8, "templates":[Ljava/lang/String;
-    const v9, 0x7f0a043c
+    const v9, 0x7f0a046b
 
     invoke-virtual {v1, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1002,7 +1002,7 @@
     invoke-virtual {v9, v10}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 184
-    const v10, 0x7f0a035c
+    const v10, 0x7f0a0380
 
     invoke-virtual {v1, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1019,7 +1019,7 @@
     invoke-virtual {v9, v11}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 214
-    const v11, 0x7f0a03ee
+    const v11, 0x7f0a0417
 
     invoke-virtual {v1, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1029,7 +1029,7 @@
 
     .line 215
     .local v11, "ResetTemplate":Landroid/widget/Button;
-    const v12, 0x7f0a0408
+    const v12, 0x7f0a0433
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1039,7 +1039,7 @@
 
     .line 216
     .local v12, "SaveTemplate":Landroid/widget/Button;
-    const v13, 0x7f0a0492
+    const v13, 0x7f0a04c7
 
     invoke-virtual {v1, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1049,7 +1049,7 @@
 
     .line 219
     .local v13, "LaunchSET":Landroid/widget/Button;
-    const v14, 0x7f0a03e4
+    const v14, 0x7f0a040c
 
     invoke-virtual {v1, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

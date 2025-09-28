@@ -343,7 +343,7 @@
     const/4 v6, 0x0
 
     :goto_0
-    const v7, -0x3361d2af    # -8.2930312E7f
+    const v7, -0x3361d2af    # -8.293031E7f
 
     mul-int v6, v6, v7
 

@@ -33,7 +33,7 @@
 
     const v2, 0x1b873593
 
-    const v3, -0x3361d2af    # -8.2930312E7f
+    const v3, -0x3361d2af    # -8.293031E7f
 
     if-ge v0, v1, :cond_0
 

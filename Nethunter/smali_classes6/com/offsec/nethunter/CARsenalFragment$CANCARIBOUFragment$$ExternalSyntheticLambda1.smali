@@ -30,7 +30,7 @@
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$$ExternalSyntheticLambda1;->f$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->lambda$onCreateView$18$com-offsec-nethunter-CARsenalFragment$CANCARIBOUFragment(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->lambda$onCreateView$0$com-offsec-nethunter-CARsenalFragment$CANCARIBOUFragment(Landroid/view/View;)V
 
     return-void
 .end method

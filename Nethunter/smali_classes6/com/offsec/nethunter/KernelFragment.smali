@@ -792,7 +792,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02e1
+    const v1, 0x7f0a02f9
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -1021,7 +1021,7 @@
     .line 56
     move-object/from16 v0, p0
 
-    const v1, 0x7f0d0067
+    const v1, 0x7f0d0068
 
     const/4 v2, 0x0
 
@@ -1045,7 +1045,7 @@
 
     .line 60
     .local v2, "sharedpreferences":Landroid/content/SharedPreferences;
-    const v5, 0x7f0a0159
+    const v5, 0x7f0a0166
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1055,7 +1055,7 @@
 
     .line 61
     .local v5, "Device":Landroid/widget/TextView;
-    const v6, 0x7f0a0116
+    const v6, 0x7f0a0124
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1065,7 +1065,7 @@
 
     .line 62
     .local v6, "Codename":Landroid/widget/TextView;
-    const v7, 0x7f0a0080
+    const v7, 0x7f0a008c
 
     invoke-virtual {v1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1090,7 +1090,7 @@
     invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 68
-    const v8, 0x7f0a03e9
+    const v8, 0x7f0a0411
 
     invoke-virtual {v1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1100,7 +1100,7 @@
 
     .line 69
     .local v8, "repoSpinner":Landroid/widget/Spinner;
-    const v9, 0x7f0a0139
+    const v9, 0x7f0a0146
 
     invoke-virtual {v1, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1110,7 +1110,7 @@
 
     .line 70
     .local v9, "codenamesearchButton":Landroid/widget/Button;
-    const v10, 0x7f0a0135
+    const v10, 0x7f0a0142
 
     invoke-virtual {v1, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1174,7 +1174,7 @@
     invoke-virtual {v9, v13}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 99
-    const v13, 0x7f0a02e0
+    const v13, 0x7f0a02f8
 
     invoke-virtual {v1, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1191,7 +1191,7 @@
     invoke-virtual {v13, v14}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 109
-    const v14, 0x7f0a0279
+    const v14, 0x7f0a028d
 
     invoke-virtual {v1, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1201,7 +1201,7 @@
 
     .line 110
     .local v14, "flashButton":Landroid/widget/Button;
-    const v15, 0x7f0a02e1
+    const v15, 0x7f0a02f9
 
     invoke-virtual {v1, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

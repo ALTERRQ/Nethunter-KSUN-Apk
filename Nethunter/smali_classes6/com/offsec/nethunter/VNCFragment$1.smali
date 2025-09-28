@@ -80,7 +80,7 @@
 
     .line 120
     .local v0, "id":I
-    const v1, 0x7f0a005e
+    const v1, 0x7f0a005f
 
     if-ne v0, v1, :cond_1
 
@@ -102,7 +102,7 @@
 
     .line 124
     .local v2, "inflater":Landroid/view/LayoutInflater;
-    const v3, 0x7f0d0069
+    const v3, 0x7f0d006a
 
     const/4 v4, 0x0
 
@@ -112,7 +112,7 @@
 
     .line 125
     .local v3, "dialogView":Landroid/view/View;
-    const v4, 0x7f0a015d
+    const v4, 0x7f0a016a
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -122,7 +122,7 @@
 
     .line 126
     .local v4, "descView":Landroid/widget/TextView;
-    const v5, 0x7f130181
+    const v5, 0x7f130183
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -146,7 +146,7 @@
 
     .line 133
     .local v6, "dialog":Landroidx/appcompat/app/AlertDialog;
-    const v7, 0x7f0a015c
+    const v7, 0x7f0a0169
 
     invoke-virtual {v3, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

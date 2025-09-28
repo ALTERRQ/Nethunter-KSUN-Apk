@@ -481,7 +481,7 @@
 
     const/16 v11, 0x3ea
 
-    const v12, 0x7f0800d8
+    const v12, 0x7f0800da
 
     const-string v13, "NethunterNotifyChannel"
 

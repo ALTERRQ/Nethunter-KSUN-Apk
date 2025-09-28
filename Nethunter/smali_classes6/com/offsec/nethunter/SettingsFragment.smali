@@ -40,7 +40,7 @@
     .line 63
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
-    .line 624
+    .line 628
     new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;
 
     invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;-><init>()V
@@ -116,22 +116,22 @@
     .param p1, "_button"    # Landroid/widget/Button;
     .param p2, "onClickListener"    # Landroid/view/View$OnClickListener;
 
-    .line 662
+    .line 666
     invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 663
+    .line 667
     return-void
 .end method
 
 .method private bootanimation_start()V
     .locals 2
 
-    .line 616
+    .line 620
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
-    const v1, 0x7f0a0517
+    const v1, 0x7f0a0555
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -139,18 +139,18 @@
 
     check-cast v0, Landroid/widget/VideoView;
 
-    .line 617
+    .line 621
     .local v0, "videoview":Landroid/widget/VideoView;
     invoke-virtual {v0}, Landroid/widget/VideoView;->requestFocus()Z
 
-    .line 618
+    .line 622
     new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda0;
 
     invoke-direct {v1, v0}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda0;-><init>(Landroid/widget/VideoView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/VideoView;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    .line 622
+    .line 626
     return-void
 .end method
 
@@ -332,15 +332,15 @@
     .param p0, "videoview"    # Landroid/widget/VideoView;
     .param p1, "mp"    # Landroid/media/MediaPlayer;
 
-    .line 619
+    .line 623
     invoke-virtual {p0}, Landroid/widget/VideoView;->start()V
 
-    .line 620
+    .line 624
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Landroid/media/MediaPlayer;->setLooping(Z)V
 
-    .line 621
+    .line 625
     return-void
 .end method
 
@@ -746,12 +746,12 @@
 .method public RunSetup()V
     .locals 3
 
-    .line 649
+    .line 653
     const-string v0, "echo -ne \"\\033]0;Bootanimation Setup\\007\" && clear;if [[ -f /usr/bin/convert ]];then echo \'Imagemagick is installed!\'; else apt update && apt install imagemagick -y;fi; if [[ -f /root/nethunter-bootanimation ]];then echo \'nethunter-bootanimation is installed!\'; else git clone https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-bootanimation /root/nethunter-bootanimation;fi; echo \'Everything is ready! Closing in 3secs..\'; sleep 3 && exit "
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd(Ljava/lang/String;)V
 
-    .line 652
+    .line 656
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -768,19 +768,19 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 653
+    .line 657
     return-void
 .end method
 
 .method public RunUpdate()V
     .locals 3
 
-    .line 656
+    .line 660
     const-string v0, "echo -ne \"\\033]0;Bootanimation Update\\007\" && clear;apt update && apt install imagemagick -y;if [[ -d /root/nethunter-bootanimation ]];then cd /root/nethunter-bootanimation;git pull;fi; echo \'Done! Closing in 3secs..\'; sleep 3 && exit "
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd(Ljava/lang/String;)V
 
-    .line 658
+    .line 662
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -797,14 +797,14 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 659
+    .line 663
     return-void
 .end method
 
 .method public SetupDialog()V
     .locals 3
 
-    .line 638
+    .line 642
     new-instance v0, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
@@ -815,18 +815,18 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;-><init>(Landroid/content/Context;I)V
 
-    .line 639
+    .line 643
     .local v0, "builder":Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
     const-string v1, "Welcome to Settings!"
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;->setTitle(Ljava/lang/CharSequence;)Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
 
-    .line 640
+    .line 644
     const-string v1, "In order to make sure everything is working, an initial setup needs to be done."
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;->setMessage(Ljava/lang/CharSequence;)Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
 
-    .line 641
+    .line 645
     new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda12;
 
     invoke-direct {v1, p0}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda12;-><init>(Lcom/offsec/nethunter/SettingsFragment;)V
@@ -835,10 +835,10 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
 
-    .line 645
+    .line 649
     invoke-virtual {v0}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;->show()Landroidx/appcompat/app/AlertDialog;
 
-    .line 646
+    .line 650
     return-void
 .end method
 
@@ -847,10 +847,10 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
     .param p2, "which"    # I
 
-    .line 642
+    .line 646
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->RunSetup()V
 
-    .line 643
+    .line 647
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -867,7 +867,7 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 644
+    .line 648
     return-void
 .end method
 
@@ -875,7 +875,7 @@
     .locals 5
     .param p1, "result"    # Landroidx/activity/result/ActivityResult;
 
-    .line 627
+    .line 631
     invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getResultCode()I
 
     move-result v0
@@ -890,18 +890,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 628
+    .line 632
     new-instance v0, Lcom/offsec/nethunter/utils/ShellExecuter;
 
     invoke-direct {v0}, Lcom/offsec/nethunter/utils/ShellExecuter;-><init>()V
 
-    .line 629
+    .line 633
     .local v0, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
 
-    const v2, 0x7f0a03f3
+    const v2, 0x7f0a041d
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -909,7 +909,7 @@
 
     check-cast v1, Landroid/widget/EditText;
 
-    .line 630
+    .line 634
     .local v1, "RestoreFileName":Landroid/widget/EditText;
     invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getData()Landroid/content/Intent;
 
@@ -929,7 +929,7 @@
 
     move-result-object v2
 
-    .line 631
+    .line 635
     .local v2, "FilePath":Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -959,10 +959,10 @@
 
     move-result-object v2
 
-    .line 632
+    .line 636
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 634
+    .line 638
     .end local v0    # "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     .end local v1    # "RestoreFileName":Landroid/widget/EditText;
     .end local v2    # "FilePath":Ljava/lang/String;
@@ -1207,28 +1207,28 @@
     .locals 3
     .param p1, "v"    # Landroid/view/View;
 
-    .line 445
+    .line 449
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 446
+    .line 450
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "android.intent.category.OPENABLE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 447
+    .line 451
     const-string v1, "application/x-tar"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 448
+    .line 452
     const-string v1, "android.intent.action.GET_CONTENT"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 449
+    .line 453
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment;->filePickerLauncher:Landroidx/activity/result/ActivityResultLauncher;
 
     const-string v2, "Select archive file"
@@ -1239,7 +1239,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
 
-    .line 450
+    .line 454
     return-void
 .end method
 
@@ -1249,7 +1249,7 @@
     .param p2, "exe"    # Lcom/offsec/nethunter/utils/ShellExecuter;
     .param p3, "v"    # Landroid/view/View;
 
-    .line 454
+    .line 458
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v0
@@ -1258,13 +1258,13 @@
 
     move-result-object v0
 
-    .line 455
+    .line 459
     .local v0, "RestoreFilePath":Ljava/lang/String;
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 456
+    .line 460
     .local v1, "RestoreFile":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->length()J
 
@@ -1278,7 +1278,7 @@
 
     if-nez v7, :cond_0
 
-    .line 457
+    .line 461
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v2
@@ -1297,7 +1297,7 @@
 
     goto :goto_0
 
-    .line 459
+    .line 463
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1353,7 +1353,7 @@
 
     invoke-virtual {p2, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 460
+    .line 464
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v2
@@ -1370,7 +1370,7 @@
 
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
-    .line 462
+    .line 466
     :goto_0
     return-void
 .end method
@@ -1380,7 +1380,7 @@
     .param p1, "NhSystemApp"    # Ljava/io/File;
     .param p2, "v"    # Landroid/view/View;
 
-    .line 468
+    .line 472
     invoke-virtual {p1}, Ljava/io/File;->length()J
 
     move-result-wide v0
@@ -1391,7 +1391,7 @@
 
     if-nez v4, :cond_0
 
-    .line 469
+    .line 473
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -1412,7 +1412,7 @@
 
     goto :goto_0
 
-    .line 471
+    .line 475
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1440,7 +1440,7 @@
 
     invoke-virtual {p0, v0}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd_android(Ljava/lang/String;)V
 
-    .line 474
+    .line 478
     :goto_0
     return-void
 .end method
@@ -1450,7 +1450,7 @@
     .param p1, "btn"    # Landroid/widget/CompoundButton;
     .param p2, "value"    # Z
 
-    .line 480
+    .line 484
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -1475,14 +1475,14 @@
     .param p3, "SELinux"    # Landroid/widget/TextView;
     .param p4, "v"    # Landroid/view/View;
 
-    .line 495
+    .line 499
     const-string v0, "getenforce"
 
     invoke-virtual {p1, v0}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 496
+    .line 500
     .local v0, "selinux_status_now":Ljava/lang/String;
     const-string v1, "Permissive"
 
@@ -1496,7 +1496,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 497
+    .line 501
     const-string v1, "setenforce 1"
 
     filled-new-array {v1}, [Ljava/lang/String;
@@ -1505,17 +1505,17 @@
 
     invoke-virtual {p1, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 498
+    .line 502
     const-string v1, "Set to Permissive"
 
     invoke-virtual {p2, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 499
+    .line 503
     const-string v1, "Enforcing"
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 500
+    .line 504
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
@@ -1532,7 +1532,7 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 501
+    .line 505
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -1549,7 +1549,7 @@
 
     goto :goto_0
 
-    .line 503
+    .line 507
     :cond_0
     const-string v2, "setenforce 0"
 
@@ -1559,15 +1559,15 @@
 
     invoke-virtual {p1, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 504
+    .line 508
     const-string v2, "Set to Enforcing"
 
     invoke-virtual {p2, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 505
+    .line 509
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 506
+    .line 510
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
@@ -1584,7 +1584,7 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 507
+    .line 511
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -1597,7 +1597,7 @@
 
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 509
+    .line 513
     :goto_0
     return-void
 .end method
@@ -1609,14 +1609,14 @@
     .param p3, "exe"    # Lcom/offsec/nethunter/utils/ShellExecuter;
     .param p4, "v"    # Landroid/view/View;
 
-    .line 557
+    .line 561
     const/4 v0, 0x0
 
     aget-object v1, p1, v0
 
     if-eqz v1, :cond_0
 
-    .line 558
+    .line 562
     new-instance v1, Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1653,7 +1653,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 559
+    .line 563
     .local v1, "busybox":Ljava/io/File;
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1685,7 +1685,7 @@
 
     invoke-virtual {p3, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 560
+    .line 564
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v2
@@ -1702,11 +1702,11 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 561
+    .line 565
     .end local v1    # "busybox":Ljava/io/File;
     goto :goto_0
 
-    .line 562
+    .line 566
     :cond_0
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
@@ -1724,7 +1724,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 564
+    .line 568
     :goto_0
     return-void
 .end method
@@ -1734,7 +1734,7 @@
     .param p1, "exe"    # Lcom/offsec/nethunter/utils/ShellExecuter;
     .param p2, "v"    # Landroid/view/View;
 
-    .line 577
+    .line 581
     const-string v0, "if [ \"$(getprop ro.build.system_root_image)\" == \"true\" ]; then export SYSTEM=/; else export SYSTEM=/system;fi;mount -o rw,remount $SYSTEM && rm /system/bin/busybox;ln -s /system/bin/busybox_nh /system/bin/busybox"
 
     filled-new-array {v0}, [Ljava/lang/String;
@@ -1743,7 +1743,7 @@
 
     invoke-virtual {p1, v0}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 578
+    .line 582
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -1762,7 +1762,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 579
+    .line 583
     return-void
 .end method
 
@@ -1772,7 +1772,7 @@
     .param p2, "TerminalStyle"    # Landroid/widget/TextView;
     .param p3, "v"    # Landroid/view/View;
 
-    .line 607
+    .line 611
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1807,7 +1807,7 @@
 
     invoke-virtual {p1, v0}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 608
+    .line 612
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -1826,12 +1826,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 609
+    .line 613
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->selected_prompt:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 610
+    .line 614
     return-void
 .end method
 
@@ -1846,7 +1846,7 @@
     .param p7, "FPS"    # Landroid/widget/EditText;
     .param p8, "v"    # Landroid/view/View;
 
-    .line 392
+    .line 396
     invoke-virtual {p1}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
@@ -1859,7 +1859,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 393
+    .line 397
     iget-object v0, p0, Lcom/offsec/nethunter/SettingsFragment;->selected_animation:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -1874,18 +1874,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 394
+    .line 398
     const-string v0, ""
 
     .local v0, "foldersCMD":Ljava/lang/String;
     goto :goto_0
 
-    .line 396
+    .line 400
     .end local v0    # "foldersCMD":Ljava/lang/String;
     :cond_0
     const-string v0, " new/part1 new/part2"
 
-    .line 398
+    .line 402
     .restart local v0    # "foldersCMD":Ljava/lang/String;
     :goto_0
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1934,7 +1934,7 @@
 
     move-result-object v4
 
-    .line 399
+    .line 403
     .local v4, "resizeCMD":Ljava/lang/String;
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -2011,7 +2011,7 @@
     .local v5, "imagesCMD":Ljava/lang/String;
     goto :goto_1
 
-    .line 404
+    .line 408
     .end local v0    # "foldersCMD":Ljava/lang/String;
     .end local v4    # "resizeCMD":Ljava/lang/String;
     .end local v5    # "imagesCMD":Ljava/lang/String;
@@ -2042,7 +2042,7 @@
 
     move-result-object v5
 
-    .line 406
+    .line 410
     .restart local v5    # "imagesCMD":Ljava/lang/String;
     :goto_1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2081,7 +2081,7 @@
 
     move-result-object v0
 
-    .line 407
+    .line 411
     .local v0, "finalRES":Ljava/lang/String;
     invoke-virtual {p7}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -2091,7 +2091,7 @@
 
     move-result-object v2
 
-    .line 408
+    .line 412
     .local v2, "finalFPS":Ljava/lang/String;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2149,7 +2149,7 @@
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd(Ljava/lang/String;)V
 
-    .line 410
+    .line 414
     return-void
 .end method
 
@@ -2160,7 +2160,7 @@
     .param p3, "BootanimationPath"    # Landroid/widget/EditText;
     .param p4, "v"    # Landroid/view/View;
 
-    .line 415
+    .line 419
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2185,7 +2185,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 416
+    .line 420
     .local v0, "AnimationZip":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->length()J
 
@@ -2197,7 +2197,7 @@
 
     if-nez v5, :cond_0
 
-    .line 417
+    .line 421
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
@@ -2218,7 +2218,7 @@
 
     goto :goto_0
 
-    .line 419
+    .line 423
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
@@ -2228,16 +2228,16 @@
 
     const-string v3, "/bootanimation.zip "
 
-    if-eqz v1, :cond_1
+    if-nez v1, :cond_1
 
-    .line 420
+    .line 424
     const-string v1, "mount | grep \"media/bootanimation\" | awk {\'print $3\'}"
 
     invoke-virtual {p2, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 421
+    .line 425
     .local v1, "mount_path":Ljava/lang/String;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2269,7 +2269,7 @@
 
     move-result-object v3
 
-    .line 422
+    .line 426
     invoke-virtual {p3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v4
@@ -2290,14 +2290,14 @@
 
     move-result-object v2
 
-    .line 421
+    .line 425
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd_android(Ljava/lang/String;)V
 
-    .line 424
+    .line 428
     .end local v1    # "mount_path":Ljava/lang/String;
     goto :goto_0
 
-    .line 425
+    .line 429
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2319,7 +2319,7 @@
 
     move-result-object v1
 
-    .line 426
+    .line 430
     invoke-virtual {p3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v3
@@ -2340,10 +2340,10 @@
 
     move-result-object v1
 
-    .line 425
+    .line 429
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/SettingsFragment;->run_cmd_android(Ljava/lang/String;)V
 
-    .line 430
+    .line 434
     :goto_0
     return-void
 .end method
@@ -2354,7 +2354,7 @@
     .param p2, "exe"    # Lcom/offsec/nethunter/utils/ShellExecuter;
     .param p3, "v"    # Landroid/view/View;
 
-    .line 436
+    .line 440
     new-instance v0, Ljava/util/Date;
 
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
@@ -2363,7 +2363,7 @@
 
     move-result-object v0
 
-    .line 437
+    .line 441
     .local v0, "currentDateandTime":Ljava/lang/String;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2407,7 +2407,7 @@
 
     invoke-virtual {p2, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRoot([Ljava/lang/String;)V
 
-    .line 438
+    .line 442
     invoke-virtual {p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
@@ -2442,7 +2442,7 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 439
+    .line 443
     return-void
 .end method
 
@@ -2567,7 +2567,7 @@
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 64
+    .locals 65
     .param p1, "inflater"    # Landroid/view/LayoutInflater;
     .param p2, "container"    # Landroid/view/ViewGroup;
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
@@ -2593,7 +2593,7 @@
 
     .line 163
     :cond_0
-    const v0, 0x7f0d00db
+    const v0, 0x7f0d00dc
 
     const/4 v12, 0x0
 
@@ -2660,7 +2660,7 @@
 
     .line 179
     .local v15, "animations":[Ljava/lang/String;
-    const v0, 0x7f0a0084
+    const v0, 0x7f0a0090
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2702,7 +2702,7 @@
     invoke-virtual {v8, v0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 250
-    const v0, 0x7f0a0124
+    const v0, 0x7f0a0132
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2714,7 +2714,7 @@
 
     .line 253
     .local v5, "ConvertCheckbox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a02c3
+    const v0, 0x7f0a02d5
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2726,7 +2726,7 @@
 
     .line 254
     .local v4, "ImageWidth":Landroid/widget/EditText;
-    const v0, 0x7f0a02c2
+    const v0, 0x7f0a02d4
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2738,7 +2738,7 @@
 
     .line 255
     .local v3, "ImageHeight":Landroid/widget/EditText;
-    const v0, 0x7f0a026f
+    const v0, 0x7f0a0283
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2750,7 +2750,7 @@
 
     .line 256
     .local v2, "FinalWidth":Landroid/widget/EditText;
-    const v0, 0x7f0a026e
+    const v0, 0x7f0a0282
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2762,7 +2762,7 @@
 
     .line 257
     .local v1, "FinalHeight":Landroid/widget/EditText;
-    const v0, 0x7f0a02c4
+    const v0, 0x7f0a02d6
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2772,7 +2772,7 @@
 
     .line 258
     .local v0, "ImageResMinus":Landroid/widget/Button;
-    const v7, 0x7f0a02c5
+    const v7, 0x7f0a02d7
 
     invoke-virtual {v14, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2782,7 +2782,7 @@
 
     .line 259
     .local v7, "ImageResPlus":Landroid/widget/Button;
-    const v11, 0x7f0a0270
+    const v11, 0x7f0a0284
 
     invoke-virtual {v14, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2792,7 +2792,7 @@
 
     .line 260
     .local v11, "FinalResMinus":Landroid/widget/Button;
-    const v12, 0x7f0a0271
+    const v12, 0x7f0a0285
 
     invoke-virtual {v14, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2839,46 +2839,46 @@
     .local v19, "animation_spinner":Landroid/widget/Spinner;
     move-object/from16 v1, p0
 
-    move-object/from16 v21, v11
-
-    move-object v11, v2
+    move-object v13, v2
 
     .end local v2    # "FinalWidth":Landroid/widget/EditText;
-    .local v11, "FinalWidth":Landroid/widget/EditText;
-    .local v21, "FinalResMinus":Landroid/widget/Button;
+    .local v13, "FinalWidth":Landroid/widget/EditText;
     move-object v2, v4
 
-    move-object/from16 v22, v3
+    move-object/from16 v21, v3
 
     .end local v3    # "ImageHeight":Landroid/widget/EditText;
-    .local v22, "ImageHeight":Landroid/widget/EditText;
-    move-object/from16 v23, v12
+    .local v21, "ImageHeight":Landroid/widget/EditText;
+    move-object/from16 v22, v15
 
-    move-object v12, v4
+    move-object v15, v4
 
     .end local v4    # "ImageWidth":Landroid/widget/EditText;
-    .local v12, "ImageWidth":Landroid/widget/EditText;
-    .local v23, "FinalResPlus":Landroid/widget/Button;
+    .local v15, "ImageWidth":Landroid/widget/EditText;
+    .local v22, "animations":[Ljava/lang/String;
     move-object/from16 v4, v20
 
-    move-object v13, v5
+    move-object/from16 v23, v6
+
+    move-object v6, v5
 
     .end local v5    # "ConvertCheckbox":Landroid/widget/CheckBox;
-    .local v13, "ConvertCheckbox":Landroid/widget/CheckBox;
+    .local v6, "ConvertCheckbox":Landroid/widget/CheckBox;
+    .local v23, "animation_dir":[Ljava/lang/String;
     move-object v5, v7
 
     invoke-direct/range {v0 .. v5}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda11;-><init>(Lcom/offsec/nethunter/SettingsFragment;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/Button;Landroid/widget/Button;)V
 
-    invoke-virtual {v13, v8}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v6, v8}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 310
     new-instance v0, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda20;
 
-    move-object/from16 v8, v22
+    move-object/from16 v8, v21
 
-    .end local v22    # "ImageHeight":Landroid/widget/EditText;
+    .end local v21    # "ImageHeight":Landroid/widget/EditText;
     .local v8, "ImageHeight":Landroid/widget/EditText;
-    invoke-direct {v0, v12, v8}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda20;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
+    invoke-direct {v0, v15, v8}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda20;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
 
     move-object/from16 v5, v20
 
@@ -2889,26 +2889,26 @@
     .line 318
     new-instance v0, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda1;
 
-    invoke-direct {v0, v12, v8}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda1;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
+    invoke-direct {v0, v15, v8}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda1;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
 
-    invoke-virtual {v5, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v7, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 326
     new-instance v0, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda2;
 
-    invoke-direct {v0, v11, v10}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda2;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
+    invoke-direct {v0, v13, v10}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda2;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
 
-    invoke-virtual {v5, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v11, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 334
     new-instance v0, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda3;
 
-    invoke-direct {v0, v11, v10}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda3;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
+    invoke-direct {v0, v13, v10}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda3;-><init>(Landroid/widget/EditText;Landroid/widget/EditText;)V
 
-    invoke-virtual {v5, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v12, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 344
-    const v0, 0x7f0a03cc
+    const v0, 0x7f0a03f4
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2916,7 +2916,7 @@
 
     .line 345
     .local v4, "PreView":Landroid/view/View;
-    const v0, 0x7f0a03d1
+    const v0, 0x7f0a03f9
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3021,10 +3021,10 @@
 
     move-result-object v0
 
-    move/from16 v22, v2
+    move/from16 v21, v2
 
     .end local v2    # "screen_width":I
-    .local v22, "screen_width":I
+    .local v21, "screen_width":I
     const-string v2, "x"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -3041,7 +3041,7 @@
 
     .line 368
     .local v2, "size":Ljava/lang/String;
-    const v0, 0x7f0a040d
+    const v0, 0x7f0a0438
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3058,7 +3058,7 @@
 
     .end local v0    # "ScreenSize":Landroid/widget/TextView;
     .local v24, "ScreenSize":Landroid/widget/TextView;
-    const v0, 0x7f0a00b9
+    const v0, 0x7f0a00cb
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3090,14 +3090,14 @@
     .local v28, "screen_height":I
     const-string v1, "find /product /vendor /system -name \"*ootanimation.zip\""
 
-    move-object/from16 v29, v15
+    move-object/from16 v29, v11
 
-    move-object/from16 v15, v26
+    move-object/from16 v11, v26
 
     .end local v26    # "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
-    .local v15, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
-    .local v29, "animations":[Ljava/lang/String;
-    invoke-virtual {v15, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
+    .local v11, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
+    .local v29, "FinalResMinus":Landroid/widget/Button;
+    invoke-virtual {v11, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3109,7 +3109,7 @@
     .local v26, "size":Ljava/lang/String;
     const-string v2, "mount | grep ootanimation"
 
-    invoke-virtual {v15, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v11, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3122,85 +3122,137 @@
     if-eqz v30, :cond_4
 
     .line 380
-    move-object/from16 v30, v2
+    move-object/from16 v30, v3
 
-    .end local v2    # "bootanimation_mount":Ljava/lang/String;
-    .local v30, "bootanimation_mount":Ljava/lang/String;
-    const v2, 0x7f13029c
+    .end local v3    # "PreviewCheckbox":Landroid/widget/CheckBox;
+    .local v30, "PreviewCheckbox":Landroid/widget/CheckBox;
+    const v3, 0x7f13029e
 
-    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setText(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/EditText;->setText(I)V
 
     goto :goto_1
 
     .line 382
-    .end local v30    # "bootanimation_mount":Ljava/lang/String;
-    .restart local v2    # "bootanimation_mount":Ljava/lang/String;
+    .end local v30    # "PreviewCheckbox":Landroid/widget/CheckBox;
+    .restart local v3    # "PreviewCheckbox":Landroid/widget/CheckBox;
     :cond_4
-    move-object/from16 v30, v2
+    move-object/from16 v30, v3
 
-    .end local v2    # "bootanimation_mount":Ljava/lang/String;
-    .restart local v30    # "bootanimation_mount":Ljava/lang/String;
+    .end local v3    # "PreviewCheckbox":Landroid/widget/CheckBox;
+    .restart local v30    # "PreviewCheckbox":Landroid/widget/CheckBox;
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 386
+    .line 385
     :goto_1
-    const v2, 0x7f0a02fe
+    invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
-    invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result v3
 
-    move-result-object v2
+    if-nez v3, :cond_5
 
-    check-cast v2, Landroid/widget/Button;
+    .line 386
+    invoke-virtual/range {p0 .. p0}, Lcom/offsec/nethunter/SettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
-    .line 387
-    .local v2, "MakeBootAnimationButton":Landroid/widget/Button;
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroidx/fragment/app/FragmentActivity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v3
+
     move-object/from16 v31, v0
 
     .end local v0    # "BootanimationPath":Landroid/widget/EditText;
     .local v31, "BootanimationPath":Landroid/widget/EditText;
-    const v0, 0x7f0a027e
+    const-string v0, "Magisk bootanimation detected"
+
+    move-object/from16 v32, v1
+
+    const/4 v1, 0x0
+
+    .end local v1    # "bootanimation_path":Ljava/lang/String;
+    .local v32, "bootanimation_path":Ljava/lang/String;
+    invoke-static {v3, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    goto :goto_2
+
+    .line 385
+    .end local v31    # "BootanimationPath":Landroid/widget/EditText;
+    .end local v32    # "bootanimation_path":Ljava/lang/String;
+    .restart local v0    # "BootanimationPath":Landroid/widget/EditText;
+    .restart local v1    # "bootanimation_path":Ljava/lang/String;
+    :cond_5
+    move-object/from16 v31, v0
+
+    move-object/from16 v32, v1
+
+    .line 390
+    .end local v0    # "BootanimationPath":Landroid/widget/EditText;
+    .end local v1    # "bootanimation_path":Ljava/lang/String;
+    .restart local v31    # "BootanimationPath":Landroid/widget/EditText;
+    .restart local v32    # "bootanimation_path":Ljava/lang/String;
+    :goto_2
+    const v0, 0x7f0a0319
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    move-object/from16 v32, v0
+    move-object v3, v0
 
-    check-cast v32, Landroid/widget/EditText;
+    check-cast v3, Landroid/widget/Button;
 
-    .line 388
-    .local v32, "FPS":Landroid/widget/EditText;
-    new-instance v0, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda5;
+    .line 391
+    .local v3, "MakeBootAnimationButton":Landroid/widget/Button;
+    const v0, 0x7f0a0292
 
-    move-object/from16 v33, v31
+    invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-object/from16 v31, v0
+    move-result-object v0
 
-    .end local v31    # "BootanimationPath":Landroid/widget/EditText;
-    .local v33, "BootanimationPath":Landroid/widget/EditText;
-    move-object/from16 v34, v1
+    move-object/from16 v33, v0
 
-    .end local v1    # "bootanimation_path":Ljava/lang/String;
-    .local v34, "bootanimation_path":Ljava/lang/String;
+    check-cast v33, Landroid/widget/EditText;
+
+    .line 392
+    .local v33, "FPS":Landroid/widget/EditText;
+    new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda5;
+
+    move-object/from16 v64, v31
+
+    move-object/from16 v31, v12
+
+    move-object/from16 v12, v64
+
+    .local v12, "BootanimationPath":Landroid/widget/EditText;
+    .local v31, "FinalResPlus":Landroid/widget/Button;
+    move-object v0, v1
+
+    move-object/from16 v34, v11
+
+    move-object v11, v1
+
+    .end local v11    # "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
+    .local v34, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     move-object/from16 v1, p0
 
-    move-object/from16 v35, v30
+    move-object/from16 v35, v2
 
-    move-object/from16 v30, v15
-
-    move-object v15, v2
-
-    .end local v2    # "MakeBootAnimationButton":Landroid/widget/Button;
-    .local v15, "MakeBootAnimationButton":Landroid/widget/Button;
-    .local v30, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
+    .end local v2    # "bootanimation_mount":Ljava/lang/String;
     .local v35, "bootanimation_mount":Ljava/lang/String;
-    move-object v2, v13
+    move-object v2, v6
 
-    move-object/from16 v36, v3
+    move-object/from16 v36, v12
 
-    .end local v3    # "PreviewCheckbox":Landroid/widget/CheckBox;
-    .local v36, "PreviewCheckbox":Landroid/widget/CheckBox;
-    move-object v3, v12
+    move-object v12, v3
+
+    .end local v3    # "MakeBootAnimationButton":Landroid/widget/Button;
+    .local v12, "MakeBootAnimationButton":Landroid/widget/Button;
+    .local v36, "BootanimationPath":Landroid/widget/EditText;
+    move-object v3, v15
 
     move-object/from16 v37, v4
 
@@ -3212,22 +3264,22 @@
 
     .end local v5    # "ImageResMinus":Landroid/widget/Button;
     .local v38, "ImageResMinus":Landroid/widget/Button;
-    move-object v5, v6
+    move-object/from16 v5, v23
 
     move-object/from16 v39, v6
 
-    .end local v6    # "animation_dir":[Ljava/lang/String;
-    .local v39, "animation_dir":[Ljava/lang/String;
-    move-object v6, v11
+    .end local v6    # "ConvertCheckbox":Landroid/widget/CheckBox;
+    .local v39, "ConvertCheckbox":Landroid/widget/CheckBox;
+    move-object v6, v13
 
     move-object/from16 v16, v7
 
-    move-object/from16 v40, v11
+    move-object/from16 v40, v13
 
-    const v11, 0x1090003
+    const v13, 0x1090003
 
     .end local v7    # "ImageResPlus":Landroid/widget/Button;
-    .end local v11    # "FinalWidth":Landroid/widget/EditText;
+    .end local v13    # "FinalWidth":Landroid/widget/EditText;
     .local v16, "ImageResPlus":Landroid/widget/Button;
     .local v40, "FinalWidth":Landroid/widget/EditText;
     move-object v7, v10
@@ -3236,14 +3288,14 @@
 
     .end local v8    # "ImageHeight":Landroid/widget/EditText;
     .local v41, "ImageHeight":Landroid/widget/EditText;
-    move-object/from16 v8, v32
+    move-object/from16 v8, v33
 
     invoke-direct/range {v0 .. v8}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda5;-><init>(Lcom/offsec/nethunter/SettingsFragment;Landroid/widget/CheckBox;Landroid/widget/EditText;Landroid/widget/EditText;[Ljava/lang/String;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;)V
 
-    invoke-direct {v9, v15, v0}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
+    invoke-direct {v9, v12, v11}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
 
-    .line 413
-    const v0, 0x7f0a0434
+    .line 417
+    const v0, 0x7f0a0463
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3251,19 +3303,19 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 414
+    .line 418
     .local v0, "InstallBootAnimationButton":Landroid/widget/Button;
     new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda6;
 
-    move-object/from16 v3, v30
-
-    move-object/from16 v2, v33
+    move-object/from16 v3, v34
 
     move-object/from16 v4, v35
 
-    .end local v30    # "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
-    .end local v33    # "BootanimationPath":Landroid/widget/EditText;
+    move-object/from16 v2, v36
+
+    .end local v34    # "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     .end local v35    # "bootanimation_mount":Ljava/lang/String;
+    .end local v36    # "BootanimationPath":Landroid/widget/EditText;
     .local v2, "BootanimationPath":Landroid/widget/EditText;
     .local v3, "exe":Lcom/offsec/nethunter/utils/ShellExecuter;
     .local v4, "bootanimation_mount":Ljava/lang/String;
@@ -3271,8 +3323,8 @@
 
     invoke-direct {v9, v0, v1}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
 
-    .line 433
-    const v1, 0x7f0a009b
+    .line 437
+    const v1, 0x7f0a00ab
 
     invoke-virtual {v14, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3280,7 +3332,7 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    .line 434
+    .line 438
     .local v1, "BackupButton":Landroid/widget/Button;
     new-instance v5, Ljava/text/SimpleDateFormat;
 
@@ -3292,7 +3344,7 @@
 
     invoke-direct {v5, v6, v7}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 435
+    .line 439
     .local v5, "sdf":Ljava/text/SimpleDateFormat;
     new-instance v6, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda7;
 
@@ -3300,8 +3352,8 @@
 
     invoke-direct {v9, v1, v6}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
 
-    .line 442
-    const v6, 0x7f0a03f3
+    .line 446
+    const v6, 0x7f0a041d
 
     invoke-virtual {v14, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3309,9 +3361,9 @@
 
     check-cast v6, Landroid/widget/EditText;
 
-    .line 443
+    .line 447
     .local v6, "RestoreFileName":Landroid/widget/EditText;
-    const v7, 0x7f0a03f2
+    const v7, 0x7f0a041c
 
     invoke-virtual {v14, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3319,7 +3371,7 @@
 
     check-cast v7, Landroid/widget/Button;
 
-    .line 444
+    .line 448
     .local v7, "RestoreFileBrowse":Landroid/widget/Button;
     new-instance v8, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda8;
 
@@ -3327,8 +3379,8 @@
 
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 452
-    const v8, 0x7f0a03f1
+    .line 456
+    const v8, 0x7f0a041b
 
     invoke-virtual {v14, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3336,7 +3388,7 @@
 
     check-cast v8, Landroid/widget/Button;
 
-    .line 453
+    .line 457
     .local v8, "RestoreButton":Landroid/widget/Button;
     new-instance v11, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda13;
 
@@ -3344,8 +3396,8 @@
 
     invoke-virtual {v8, v11}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 465
-    const v11, 0x7f0a0507
+    .line 469
+    const v11, 0x7f0a0545
 
     invoke-virtual {v14, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3353,101 +3405,99 @@
 
     check-cast v11, Landroid/widget/Button;
 
-    .line 466
+    .line 470
     .local v11, "UninstallButton":Landroid/widget/Button;
-    move-object/from16 v31, v0
+    new-instance v13, Ljava/io/File;
+
+    move-object/from16 v35, v0
 
     .end local v0    # "InstallBootAnimationButton":Landroid/widget/Button;
-    .local v31, "InstallBootAnimationButton":Landroid/widget/Button;
-    new-instance v0, Ljava/io/File;
+    .local v35, "InstallBootAnimationButton":Landroid/widget/Button;
+    const-string v0, "/system/app/NetHunter/NetHunter.apk"
 
-    move-object/from16 v33, v1
+    invoke-direct {v13, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    move-object v0, v13
+
+    .line 471
+    .local v0, "NhSystemApp":Ljava/io/File;
+    new-instance v13, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda14;
+
+    invoke-direct {v13, v9, v0}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda14;-><init>(Lcom/offsec/nethunter/SettingsFragment;Ljava/io/File;)V
+
+    invoke-direct {v9, v11, v13}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
+
+    .line 481
+    const v13, 0x7f0a045b
+
+    invoke-virtual {v14, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v13
+
+    check-cast v13, Landroid/widget/CheckBox;
+
+    .line 482
+    .local v13, "SELinuxOnBoot":Landroid/widget/CheckBox;
+    move-object/from16 v36, v0
+
+    .end local v0    # "NhSystemApp":Ljava/io/File;
+    .local v36, "NhSystemApp":Ljava/io/File;
+    iget-object v0, v9, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
+
+    move-object/from16 v42, v1
 
     .end local v1    # "BackupButton":Landroid/widget/Button;
-    .local v33, "BackupButton":Landroid/widget/Button;
-    const-string v1, "/system/app/NetHunter/NetHunter.apk"
+    .local v42, "BackupButton":Landroid/widget/Button;
+    const-string v1, "SELinuxOnBoot"
 
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    move-object/from16 v43, v2
 
-    .line 467
-    .local v0, "NhSystemApp":Ljava/io/File;
-    new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda14;
+    .end local v2    # "BootanimationPath":Landroid/widget/EditText;
+    .local v43, "BootanimationPath":Landroid/widget/EditText;
+    const/4 v2, 0x1
 
-    invoke-direct {v1, v9, v0}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda14;-><init>(Lcom/offsec/nethunter/SettingsFragment;Ljava/io/File;)V
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
-    invoke-direct {v9, v11, v1}, Lcom/offsec/nethunter/SettingsFragment;->addClickListener(Landroid/widget/Button;Landroid/view/View$OnClickListener;)V
+    move-result v0
 
-    .line 477
-    const v1, 0x7f0a042e
+    .line 483
+    .local v0, "set_selinux_permissive_on_boot":Z
+    invoke-virtual {v13, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 484
+    new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda15;
+
+    invoke-direct {v1, v9}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda15;-><init>(Lcom/offsec/nethunter/SettingsFragment;)V
+
+    invoke-virtual {v13, v1}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 486
+    const v1, 0x7f0a0459
 
     invoke-virtual {v14, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    check-cast v1, Landroid/widget/CheckBox;
+    check-cast v1, Landroid/widget/TextView;
 
-    .line 478
-    .local v1, "SELinuxOnBoot":Landroid/widget/CheckBox;
-    move-object/from16 v35, v0
+    .line 487
+    .local v1, "SELinux":Landroid/widget/TextView;
+    const-string v2, "getenforce"
 
-    .end local v0    # "NhSystemApp":Ljava/io/File;
-    .local v35, "NhSystemApp":Ljava/io/File;
-    iget-object v0, v9, Lcom/offsec/nethunter/SettingsFragment;->sharedpreferences:Landroid/content/SharedPreferences;
-
-    move-object/from16 v42, v2
-
-    .end local v2    # "BootanimationPath":Landroid/widget/EditText;
-    .local v42, "BootanimationPath":Landroid/widget/EditText;
-    const-string v2, "SELinuxOnBoot"
-
-    move-object/from16 v43, v4
-
-    .end local v4    # "bootanimation_mount":Ljava/lang/String;
-    .local v43, "bootanimation_mount":Ljava/lang/String;
-    const/4 v4, 0x1
-
-    invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    .line 479
-    .local v0, "set_selinux_permissive_on_boot":Z
-    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
-
-    .line 480
-    new-instance v2, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda15;
-
-    invoke-direct {v2, v9}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda15;-><init>(Lcom/offsec/nethunter/SettingsFragment;)V
-
-    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
-
-    .line 482
-    const v2, 0x7f0a042c
-
-    invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v3, v2}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    check-cast v2, Landroid/widget/TextView;
+    .line 488
+    .local v2, "selinux_status":Ljava/lang/String;
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 483
-    .local v2, "SELinux":Landroid/widget/TextView;
-    const-string v4, "getenforce"
-
-    invoke-virtual {v3, v4}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 484
-    .local v4, "selinux_status":Ljava/lang/String;
-    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 485
+    .line 489
     move/from16 v45, v0
 
     .end local v0    # "set_selinux_permissive_on_boot":Z
     .local v45, "set_selinux_permissive_on_boot":Z
-    const v0, 0x7f0a042d
+    const v0, 0x7f0a045a
 
     invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3455,73 +3505,73 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 486
+    .line 490
     .local v0, "SELinuxButton":Landroid/widget/Button;
-    move-object/from16 v46, v1
+    move-object/from16 v46, v4
 
-    .end local v1    # "SELinuxOnBoot":Landroid/widget/CheckBox;
-    .local v46, "SELinuxOnBoot":Landroid/widget/CheckBox;
-    const-string v1, "Permissive"
+    .end local v4    # "bootanimation_mount":Ljava/lang/String;
+    .local v46, "bootanimation_mount":Ljava/lang/String;
+    const-string v4, "Permissive"
 
-    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v4
 
     const-string v47, "#40FFFFFF"
 
-    if-eqz v1, :cond_5
+    if-eqz v4, :cond_6
 
-    const-string v1, "Set to Enforcing"
+    const-string v4, "Set to Enforcing"
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 487
-    :cond_5
-    const-string v1, "Disabled"
+    .line 491
+    :cond_6
+    const-string v4, "Disabled"
 
-    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v4
 
-    if-eqz v1, :cond_6
-
-    .line 488
-    const-string v1, "SELinux is Disabled"
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
-
-    .line 489
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
-
-    .line 490
-    invoke-static/range {v47 .. v47}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
-
-    goto :goto_2
+    if-eqz v4, :cond_7
 
     .line 492
-    :cond_6
-    const-string v1, "Set to Permissive"
+    const-string v4, "SELinux is Disabled"
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    .line 493
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 494
-    :goto_2
-    new-instance v1, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda16;
+    invoke-static/range {v47 .. v47}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
-    invoke-direct {v1, v9, v3, v0, v2}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda16;-><init>(Lcom/offsec/nethunter/SettingsFragment;Lcom/offsec/nethunter/utils/ShellExecuter;Landroid/widget/Button;Landroid/widget/TextView;)V
+    move-result v4
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 512
-    new-instance v1, Ljava/io/File;
+    goto :goto_3
+
+    .line 496
+    :cond_7
+    const-string v4, "Set to Permissive"
+
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    .line 498
+    :goto_3
+    new-instance v4, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda16;
+
+    invoke-direct {v4, v9, v3, v0, v1}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda16;-><init>(Lcom/offsec/nethunter/SettingsFragment;Lcom/offsec/nethunter/utils/ShellExecuter;Landroid/widget/Button;Landroid/widget/TextView;)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 516
+    new-instance v4, Ljava/io/File;
 
     move-object/from16 v48, v0
 
@@ -3529,58 +3579,58 @@
     .local v48, "SELinuxButton":Landroid/widget/Button;
     sget-object v0, Lcom/offsec/nethunter/utils/NhPaths;->BUSYBOX:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     sget-object v0, Lcom/offsec/nethunter/utils/NhPaths;->BUSYBOX:Ljava/lang/String;
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_7
+    :cond_8
     const-string v0, "/system/bin/busybox"
 
-    .line 513
+    .line 517
     .local v0, "busyboxPath":Ljava/lang/String;
-    :goto_3
-    new-instance v1, Ljava/io/File;
+    :goto_4
+    new-instance v4, Ljava/io/File;
 
-    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 514
-    .local v1, "busyboxFile":Ljava/io/File;
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    .line 518
+    .local v4, "busyboxFile":Ljava/io/File;
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v49
 
-    if-nez v49, :cond_8
+    if-nez v49, :cond_9
 
-    .line 515
+    .line 519
     const-string v0, "/system/bin/busybox"
 
-    .line 516
+    .line 520
     move-object/from16 v49, v1
 
-    .end local v1    # "busyboxFile":Ljava/io/File;
-    .local v49, "busyboxFile":Ljava/io/File;
+    .end local v1    # "SELinux":Landroid/widget/TextView;
+    .local v49, "SELinux":Landroid/widget/TextView;
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    goto :goto_4
+    goto :goto_5
 
-    .line 518
-    .end local v49    # "busyboxFile":Ljava/io/File;
-    .restart local v1    # "busyboxFile":Ljava/io/File;
-    :cond_8
+    .line 522
+    .end local v49    # "SELinux":Landroid/widget/TextView;
+    .restart local v1    # "SELinux":Landroid/widget/TextView;
+    :cond_9
     move-object/from16 v49, v1
 
-    .end local v1    # "busyboxFile":Ljava/io/File;
-    .restart local v49    # "busyboxFile":Ljava/io/File;
+    .end local v1    # "SELinux":Landroid/widget/TextView;
+    .restart local v49    # "SELinux":Landroid/widget/TextView;
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3605,10 +3655,10 @@
 
     move-result-object v0
 
-    .line 521
+    .line 525
     .end local v50    # "busyboxPath":Ljava/lang/String;
     .restart local v0    # "busyboxPath":Ljava/lang/String;
-    :goto_4
+    :goto_5
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -3617,9 +3667,9 @@
 
     move-result v1
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_a
 
-    .line 522
+    .line 526
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3630,8 +3680,8 @@
 
     move-object/from16 v50, v2
 
-    .end local v2    # "SELinux":Landroid/widget/TextView;
-    .local v50, "SELinux":Landroid/widget/TextView;
+    .end local v2    # "selinux_status":Ljava/lang/String;
+    .local v50, "selinux_status":Ljava/lang/String;
     const-string v2, " | head -n1 | cut -c 10-13"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -3646,24 +3696,24 @@
 
     move-result-object v1
 
-    goto :goto_5
+    goto :goto_6
 
-    .line 523
-    .end local v50    # "SELinux":Landroid/widget/TextView;
-    .restart local v2    # "SELinux":Landroid/widget/TextView;
-    :cond_9
+    .line 527
+    .end local v50    # "selinux_status":Ljava/lang/String;
+    .restart local v2    # "selinux_status":Ljava/lang/String;
+    :cond_a
     move-object/from16 v50, v2
 
-    .end local v2    # "SELinux":Landroid/widget/TextView;
-    .restart local v50    # "SELinux":Landroid/widget/TextView;
+    .end local v2    # "selinux_status":Ljava/lang/String;
+    .restart local v50    # "selinux_status":Ljava/lang/String;
     const-string v1, "N/A"
 
-    :goto_5
+    :goto_6
     nop
 
-    .line 524
+    .line 528
     .local v1, "busybox_ver":Ljava/lang/String;
-    const v2, 0x7f0a00e4
+    const v2, 0x7f0a00ec
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3671,11 +3721,11 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 525
+    .line 529
     .local v2, "BusyboxVersion":Landroid/widget/TextView;
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 527
+    .line 531
     const/16 v17, 0x0
 
     filled-new-array/range {v17 .. v17}, [Ljava/lang/String;
@@ -3684,7 +3734,7 @@
 
     move-object/from16 v51, v17
 
-    .line 530
+    .line 534
     .local v51, "busybox_file":[Ljava/lang/String;
     move-object/from16 v17, v1
 
@@ -3698,7 +3748,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_b
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3736,31 +3786,31 @@
 
     move-result-object v1
 
-    goto :goto_6
+    goto :goto_7
 
     .end local v52    # "BusyboxVersion":Landroid/widget/TextView;
     .restart local v2    # "BusyboxVersion":Landroid/widget/TextView;
-    :cond_a
+    :cond_b
     move-object/from16 v52, v2
 
     .end local v2    # "BusyboxVersion":Landroid/widget/TextView;
     .restart local v52    # "BusyboxVersion":Landroid/widget/TextView;
     const-string v1, "echo \'\'"
 
-    .line 531
+    .line 535
     .local v1, "commandBB":Ljava/lang/String;
-    :goto_6
+    :goto_7
     invoke-virtual {v3, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->RunAsRootOutput(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 532
+    .line 536
     .local v2, "outputBB":Ljava/lang/String;
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v53
 
-    if-eqz v53, :cond_b
+    if-eqz v53, :cond_c
 
     move-object/from16 v53, v1
 
@@ -3769,38 +3819,38 @@
     const/4 v1, 0x0
 
     .end local v1    # "commandBB":Ljava/lang/String;
-    .end local v4    # "selinux_status":Ljava/lang/String;
+    .end local v4    # "busyboxFile":Ljava/io/File;
     .local v53, "commandBB":Ljava/lang/String;
-    .local v54, "selinux_status":Ljava/lang/String;
+    .local v54, "busyboxFile":Ljava/io/File;
     new-array v4, v1, [Ljava/lang/String;
 
-    goto :goto_7
+    goto :goto_8
 
     .end local v53    # "commandBB":Ljava/lang/String;
-    .end local v54    # "selinux_status":Ljava/lang/String;
+    .end local v54    # "busyboxFile":Ljava/io/File;
     .restart local v1    # "commandBB":Ljava/lang/String;
-    .restart local v4    # "selinux_status":Ljava/lang/String;
-    :cond_b
+    .restart local v4    # "busyboxFile":Ljava/io/File;
+    :cond_c
     move-object/from16 v53, v1
 
     move-object/from16 v54, v4
 
     .end local v1    # "commandBB":Ljava/lang/String;
-    .end local v4    # "selinux_status":Ljava/lang/String;
+    .end local v4    # "busyboxFile":Ljava/io/File;
     .restart local v53    # "commandBB":Ljava/lang/String;
-    .restart local v54    # "selinux_status":Ljava/lang/String;
+    .restart local v54    # "busyboxFile":Ljava/io/File;
     const-string v1, "\n"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v4
 
-    :goto_7
+    :goto_8
     move-object v1, v4
 
-    .line 533
+    .line 537
     .local v1, "bbArray":[Ljava/lang/String;
-    const v4, 0x7f0a00b1
+    const v4, 0x7f0a00c1
 
     invoke-virtual {v14, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3808,7 +3858,7 @@
 
     check-cast v4, Landroid/widget/Spinner;
 
-    .line 534
+    .line 538
     .local v4, "busybox_spinner":Landroid/widget/Spinner;
     move-object/from16 v55, v2
 
@@ -3832,11 +3882,11 @@
     .local v57, "RestoreFileName":Landroid/widget/EditText;
     invoke-direct {v2, v5, v6, v1}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    .line 535
+    .line 539
     .local v2, "usersadapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/String;>;"
     invoke-virtual {v4, v2}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 538
+    .line 542
     new-instance v5, Lcom/offsec/nethunter/SettingsFragment$3;
 
     move-object/from16 v6, v51
@@ -3847,8 +3897,8 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 554
-    const v5, 0x7f0a0428
+    .line 558
+    const v5, 0x7f0a0455
 
     invoke-virtual {v14, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3856,11 +3906,11 @@
 
     check-cast v5, Landroid/widget/Button;
 
-    .line 555
+    .line 559
     .local v5, "BusyboxButton":Landroid/widget/Button;
     move-object/from16 v51, v0
 
-    .line 556
+    .line 560
     .local v51, "finalBusyboxPath":Ljava/lang/String;
     move-object/from16 v58, v1
 
@@ -3879,8 +3929,8 @@
 
     invoke-virtual {v5, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 567
-    const v1, 0x7f0a04aa
+    .line 571
+    const v1, 0x7f0a04e4
 
     invoke-virtual {v14, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3888,7 +3938,7 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    .line 568
+    .line 572
     .local v1, "BusyboxSystemButton":Landroid/widget/Button;
     nop
 
@@ -3920,20 +3970,20 @@
 
     move-result-object v0
 
-    .line 569
+    .line 573
     .local v0, "busybox_system":Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
 
-    if-eqz v2, :cond_c
+    if-eqz v2, :cond_d
 
-    .line 570
+    .line 574
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 571
+    .line 575
     const-string v2, "#FFFFFFFF"
 
     invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
@@ -3942,31 +3992,31 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
-    goto :goto_8
+    goto :goto_9
 
-    .line 573
-    :cond_c
+    .line 577
+    :cond_d
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 574
+    .line 578
     invoke-static/range {v47 .. v47}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 576
-    :goto_8
+    .line 580
+    :goto_9
     new-instance v2, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda18;
 
     invoke-direct {v2, v9, v3}, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda18;-><init>(Lcom/offsec/nethunter/SettingsFragment;Lcom/offsec/nethunter/utils/ShellExecuter;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 582
-    const v2, 0x7f0a03d8
+    .line 586
+    const v2, 0x7f0a0400
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3974,7 +4024,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 583
+    .line 587
     .local v2, "TerminalStyle":Landroid/widget/TextView;
     move-object/from16 v18, v0
 
@@ -4008,12 +4058,12 @@
 
     move-result-object v0
 
-    .line 584
+    .line 588
     .local v0, "current_prompt":Ljava/lang/String;
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 587
-    const v1, 0x7f0a03d7
+    .line 591
+    const v1, 0x7f0a03ff
 
     invoke-virtual {v14, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4021,7 +4071,7 @@
 
     check-cast v1, Landroid/widget/Spinner;
 
-    .line 588
+    .line 592
     .local v1, "PromptSpinner":Landroid/widget/Spinner;
     move-object/from16 v47, v0
 
@@ -4045,7 +4095,7 @@
 
     move-result-object v0
 
-    .line 589
+    .line 593
     .local v0, "Prompts":[Ljava/lang/String;
     new-instance v4, Landroid/widget/ArrayAdapter;
 
@@ -4063,15 +4113,15 @@
 
     invoke-virtual {v1, v4}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    .line 593
+    .line 597
     new-instance v4, Lcom/offsec/nethunter/SettingsFragment$4;
 
     invoke-direct {v4, v9}, Lcom/offsec/nethunter/SettingsFragment$4;-><init>(Lcom/offsec/nethunter/SettingsFragment;)V
 
     invoke-virtual {v1, v4}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 605
-    const v4, 0x7f0a0088
+    .line 609
+    const v4, 0x7f0a0094
 
     invoke-virtual {v14, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4079,7 +4129,7 @@
 
     check-cast v4, Landroid/widget/Button;
 
-    .line 606
+    .line 610
     .local v4, "ApplyPromptButton":Landroid/widget/Button;
     new-instance v5, Lcom/offsec/nethunter/SettingsFragment$$ExternalSyntheticLambda19;
 
@@ -4087,7 +4137,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 612
+    .line 616
     return-object v14
 .end method
 
@@ -4124,20 +4174,20 @@
     .locals 2
     .param p1, "cmd"    # Ljava/lang/String;
 
-    .line 670
+    .line 674
     const-string v0, "/data/data/com.offsec.nhterm/files/usr/bin/kali"
 
     invoke-static {v0, p1}, Lcom/offsec/nethunter/bridge/Bridge;->createExecuteIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 671
+    .line 675
     .local v0, "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment;->activity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 672
+    .line 676
     return-void
 .end method
 
@@ -4145,19 +4195,19 @@
     .locals 2
     .param p1, "cmd"    # Ljava/lang/String;
 
-    .line 675
+    .line 679
     const-string v0, "/data/data/com.offsec.nhterm/files/usr/bin/android-su"
 
     invoke-static {v0, p1}, Lcom/offsec/nethunter/bridge/Bridge;->createExecuteIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 676
+    .line 680
     .local v0, "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/offsec/nethunter/SettingsFragment;->activity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 677
+    .line 681
     return-void
 .end method

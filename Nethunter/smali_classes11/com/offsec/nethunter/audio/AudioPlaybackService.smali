@@ -23,7 +23,7 @@
 
 .field public static final KEY_TARGET_LATENCY:Ljava/lang/String; = "buffer_ms_behind"
 
-.field private static final NOTIFICATION:I = 0x7f130272
+.field private static final NOTIFICATION:I = 0x7f130274
 
 
 # instance fields
@@ -161,7 +161,7 @@
 
     .line 291
     .local v0, "contentIntent":Landroid/app/PendingIntent;
-    const v1, 0x7f1300ba
+    const v1, 0x7f1300bd
 
     .line 292
     .local v1, "buttonResId":I
@@ -184,7 +184,7 @@
 
     .line 307
     :pswitch_0
-    const v3, 0x7f130277
+    const v3, 0x7f130279
 
     .line 308
     .local v3, "statusResId":I
@@ -193,7 +193,7 @@
     .line 304
     .end local v3    # "statusResId":I
     :pswitch_1
-    const v3, 0x7f130274
+    const v3, 0x7f130276
 
     .line 305
     .restart local v3    # "statusResId":I
@@ -202,7 +202,7 @@
     .line 301
     .end local v3    # "statusResId":I
     :pswitch_2
-    const v3, 0x7f130273
+    const v3, 0x7f130275
 
     .line 302
     .restart local v3    # "statusResId":I
@@ -211,7 +211,7 @@
     .line 298
     .end local v3    # "statusResId":I
     :pswitch_3
-    const v3, 0x7f130275
+    const v3, 0x7f130277
 
     .line 299
     .restart local v3    # "statusResId":I
@@ -220,11 +220,11 @@
     .line 294
     .end local v3    # "statusResId":I
     :pswitch_4
-    const v3, 0x7f130276
+    const v3, 0x7f130278
 
     .line 295
     .restart local v3    # "statusResId":I
-    const v1, 0x7f1300b8
+    const v1, 0x7f1300bb
 
     .line 296
     nop
@@ -241,7 +241,7 @@
 
     aput-object v4, v6, v2
 
-    const v2, 0x7f130272
+    const v2, 0x7f130274
 
     invoke-virtual {p0, v2, v6}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -255,7 +255,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d00af
+    const v7, 0x7f0d00b0
 
     invoke-direct {v4, v6, v7}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -265,7 +265,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0a04e9
+    const v7, 0x7f0a0525
 
     invoke-virtual {v4, v7, v6}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
@@ -275,14 +275,14 @@
     invoke-virtual {v4, v7, v6}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 318
-    const v6, 0x7f0a0120
+    const v6, 0x7f0a012e
 
     invoke-virtual {v4, v6, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 319
     new-instance v6, Landroidx/core/app/NotificationCompat$Builder;
 
-    const v7, 0x7f130297
+    const v7, 0x7f130299
 
     invoke-virtual {p0, v7}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
     move-result-object v6
 
     .line 321
-    const v7, 0x7f130271
+    const v7, 0x7f130273
 
     invoke-virtual {p0, v7}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->getText(I)Ljava/lang/CharSequence;
 
@@ -317,7 +317,7 @@
     move-result-object v6
 
     .line 324
-    const v7, 0x7f0800d8
+    const v7, 0x7f0800da
 
     invoke-virtual {v6, v7}, Landroidx/core/app/NotificationCompat$Builder;->setSmallIcon(I)Landroidx/core/app/NotificationCompat$Builder;
 
@@ -425,7 +425,7 @@
     .line 261
     iget-object v0, p0, Lcom/offsec/nethunter/audio/AudioPlaybackService;->notifManager:Landroid/app/NotificationManager;
 
-    const v1, 0x7f130272
+    const v1, 0x7f130274
 
     invoke-direct {p0, p1}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->createNotification(Lcom/offsec/nethunter/audio/AudioPlayState;)Landroid/app/Notification;
 
@@ -784,7 +784,7 @@
 
     .line 74
     .local v0, "intent":Landroid/content/Intent;
-    const v1, 0x7f0a02d4
+    const v1, 0x7f0a02e8
 
     const/high16 v2, 0x4000000
 
@@ -831,14 +831,14 @@
     new-instance v3, Landroid/app/NotificationChannel;
 
     .line 83
-    const v4, 0x7f130297
+    const v4, 0x7f130299
 
     invoke-virtual {p0, v4}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     .line 84
-    const v5, 0x7f130271
+    const v5, 0x7f130273
 
     invoke-virtual {p0, v5}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->getString(I)Ljava/lang/String;
 
@@ -925,7 +925,7 @@
     .line 122
     iget-object v2, p0, Lcom/offsec/nethunter/audio/AudioPlaybackService;->notifManager:Landroid/app/NotificationManager;
 
-    const v3, 0x7f130272
+    const v3, 0x7f130274
 
     invoke-virtual {v2, v3}, Landroid/app/NotificationManager;->cancel(I)V
 
@@ -1178,7 +1178,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f130272
+    const v1, 0x7f130274
 
     invoke-virtual {p0, v1, v0}, Lcom/offsec/nethunter/audio/AudioPlaybackService;->startForeground(ILandroid/app/Notification;)V
 
@@ -1361,7 +1361,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f130272
+    const v2, 0x7f130274
 
     invoke-virtual {v0, v2, v1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 

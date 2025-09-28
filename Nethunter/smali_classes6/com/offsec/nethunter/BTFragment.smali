@@ -541,7 +541,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0a02ce
+    const v3, 0x7f0a02e2
 
     invoke-virtual {v0, v3}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -605,7 +605,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0a018a
+    const v2, 0x7f0a019d
 
     invoke-virtual {v0, v2}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -761,7 +761,7 @@
 
     .line 85
     .local v2, "tabsPagerAdapter":Lcom/offsec/nethunter/BTFragment$TabsPagerAdapter;
-    const v3, 0x7f0a03a6
+    const v3, 0x7f0a03ce
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -838,7 +838,7 @@
 
     .line 110
     .local v1, "id":I
-    const v2, 0x7f0a043f
+    const v2, 0x7f0a046e
 
     const/4 v3, 0x1
 
@@ -865,7 +865,7 @@
 
     .line 114
     :cond_1
-    const v2, 0x7f0a050a
+    const v2, 0x7f0a0548
 
     if-ne v1, v2, :cond_3
 

@@ -377,7 +377,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 208
-    const v0, 0x7f0a0415
+    const v0, 0x7f0a0440
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -400,7 +400,7 @@
 
     .line 210
     .local v0, "exploitCount":Ljava/lang/Long;
-    const v1, 0x7f0a0432
+    const v1, 0x7f0a045f
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -420,7 +420,7 @@
 
     const/4 v7, 0x0
 
-    const v8, 0x7f0a041c
+    const v8, 0x7f0a0447
 
     cmp-long v9, v2, v4
 
@@ -471,7 +471,7 @@
 
     .line 223
     .local v2, "platformList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
-    const v3, 0x7f0a019a
+    const v3, 0x7f0a01ad
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -514,7 +514,7 @@
 
     .line 240
     .local v7, "typeList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
-    const v8, 0x7f0a019b
+    const v8, 0x7f0a01ae
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1209,7 +1209,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a041c
+    const v1, 0x7f0a0447
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1293,7 +1293,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 78
-    const v0, 0x7f0d00d4
+    const v0, 0x7f0d00d5
 
     const/4 v1, 0x0
 
@@ -1354,7 +1354,7 @@
     invoke-virtual {v1}, Landroidx/appcompat/app/AlertDialog;->show()V
 
     .line 90
-    const v1, 0x7f0a0388
+    const v1, 0x7f0a03ae
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1365,7 +1365,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/SearchSploitFragment;->numex:Landroid/widget/TextView;
 
     .line 91
-    const v1, 0x7f0a0416
+    const v1, 0x7f0a0441
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1382,7 +1382,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/SearchView;->setOnQueryTextListener(Landroid/widget/SearchView$OnQueryTextListener;)V
 
     .line 115
-    const v3, 0x7f0a0432
+    const v3, 0x7f0a045f
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1392,7 +1392,7 @@
 
     .line 116
     .local v3, "searchSearchSploit":Landroid/widget/Button;
-    const v4, 0x7f0a03d2
+    const v4, 0x7f0a03fa
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1434,7 +1434,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a03db
+    const v1, 0x7f0a0403
 
     if-ne v0, v1, :cond_3
 
@@ -1473,7 +1473,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0a041c
+    const v3, 0x7f0a0447
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

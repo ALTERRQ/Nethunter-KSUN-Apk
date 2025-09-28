@@ -297,7 +297,7 @@
     .end annotation
 
     .line 54
-    const v0, -0x3361d2af    # -8.2930312E7f
+    const v0, -0x3361d2af    # -8.293031E7f
 
     mul-int v0, v0, p0
 

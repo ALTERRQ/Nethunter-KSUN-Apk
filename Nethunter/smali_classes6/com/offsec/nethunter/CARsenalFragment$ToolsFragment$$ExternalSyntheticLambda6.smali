@@ -9,9 +9,17 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
+.field public final synthetic f$1:Landroid/content/SharedPreferences;
+
+.field public final synthetic f$2:Landroid/widget/EditText;
+
+.field public final synthetic f$3:Landroid/widget/EditText;
+
+.field public final synthetic f$4:Landroid/widget/EditText;
+
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Landroid/content/SharedPreferences;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;)V
     .locals 0
 
     .line 0
@@ -19,18 +27,36 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$1:Landroid/content/SharedPreferences;
+
+    iput-object p3, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$2:Landroid/widget/EditText;
+
+    iput-object p4, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$3:Landroid/widget/EditText;
+
+    iput-object p5, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$4:Landroid/widget/EditText;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final onLongClick(Landroid/view/View;)Z
-    .locals 1
+    .locals 6
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$23$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/view/View;)Z
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$1:Landroid/content/SharedPreferences;
+
+    iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$2:Landroid/widget/EditText;
+
+    iget-object v3, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$3:Landroid/widget/EditText;
+
+    iget-object v4, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda6;->f$4:Landroid/widget/EditText;
+
+    move-object v5, p1
+
+    invoke-virtual/range {v0 .. v5}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$23$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/content/SharedPreferences;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/view/View;)Z
 
     move-result p1
 

@@ -132,7 +132,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 98
-    const v0, 0x7f0a03c1
+    const v0, 0x7f0a03e9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -142,7 +142,7 @@
 
     .line 101
     .local v0, "port":Landroid/widget/EditText;
-    const v1, 0x7f0a03bc
+    const v1, 0x7f0a03e4
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -152,7 +152,7 @@
 
     .line 104
     .local v1, "gateway_ip":Landroid/widget/EditText;
-    const v2, 0x7f0a03ba
+    const v2, 0x7f0a03e2
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -162,7 +162,7 @@
 
     .line 107
     .local v2, "web_ip":Landroid/widget/EditText;
-    const v3, 0x7f0a03b9
+    const v3, 0x7f0a03e1
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -447,7 +447,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 44
-    const v0, 0x7f0d00c1
+    const v0, 0x7f0d00c2
 
     const/4 v1, 0x0
 
@@ -474,7 +474,7 @@
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 50
-    const v2, 0x7f0a03be
+    const v2, 0x7f0a03e6
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -493,7 +493,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 61
-    const v4, 0x7f0a03c0
+    const v4, 0x7f0a03e8
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -517,7 +517,7 @@
 
     invoke-direct {v5, p0, v0}, Lcom/offsec/nethunter/PineappleFragment$$ExternalSyntheticLambda4;-><init>(Lcom/offsec/nethunter/PineappleFragment;Landroid/view/View;)V
 
-    const v6, 0x7f0a03bf
+    const v6, 0x7f0a03e7
 
     invoke-direct {p0, v6, v5, v0}, Lcom/offsec/nethunter/PineappleFragment;->addClickListener(ILandroid/view/View$OnClickListener;Landroid/view/View;)V
 
@@ -526,7 +526,7 @@
 
     invoke-direct {v5, p0}, Lcom/offsec/nethunter/PineappleFragment$$ExternalSyntheticLambda5;-><init>(Lcom/offsec/nethunter/PineappleFragment;)V
 
-    const v6, 0x7f0a03bb
+    const v6, 0x7f0a03e3
 
     invoke-direct {p0, v6, v5, v0}, Lcom/offsec/nethunter/PineappleFragment;->addClickListener(ILandroid/view/View$OnClickListener;Landroid/view/View;)V
 

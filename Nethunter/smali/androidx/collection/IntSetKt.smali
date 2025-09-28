@@ -97,7 +97,7 @@
 
     .line 849
     .local v0, "$i$f$hash":I
-    const v1, -0x3361d2af    # -8.2930312E7f
+    const v1, -0x3361d2af    # -8.293031E7f
 
     mul-int v1, v1, p0
 

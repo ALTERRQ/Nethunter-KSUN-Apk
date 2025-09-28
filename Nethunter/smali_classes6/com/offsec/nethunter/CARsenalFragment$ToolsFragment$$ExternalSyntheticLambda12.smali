@@ -9,13 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-.field public final synthetic f$1:Ljava/lang/String;
-
-.field public final synthetic f$2:Ljava/lang/String;
+.field public final synthetic f$1:Landroid/widget/EditText;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Landroid/widget/EditText;)V
     .locals 0
 
     .line 0
@@ -23,9 +21,7 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$1:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$2:Ljava/lang/String;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$1:Landroid/widget/EditText;
 
     return-void
 .end method
@@ -33,16 +29,14 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 2
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$1:Ljava/lang/String;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$1:Landroid/widget/EditText;
 
-    iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda12;->f$2:Ljava/lang/String;
-
-    invoke-virtual {v0, v1, v2, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$28$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Ljava/lang/String;Ljava/lang/String;Landroid/view/View;)V
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$28$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/widget/EditText;Landroid/view/View;)V
 
     return-void
 .end method

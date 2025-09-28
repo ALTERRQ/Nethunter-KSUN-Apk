@@ -9,11 +9,9 @@
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-.field public final synthetic f$1:Lcom/google/android/material/textfield/TextInputEditText;
-
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Lcom/google/android/material/textfield/TextInputEditText;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;)V
     .locals 0
 
     .line 0
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda19;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda19;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda19;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda19;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
-
-    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$6$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Lcom/google/android/material/textfield/TextInputEditText;Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$8$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/view/View;)V
 
     return-void
 .end method

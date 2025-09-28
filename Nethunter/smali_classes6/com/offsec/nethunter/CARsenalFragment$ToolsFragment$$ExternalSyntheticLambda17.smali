@@ -3,17 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-.field public final synthetic f$1:Landroidx/appcompat/widget/SwitchCompat;
+.field public final synthetic f$1:Landroid/content/SharedPreferences;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Landroidx/appcompat/widget/SwitchCompat;)V
+.method public synthetic constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;Landroid/content/SharedPreferences;)V
     .locals 0
 
     .line 0
@@ -21,22 +21,22 @@
 
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$1:Landroidx/appcompat/widget/SwitchCompat;
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$1:Landroid/content/SharedPreferences;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
     .line 0
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$0:Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$1:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda17;->f$1:Landroid/content/SharedPreferences;
 
-    invoke-virtual {v0, v1, p1, p2}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$4$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroidx/appcompat/widget/SwitchCompat;Landroid/widget/CompoundButton;Z)V
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$onCreateView$6$com-offsec-nethunter-CARsenalFragment$ToolsFragment(Landroid/content/SharedPreferences;Landroid/view/View;)V
 
     return-void
 .end method

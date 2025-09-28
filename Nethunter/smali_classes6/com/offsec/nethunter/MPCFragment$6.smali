@@ -113,7 +113,7 @@
     .local v5, "ip":Ljava/lang/String;
     iget-object v6, p0, Lcom/offsec/nethunter/MPCFragment$6;->val$rootView:Landroid/view/View;
 
-    const v7, 0x7f0a0339
+    const v7, 0x7f0a035e
 
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

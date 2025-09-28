@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final fragment_container_view_tag:I = 0x7f0a0280
+.field public static final fragment_container_view_tag:I = 0x7f0a0294
 
-.field public static final special_effects_controller_view_tag:I = 0x7f0a0455
+.field public static final special_effects_controller_view_tag:I = 0x7f0a0484
 
-.field public static final visible_removing_fragment_view_tag:I = 0x7f0a0524
+.field public static final visible_removing_fragment_view_tag:I = 0x7f0a0562
 
 
 # direct methods

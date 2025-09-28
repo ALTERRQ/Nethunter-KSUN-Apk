@@ -91,7 +91,7 @@
 
     .line 172
     .local v0, "id":I
-    const v1, 0x7f0a006e
+    const v1, 0x7f0a0070
 
     const/4 v2, 0x0
 
@@ -140,7 +140,7 @@
     .line 178
     .end local v1    # "msg":Ljava/lang/String;
     :cond_1
-    const v1, 0x7f0a005e
+    const v1, 0x7f0a005f
 
     const/4 v4, 0x0
 
@@ -157,7 +157,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d0054
+    const v5, 0x7f0d0055
 
     invoke-virtual {v1, v5, v4, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -187,7 +187,7 @@
 
     .line 184
     .local v2, "dialog":Landroidx/appcompat/app/AlertDialog;
-    const v4, 0x7f0a028e
+    const v4, 0x7f0a02a2
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -214,7 +214,7 @@
     .end local v2    # "dialog":Landroidx/appcompat/app/AlertDialog;
     .end local v4    # "closeButton":Landroid/widget/Button;
     :cond_2
-    const v1, 0x7f0a006a
+    const v1, 0x7f0a006b
 
     if-ne v0, v1, :cond_3
 
@@ -229,7 +229,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d0053
+    const v5, 0x7f0d0054
 
     invoke-virtual {v1, v5, v4, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -259,7 +259,7 @@
 
     .line 195
     .restart local v2    # "dialog":Landroidx/appcompat/app/AlertDialog;
-    const v4, 0x7f0a015c
+    const v4, 0x7f0a0169
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -286,6 +286,10 @@
     .end local v2    # "dialog":Landroidx/appcompat/app/AlertDialog;
     .end local v4    # "closeButton":Landroid/widget/Button;
     :cond_3
+    const v1, 0x7f0a0069
+
+    if-eq v0, v1, :cond_5
+
     const v1, 0x7f0a0068
 
     if-eq v0, v1, :cond_5
@@ -294,11 +298,7 @@
 
     if-eq v0, v1, :cond_5
 
-    const v1, 0x7f0a0066
-
-    if-eq v0, v1, :cond_5
-
-    const v1, 0x7f0a0064
+    const v1, 0x7f0a0065
 
     if-ne v0, v1, :cond_4
 
@@ -328,7 +328,7 @@
     .param p1, "menu"    # Landroid/view/Menu;
 
     .line 159
-    const v0, 0x7f0a006e
+    const v0, 0x7f0a0070
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -348,7 +348,7 @@
     if-eqz v1, :cond_0
 
     .line 162
-    const v1, 0x7f0800dc
+    const v1, 0x7f0800de
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -356,7 +356,7 @@
 
     .line 164
     :cond_0
-    const v1, 0x7f0800db
+    const v1, 0x7f0800dd
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

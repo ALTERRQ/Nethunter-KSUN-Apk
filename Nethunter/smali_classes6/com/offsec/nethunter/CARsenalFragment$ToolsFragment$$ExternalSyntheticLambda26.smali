@@ -3,34 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnShowListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic f$0:Landroid/app/AlertDialog;
+.field public final synthetic f$0:Landroid/view/View;
+
+.field public final synthetic f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/app/AlertDialog;)V
+.method public synthetic constructor <init>(Landroid/view/View;Lcom/google/android/material/textfield/TextInputEditText;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$0:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$0:Landroid/view/View;
+
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onShow(Landroid/content/DialogInterface;)V
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
 
     .line 0
-    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$0:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$0:Landroid/view/View;
 
-    invoke-static {v0, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$showEditCommandDialog$33(Landroid/app/AlertDialog;Landroid/content/DialogInterface;)V
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda26;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
+
+    invoke-static {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$showToolsConfig$30(Landroid/view/View;Lcom/google/android/material/textfield/TextInputEditText;Landroid/view/View;)V
 
     return-void
 .end method

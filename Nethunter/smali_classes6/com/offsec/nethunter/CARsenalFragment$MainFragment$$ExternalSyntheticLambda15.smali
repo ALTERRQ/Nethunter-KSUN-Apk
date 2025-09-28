@@ -36,7 +36,7 @@
 
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$MainFragment$$ExternalSyntheticLambda15;->f$1:[Ljava/lang/String;
 
-    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$MainFragment;->lambda$onCreateView$26$com-offsec-nethunter-CARsenalFragment$MainFragment([Ljava/lang/String;Landroid/view/View;)V
+    invoke-virtual {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$MainFragment;->lambda$onCreateView$25$com-offsec-nethunter-CARsenalFragment$MainFragment([Ljava/lang/String;Landroid/view/View;)V
 
     return-void
 .end method

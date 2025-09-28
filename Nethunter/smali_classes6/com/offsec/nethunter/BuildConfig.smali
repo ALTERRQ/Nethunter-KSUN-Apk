@@ -14,9 +14,9 @@
 
 .field public static final DEBUG:Z
 
-.field public static final VERSION_CODE:I = 0x78b35b28
+.field public static final VERSION_CODE:I = 0x78b46bd1
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "2025.3-rc1-dev"
+.field public static final VERSION_NAME:Ljava/lang/String; = "2025.4-dev"
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .line 15
     new-instance v0, Ljava/util/Date;
 
-    const-wide v1, 0x198fc26ac4dL
+    const-wide v1, 0x1995d1a9176L
 
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 

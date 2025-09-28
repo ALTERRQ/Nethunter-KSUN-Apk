@@ -191,7 +191,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0531
+    const v3, 0x7f0a0571
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -336,7 +336,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0531
+    const v2, 0x7f0a0571
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -375,7 +375,7 @@
 
     .line 479
     .local v0, "id":I
-    const v1, 0x7f0a0532
+    const v1, 0x7f0a0572
 
     if-ne v0, v1, :cond_2
 
@@ -395,7 +395,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0531
+    const v2, 0x7f0a0571
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -442,7 +442,7 @@
     goto/16 :goto_2
 
     :cond_2
-    const v1, 0x7f0a052f
+    const v1, 0x7f0a056f
 
     if-ne v0, v1, :cond_4
 
@@ -539,7 +539,7 @@
     goto :goto_2
 
     :cond_4
-    const v1, 0x7f0a0530
+    const v1, 0x7f0a0570
 
     if-ne v0, v1, :cond_6
 
@@ -699,7 +699,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 463
-    const v0, 0x7f0d0059
+    const v0, 0x7f0d005a
 
     const/4 v1, 0x0
 
@@ -709,7 +709,7 @@
 
     .line 464
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a0531
+    const v1, 0x7f0a0571
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -726,7 +726,7 @@
     invoke-virtual {v2, v3, v1}, Lcom/offsec/nethunter/utils/ShellExecuter;->ReadFile_ASYNC(Ljava/lang/String;Landroid/widget/EditText;)V
 
     .line 466
-    const v2, 0x7f0a0532
+    const v2, 0x7f0a0572
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -736,7 +736,7 @@
 
     .line 467
     .local v2, "b":Landroid/widget/Button;
-    const v3, 0x7f0a052f
+    const v3, 0x7f0a056f
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -746,7 +746,7 @@
 
     .line 468
     .local v3, "b1":Landroid/widget/Button;
-    const v4, 0x7f0a0530
+    const v4, 0x7f0a0570
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

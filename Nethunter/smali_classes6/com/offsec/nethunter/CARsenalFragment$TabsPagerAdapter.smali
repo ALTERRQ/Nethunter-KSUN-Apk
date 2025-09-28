@@ -19,10 +19,10 @@
     .locals 0
     .param p1, "fragment"    # Landroidx/fragment/app/Fragment;
 
-    .line 413
+    .line 378
     invoke-direct {p0, p1}, Landroidx/viewpager2/adapter/FragmentStateAdapter;-><init>(Landroidx/fragment/app/Fragment;)V
 
-    .line 414
+    .line 379
     return-void
 .end method
 
@@ -32,25 +32,25 @@
     .locals 1
     .param p1, "position"    # I
 
-    .line 419
+    .line 384
     packed-switch p1, :pswitch_data_0
 
-    .line 431
+    .line 396
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;
 
     invoke-direct {v0}, Lcom/offsec/nethunter/CARsenalFragment$CANMSFFragment;-><init>()V
 
     return-object v0
 
-    .line 429
+    .line 394
     :pswitch_0
-    new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$CANICSIMFragment;
+    new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$SIMFragment;
 
-    invoke-direct {v0}, Lcom/offsec/nethunter/CARsenalFragment$CANICSIMFragment;-><init>()V
+    invoke-direct {v0}, Lcom/offsec/nethunter/CARsenalFragment$SIMFragment;-><init>()V
 
     return-object v0
 
-    .line 427
+    .line 392
     :pswitch_1
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
@@ -58,7 +58,7 @@
 
     return-object v0
 
-    .line 425
+    .line 390
     :pswitch_2
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;
 
@@ -66,7 +66,7 @@
 
     return-object v0
 
-    .line 423
+    .line 388
     :pswitch_3
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;
 
@@ -74,7 +74,7 @@
 
     return-object v0
 
-    .line 421
+    .line 386
     :pswitch_4
     new-instance v0, Lcom/offsec/nethunter/CARsenalFragment$MainFragment;
 
@@ -97,7 +97,7 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 437
+    .line 402
     const/4 v0, 0x6
 
     return v0

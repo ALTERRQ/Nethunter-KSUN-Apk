@@ -101,7 +101,7 @@
 
     iget-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment$2;->this$0:Lcom/offsec/nethunter/MacchangerFragment;
 
-    const v2, 0x7f1300dc
+    const v2, 0x7f1300df
 
     invoke-virtual {v1, v2}, Lcom/offsec/nethunter/MacchangerFragment;->getString(I)Ljava/lang/String;
 
@@ -154,7 +154,7 @@
 
     iget-object v4, p0, Lcom/offsec/nethunter/MacchangerFragment$2;->this$0:Lcom/offsec/nethunter/MacchangerFragment;
 
-    const v6, 0x7f130285
+    const v6, 0x7f130287
 
     invoke-virtual {v4, v6}, Lcom/offsec/nethunter/MacchangerFragment;->getString(I)Ljava/lang/String;
 

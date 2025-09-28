@@ -35,7 +35,7 @@
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
     .line 163
-    const v0, 0x7f0a01d1
+    const v0, 0x7f0a01e4
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -46,7 +46,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/CustomCommandsRecyclerViewAdapter$ItemViewHolder;->commandLabelTextView:Landroid/widget/TextView;
 
     .line 164
-    const v0, 0x7f0a01d2
+    const v0, 0x7f0a01e5
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +57,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/CustomCommandsRecyclerViewAdapter$ItemViewHolder;->execEnvTextView:Landroid/widget/TextView;
 
     .line 165
-    const v0, 0x7f0a01d3
+    const v0, 0x7f0a01e6
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -68,7 +68,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/CustomCommandsRecyclerViewAdapter$ItemViewHolder;->execModeTextView:Landroid/widget/TextView;
 
     .line 166
-    const v0, 0x7f0a01d4
+    const v0, 0x7f0a01e7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/CustomCommandsRecyclerViewAdapter$ItemViewHolder;->runOnBootTextView:Landroid/widget/TextView;
 
     .line 168
-    const v0, 0x7f0a01cf
+    const v0, 0x7f0a01e2
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

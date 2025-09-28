@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;->showCanUsbConfig()V
+    value = Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;->getStringArrayAdapter()Landroid/widget/ArrayAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
     .param p3, "resource"    # I
     .param p4, "objects"    # [Ljava/lang/String;
 
-    .line 1617
+    .line 1699
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment$1;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANUSBFragment;
 
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
@@ -50,14 +50,14 @@
     .param p2, "convertView"    # Landroid/view/View;
     .param p3, "parent"    # Landroid/view/ViewGroup;
 
-    .line 1625
+    .line 1707
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1626
+    .line 1708
     .local v0, "tv":Landroid/widget/TextView;
     if-nez p1, :cond_0
 
@@ -71,7 +71,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1627
+    .line 1709
     return-object v0
 .end method
 
@@ -79,7 +79,7 @@
     .locals 1
     .param p1, "position"    # I
 
-    .line 1620
+    .line 1702
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1

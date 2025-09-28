@@ -310,7 +310,7 @@
 
     int-to-long v11, v4
 
-    const-wide v13, -0x3c5a37a36834ced9L    # -7.8480313857871552E17
+    const-wide v13, -0x3c5a37a36834ced9L    # -7.848031385787155E17
 
     mul-long v11, v11, v13
 
@@ -1185,7 +1185,7 @@
 
     move-result-wide v2
 
-    const-wide v4, -0x3c5a37a36834ced9L    # -7.8480313857871552E17
+    const-wide v4, -0x3c5a37a36834ced9L    # -7.848031385787155E17
 
     mul-long v2, v2, v4
 

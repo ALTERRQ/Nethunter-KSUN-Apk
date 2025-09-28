@@ -267,7 +267,7 @@
 
     move-result v2
 
-    const v3, -0x3361d2af    # -8.2930312E7f
+    const v3, -0x3361d2af    # -8.293031E7f
 
     mul-int v2, v2, v3
 
@@ -1457,7 +1457,7 @@
 
     move-result v11
 
-    const v14, -0x3361d2af    # -8.2930312E7f
+    const v14, -0x3361d2af    # -8.293031E7f
 
     mul-int v11, v11, v14
 
@@ -2803,7 +2803,7 @@
 
     move-result v4
 
-    const v5, -0x3361d2af    # -8.2930312E7f
+    const v5, -0x3361d2af    # -8.293031E7f
 
     mul-int v4, v4, v5
 
@@ -3172,7 +3172,7 @@
 
     move-result v4
 
-    const v5, -0x3361d2af    # -8.2930312E7f
+    const v5, -0x3361d2af    # -8.293031E7f
 
     mul-int v4, v4, v5
 

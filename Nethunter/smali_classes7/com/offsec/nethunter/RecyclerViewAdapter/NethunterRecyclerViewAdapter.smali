@@ -199,7 +199,7 @@
 
     .line 59
     .local v11, "mInflater":Landroid/view/LayoutInflater;
-    const v0, 0x7f0d00a9
+    const v0, 0x7f0d00aa
 
     invoke-virtual {v11, v0, v10}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -207,7 +207,7 @@
 
     .line 60
     .local v12, "promptViewEdit":Landroid/view/View;
-    const v0, 0x7f0a0227
+    const v0, 0x7f0a023a
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -219,7 +219,7 @@
 
     .line 61
     .local v13, "titleEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a0225
+    const v0, 0x7f0a0238
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -231,7 +231,7 @@
 
     .line 62
     .local v14, "cmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a0226
+    const v0, 0x7f0a0239
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -243,7 +243,7 @@
 
     .line 63
     .local v15, "delimiterEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a023d
+    const v0, 0x7f0a0250
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -255,7 +255,7 @@
 
     .line 64
     .local v7, "runOnCreateCheckbox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a0228
+    const v0, 0x7f0a023b
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -267,7 +267,7 @@
 
     .line 65
     .local v6, "readmeButton1":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a0229
+    const v0, 0x7f0a023c
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
 
     .line 66
     .local v5, "readmeButton2":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a022a
+    const v0, 0x7f0a023d
 
     invoke-virtual {v12, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -600,7 +600,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/NethunterRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 70
-    const v3, 0x7f130241
+    const v3, 0x7f130243
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -661,7 +661,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/NethunterRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 80
-    const v3, 0x7f130242
+    const v3, 0x7f130244
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -722,7 +722,7 @@
     iget-object v2, p0, Lcom/offsec/nethunter/RecyclerViewAdapter/NethunterRecyclerViewAdapter;->context:Landroid/content/Context;
 
     .line 90
-    const v3, 0x7f130243
+    const v3, 0x7f130245
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1117,7 +1117,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00ac
+    const v1, 0x7f0d00ad
 
     const/4 v2, 0x0
 

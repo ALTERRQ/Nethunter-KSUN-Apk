@@ -23,7 +23,7 @@
     .locals 0
     .param p1, "this$0"    # Lcom/offsec/nethunter/CARsenalFragment;
 
-    .line 130
+    .line 125
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$1;->this$0:Lcom/offsec/nethunter/CARsenalFragment;
 
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$OnPageChangeCallback;-><init>()V
@@ -37,7 +37,7 @@
     .locals 1
     .param p1, "position"    # I
 
-    .line 133
+    .line 128
     iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$1;->this$0:Lcom/offsec/nethunter/CARsenalFragment;
 
     invoke-static {v0}, Lcom/offsec/nethunter/CARsenalFragment;->access$000(Lcom/offsec/nethunter/CARsenalFragment;)Landroid/app/Activity;
@@ -46,6 +46,6 @@
 
     invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
 
-    .line 134
+    .line 129
     return-void
 .end method

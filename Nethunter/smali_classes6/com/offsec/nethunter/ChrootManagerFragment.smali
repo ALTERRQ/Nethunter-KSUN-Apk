@@ -963,7 +963,7 @@
     .line 825
     iget-object v0, p0, Lcom/offsec/nethunter/ChrootManagerFragment;->mountStatsTextView:Landroid/widget/TextView;
 
-    const v1, 0x7f13028d
+    const v1, 0x7f13028f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -985,7 +985,7 @@
     .line 828
     iget-object v0, p0, Lcom/offsec/nethunter/ChrootManagerFragment;->mountStatsTextView:Landroid/widget/TextView;
 
-    const v1, 0x7f1302bb
+    const v1, 0x7f1302be
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1015,7 +1015,7 @@
     .line 835
     iget-object v0, p0, Lcom/offsec/nethunter/ChrootManagerFragment;->mountStatsTextView:Landroid/widget/TextView;
 
-    const v1, 0x7f13025a
+    const v1, 0x7f13025c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1105,7 +1105,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f130079
+    const v3, 0x7f13007c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2305,7 +2305,7 @@
 
     .line 695
     .local v1, "d":Landroidx/appcompat/app/AlertDialog;
-    const v2, 0x7f0a031c
+    const v2, 0x7f0a0340
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog;->findViewById(I)Landroid/view/View;
 
@@ -2420,7 +2420,7 @@
     .local v4, "e":Ljava/lang/Exception;
     iget-object v5, p0, Lcom/offsec/nethunter/ChrootManagerFragment;->context:Landroid/content/Context;
 
-    const v6, 0x7f1302c4
+    const v6, 0x7f1302c7
 
     invoke-virtual {p0, v6}, Lcom/offsec/nethunter/ChrootManagerFragment;->getString(I)Ljava/lang/String;
 
@@ -2462,7 +2462,7 @@
 
     .line 681
     .local v1, "inflater":Landroid/view/LayoutInflater;
-    const v2, 0x7f0d0082
+    const v2, 0x7f0d0083
 
     const/4 v3, 0x0
 
@@ -2477,7 +2477,7 @@
     invoke-virtual {v0, v2}, Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;->setView(Landroid/view/View;)Lcom/google/android/material/dialog/MaterialAlertDialogBuilder;
 
     .line 683
-    const v3, 0x7f0a031d
+    const v3, 0x7f0a0341
 
     invoke-virtual {v2, v3}, Landroid/widget/ScrollView;->findViewById(I)Landroid/view/View;
 
@@ -3141,7 +3141,7 @@
     invoke-virtual {v9, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 318
-    const v10, 0x7f13018d
+    const v10, 0x7f13018f
 
     invoke-virtual {v0, v10}, Lcom/offsec/nethunter/ChrootManagerFragment;->getString(I)Ljava/lang/String;
 
@@ -3915,7 +3915,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 100
-    const v0, 0x7f0d0030
+    const v0, 0x7f0d0031
 
     const/4 v1, 0x0
 
@@ -3941,7 +3941,7 @@
     sput-object v1, Lcom/offsec/nethunter/ChrootManagerFragment;->sharedPreferences:Landroid/content/SharedPreferences;
 
     .line 108
-    const v1, 0x7f0a01a4
+    const v1, 0x7f0a01b7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3957,7 +3957,7 @@
     if-eqz v1, :cond_a
 
     .line 113
-    const v1, 0x7f0a01ac
+    const v1, 0x7f0a01bf
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3973,7 +3973,7 @@
     if-eqz v1, :cond_9
 
     .line 118
-    const v1, 0x7f0a01b1
+    const v1, 0x7f0a01c4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3989,7 +3989,7 @@
     if-eqz v1, :cond_8
 
     .line 123
-    const v1, 0x7f0a01a9
+    const v1, 0x7f0a01bc
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4005,7 +4005,7 @@
     if-eqz v1, :cond_7
 
     .line 128
-    const v1, 0x7f0a01a7
+    const v1, 0x7f0a01ba
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4021,7 +4021,7 @@
     if-eqz v1, :cond_6
 
     .line 133
-    const v1, 0x7f0a01ab
+    const v1, 0x7f0a01be
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4037,7 +4037,7 @@
     if-eqz v1, :cond_5
 
     .line 138
-    const v1, 0x7f0a01af
+    const v1, 0x7f0a01c2
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4053,7 +4053,7 @@
     if-eqz v1, :cond_4
 
     .line 143
-    const v1, 0x7f0a01a8
+    const v1, 0x7f0a01bb
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4069,7 +4069,7 @@
     if-eqz v1, :cond_3
 
     .line 148
-    const v1, 0x7f0a01a1
+    const v1, 0x7f0a01b4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4085,7 +4085,7 @@
     if-eqz v1, :cond_2
 
     .line 153
-    const v1, 0x7f0a01ad
+    const v1, 0x7f0a01c0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4101,7 +4101,7 @@
     if-eqz v1, :cond_1
 
     .line 158
-    const v1, 0x7f0a01a3
+    const v1, 0x7f0a01b6
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4353,7 +4353,7 @@
 
     .line 174
     :cond_0
-    const v0, 0x7f0a01b0
+    const v0, 0x7f0a01c3
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -3,26 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Landroid/view/View;
+
+.field public final synthetic f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Landroid/view/View;Lcom/google/android/material/textfield/TextInputEditText;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda25;->f$0:Landroid/view/View;
+
+    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda25;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
 
     .line 0
-    invoke-static {p1, p2}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$showEditCommandDialog$32(Landroid/content/DialogInterface;I)V
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda25;->f$0:Landroid/view/View;
+
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment$$ExternalSyntheticLambda25;->f$1:Lcom/google/android/material/textfield/TextInputEditText;
+
+    invoke-static {v0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$ToolsFragment;->lambda$showToolsConfig$29(Landroid/view/View;Lcom/google/android/material/textfield/TextInputEditText;Landroid/view/View;)V
 
     return-void
 .end method

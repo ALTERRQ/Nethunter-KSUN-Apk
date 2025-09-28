@@ -70,13 +70,13 @@
 
 .field public static final abc_tooltip:I = 0x7f0d001b
 
-.field public static final select_dialog_item_material:I = 0x7f0d00d6
+.field public static final select_dialog_item_material:I = 0x7f0d00d7
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d00d7
+.field public static final select_dialog_multichoice_material:I = 0x7f0d00d8
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d00d8
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d00d9
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00e0
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00e1
 
 
 # direct methods

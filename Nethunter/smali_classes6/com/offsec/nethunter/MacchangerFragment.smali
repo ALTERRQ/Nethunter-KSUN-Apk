@@ -1967,7 +1967,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 86
-    const v0, 0x7f0d0071
+    const v0, 0x7f0d0072
 
     const/4 v1, 0x0
 
@@ -1977,7 +1977,7 @@
 
     .line 87
     .local v0, "rootView":Landroid/view/View;
-    const v1, 0x7f0a0205
+    const v1, 0x7f0a0218
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1988,7 +1988,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->interfaceSpinner:Landroid/widget/Spinner;
 
     .line 88
-    const v1, 0x7f0a020c
+    const v1, 0x7f0a021f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1999,7 +1999,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->macModeSpinner:Landroid/widget/Spinner;
 
     .line 89
-    const v1, 0x7f0a0212
+    const v1, 0x7f0a0225
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2010,7 +2010,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->changeMacButton:Landroid/widget/Button;
 
     .line 90
-    const v1, 0x7f0a0211
+    const v1, 0x7f0a0224
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2021,7 +2021,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->setHostNameButton:Landroid/widget/Button;
 
     .line 91
-    const v1, 0x7f0a0210
+    const v1, 0x7f0a0223
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2032,7 +2032,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->resetMacButton:Landroid/widget/Button;
 
     .line 92
-    const v1, 0x7f0a020d
+    const v1, 0x7f0a0220
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2043,7 +2043,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->netHostNameEditText:Landroid/widget/EditText;
 
     .line 93
-    const v1, 0x7f0a0204
+    const v1, 0x7f0a0217
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2054,7 +2054,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->currentMacTextView:Landroid/widget/TextView;
 
     .line 94
-    const v1, 0x7f0a020f
+    const v1, 0x7f0a0222
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2065,7 +2065,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->reloadImageButton:Landroid/widget/ImageButton;
 
     .line 95
-    const v1, 0x7f0a020e
+    const v1, 0x7f0a0221
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2076,7 +2076,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->regenerateMacButton:Landroid/widget/Button;
 
     .line 96
-    const v1, 0x7f0a0203
+    const v1, 0x7f0a0216
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2087,7 +2087,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->clearMacButton:Landroid/widget/Button;
 
     .line 97
-    const v1, 0x7f0a0206
+    const v1, 0x7f0a0219
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2098,7 +2098,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->mac1:Landroid/widget/EditText;
 
     .line 98
-    const v1, 0x7f0a0207
+    const v1, 0x7f0a021a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2109,7 +2109,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->mac2:Landroid/widget/EditText;
 
     .line 99
-    const v1, 0x7f0a0208
+    const v1, 0x7f0a021b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2120,7 +2120,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->mac3:Landroid/widget/EditText;
 
     .line 100
-    const v1, 0x7f0a0209
+    const v1, 0x7f0a021c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2131,7 +2131,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->mac4:Landroid/widget/EditText;
 
     .line 101
-    const v1, 0x7f0a020a
+    const v1, 0x7f0a021d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2142,7 +2142,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/MacchangerFragment;->mac5:Landroid/widget/EditText;
 
     .line 102
-    const v1, 0x7f0a020b
+    const v1, 0x7f0a021e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

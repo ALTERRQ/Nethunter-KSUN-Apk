@@ -2133,7 +2133,7 @@
     .line 412
     iget-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbStatusTextView:Landroid/widget/TextView;
 
-    const v3, 0x7f1302d7
+    const v3, 0x7f1302da
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -2327,7 +2327,7 @@
 
     iget-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->mountedImageTextView:Landroid/widget/TextView;
 
-    const v1, 0x7f1302d6
+    const v1, 0x7f1302d9
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2844,7 +2844,7 @@
     .line 484
     iget-object v1, p0, Lcom/offsec/nethunter/USBArsenalFragment;->currentInquiryHintTextView:Landroid/widget/TextView;
 
-    const v2, 0x7f1302d5
+    const v2, 0x7f1302d8
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -4218,7 +4218,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 102
-    const v0, 0x7f0d00e1
+    const v0, 0x7f0d00e2
 
     const/4 v1, 0x0
 
@@ -4334,7 +4334,7 @@
     if-eqz v0, :cond_4
 
     .line 536
-    const v1, 0x7f0d0060
+    const v1, 0x7f0d0061
 
     const/4 v2, 0x0
 
@@ -4344,7 +4344,7 @@
 
     .line 537
     .local v1, "promptView":Landroid/view/View;
-    const v2, 0x7f0a01d8
+    const v2, 0x7f0a01eb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4354,7 +4354,7 @@
 
     .line 538
     .local v2, "titleTextView":Landroid/widget/TextView;
-    const v3, 0x7f0a01d7
+    const v3, 0x7f0a01ea
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4370,7 +4370,7 @@
 
     .line 541
     .local v4, "itemId":I
-    const v5, 0x7f0a025d
+    const v5, 0x7f0a0270
 
     const-string v6, "OK"
 
@@ -4387,7 +4387,7 @@
     if-ne v4, v5, :cond_0
 
     .line 542
-    const v5, 0x7f1302d4
+    const v5, 0x7f1302d7
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -4451,12 +4451,12 @@
     goto/16 :goto_1
 
     :cond_0
-    const v5, 0x7f0a025f
+    const v5, 0x7f0a0272
 
     if-ne v4, v5, :cond_1
 
     .line 564
-    const v5, 0x7f1302d3
+    const v5, 0x7f1302d6
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -4520,7 +4520,7 @@
 
     .line 587
     :cond_1
-    const v5, 0x7f0a025c
+    const v5, 0x7f0a026f
 
     if-ne v4, v5, :cond_3
 
@@ -4639,7 +4639,7 @@
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 108
-    const v0, 0x7f0a0263
+    const v0, 0x7f0a0276
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4650,7 +4650,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->targetOSSpinner:Landroid/widget/Spinner;
 
     .line 109
-    const v0, 0x7f0a0264
+    const v0, 0x7f0a0277
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4661,7 +4661,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbFuncSpinner:Landroid/widget/Spinner;
 
     .line 110
-    const v0, 0x7f0a0260
+    const v0, 0x7f0a0273
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4672,7 +4672,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->adbSpinner:Landroid/widget/Spinner;
 
     .line 111
-    const v0, 0x7f0a0261
+    const v0, 0x7f0a0274
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4683,7 +4683,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->imgFileSpinner:Landroid/widget/Spinner;
 
     .line 112
-    const v0, 0x7f0a0262
+    const v0, 0x7f0a0275
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4694,7 +4694,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkAttackModeSpinner:Landroid/widget/Spinner;
 
     .line 113
-    const v0, 0x7f0a0243
+    const v0, 0x7f0a0256
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4705,7 +4705,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->setUSBIfaceButton:Landroid/widget/Button;
 
     .line 114
-    const v0, 0x7f0a0240
+    const v0, 0x7f0a0253
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4716,7 +4716,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->setUSBNetworkTetheringButton:Landroid/widget/Button;
 
     .line 115
-    const v0, 0x7f0a023f
+    const v0, 0x7f0a0252
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4727,7 +4727,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->mountImgButton:Landroid/widget/Button;
 
     .line 116
-    const v0, 0x7f0a0244
+    const v0, 0x7f0a0257
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4738,7 +4738,7 @@
     iput-object v0, p0, Lcom/offsec/nethunter/USBArsenalFragment;->unmountImgButton:Landroid/widget/Button;
 
     .line 117
-    const v0, 0x7f0a023e
+    const v0, 0x7f0a0251
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4748,7 +4748,7 @@
 
     .line 118
     .local v0, "changeInquiryButton":Landroid/widget/Button;
-    const v1, 0x7f0a0252
+    const v1, 0x7f0a0265
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4759,7 +4759,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/USBArsenalFragment;->reloadUSBStateImageButton:Landroid/widget/ImageButton;
 
     .line 119
-    const v1, 0x7f0a0251
+    const v1, 0x7f0a0264
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4770,7 +4770,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/USBArsenalFragment;->reloadMountStateButton:Landroid/widget/ImageButton;
 
     .line 120
-    const v1, 0x7f0a0241
+    const v1, 0x7f0a0254
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4781,7 +4781,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/USBArsenalFragment;->saveUSBFunctionConfigButton:Landroid/widget/Button;
 
     .line 121
-    const v1, 0x7f0a0242
+    const v1, 0x7f0a0255
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4792,7 +4792,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/USBArsenalFragment;->saveUSBNetworkTetheringConfigButton:Landroid/widget/Button;
 
     .line 122
-    const v1, 0x7f0a0245
+    const v1, 0x7f0a0258
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4802,7 +4802,7 @@
 
     .line 123
     .local v1, "readOnlyCheckBox":Landroid/widget/CheckBox;
-    const v2, 0x7f0a0266
+    const v2, 0x7f0a0279
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4813,7 +4813,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbStatusTextView:Landroid/widget/TextView;
 
     .line 124
-    const v2, 0x7f0a0267
+    const v2, 0x7f0a027a
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4824,7 +4824,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->mountedImageTextView:Landroid/widget/TextView;
 
     .line 125
-    const v2, 0x7f0a0265
+    const v2, 0x7f0a0278
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4835,7 +4835,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->currentInquiryHintTextView:Landroid/widget/TextView;
 
     .line 126
-    const v2, 0x7f0a0256
+    const v2, 0x7f0a0269
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4846,7 +4846,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->mountedImageHintTextView:Landroid/widget/TextView;
 
     .line 127
-    const v2, 0x7f0a0257
+    const v2, 0x7f0a026a
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4857,7 +4857,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkTetheringHintTextView:Landroid/widget/TextView;
 
     .line 128
-    const v2, 0x7f0a0255
+    const v2, 0x7f0a0268
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4868,7 +4868,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->imageMounterLL:Landroid/widget/LinearLayout;
 
     .line 129
-    const v2, 0x7f0a025a
+    const v2, 0x7f0a026d
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4879,7 +4879,7 @@
     iput-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkTetheringLL:Landroid/widget/LinearLayout;
 
     .line 130
-    const v2, 0x7f0a0248
+    const v2, 0x7f0a025b
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4892,7 +4892,7 @@
     .line 132
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbSwitchInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a0247
+    const v3, 0x7f0a025a
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4907,7 +4907,7 @@
     .line 133
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbSwitchInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a0246
+    const v3, 0x7f0a0259
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4922,7 +4922,7 @@
     .line 134
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbSwitchInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a0249
+    const v3, 0x7f0a025c
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4937,7 +4937,7 @@
     .line 135
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbSwitchInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024a
+    const v3, 0x7f0a025d
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4952,7 +4952,7 @@
     .line 136
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbSwitchInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024b
+    const v3, 0x7f0a025e
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4967,7 +4967,7 @@
     .line 137
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024f
+    const v3, 0x7f0a0262
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4980,7 +4980,7 @@
     .line 138
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a0250
+    const v3, 0x7f0a0263
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -4993,7 +4993,7 @@
     .line 139
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024e
+    const v3, 0x7f0a0261
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -5006,7 +5006,7 @@
     .line 140
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024c
+    const v3, 0x7f0a025f
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -5019,7 +5019,7 @@
     .line 141
     iget-object v2, p0, Lcom/offsec/nethunter/USBArsenalFragment;->usbNetworkInfoEditTextGroup:[Landroid/widget/EditText;
 
-    const v3, 0x7f0a024d
+    const v3, 0x7f0a0260
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

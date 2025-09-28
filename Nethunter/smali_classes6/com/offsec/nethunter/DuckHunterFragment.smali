@@ -860,7 +860,7 @@
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 140
-    const v0, 0x7f0a017e
+    const v0, 0x7f0a018d
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -881,7 +881,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 103
-    const v0, 0x7f0d004e
+    const v0, 0x7f0d004f
 
     const/4 v1, 0x0
 
@@ -906,7 +906,7 @@
 
     .line 106
     .local v3, "tabsPagerAdapter":Lcom/offsec/nethunter/DuckHunterFragment$TabsPagerAdapter;
-    const v4, 0x7f0a03a8
+    const v4, 0x7f0a03d0
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1045,7 +1045,7 @@
 
     .line 146
     .local v0, "itemId":I
-    const v1, 0x7f0a017e
+    const v1, 0x7f0a018d
 
     const/4 v2, 0x1
 
@@ -1074,7 +1074,7 @@
 
     .line 169
     :cond_0
-    const v1, 0x7f0a010c
+    const v1, 0x7f0a011a
 
     if-ne v0, v1, :cond_1
 

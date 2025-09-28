@@ -296,7 +296,7 @@
 
     .line 571
     .local v0, "fragmentManager":Landroidx/fragment/app/FragmentManager;
-    const v1, 0x7f0a036b
+    const v1, 0x7f0a038f
 
     if-ne p1, v1, :cond_0
 
@@ -311,7 +311,7 @@
 
     .line 573
     :cond_0
-    const v1, 0x7f0a00f2
+    const v1, 0x7f0a00fe
 
     if-ne p1, v1, :cond_1
 
@@ -326,7 +326,7 @@
 
     .line 575
     :cond_1
-    const v1, 0x7f0a02dc
+    const v1, 0x7f0a02f4
 
     if-ne p1, v1, :cond_2
 
@@ -341,7 +341,7 @@
 
     .line 577
     :cond_2
-    const v1, 0x7f0a0138
+    const v1, 0x7f0a0145
 
     if-ne p1, v1, :cond_3
 
@@ -356,7 +356,7 @@
 
     .line 579
     :cond_3
-    const v1, 0x7f0a02a8
+    const v1, 0x7f0a02bc
 
     if-ne p1, v1, :cond_4
 
@@ -371,7 +371,7 @@
 
     .line 581
     :cond_4
-    const v1, 0x7f0a017f
+    const v1, 0x7f0a018e
 
     if-ne p1, v1, :cond_5
 
@@ -386,7 +386,7 @@
 
     .line 583
     :cond_5
-    const v1, 0x7f0a0512
+    const v1, 0x7f0a0550
 
     const/4 v2, 0x0
 
@@ -424,7 +424,7 @@
 
     .line 589
     :cond_7
-    const v1, 0x7f0a00ac
+    const v1, 0x7f0a00bc
 
     if-ne p1, v1, :cond_8
 
@@ -439,7 +439,7 @@
 
     .line 591
     :cond_8
-    const v1, 0x7f0a052e
+    const v1, 0x7f0a056e
 
     if-ne p1, v1, :cond_9
 
@@ -454,7 +454,7 @@
 
     .line 593
     :cond_9
-    const v1, 0x7f0a0544
+    const v1, 0x7f0a0584
 
     if-ne p1, v1, :cond_a
 
@@ -469,7 +469,7 @@
 
     .line 595
     :cond_a
-    const v1, 0x7f0a00c4
+    const v1, 0x7f0a00d6
 
     if-ne p1, v1, :cond_b
 
@@ -484,7 +484,7 @@
 
     .line 597
     :cond_b
-    const v1, 0x7f0a0090
+    const v1, 0x7f0a009e
 
     if-ne p1, v1, :cond_c
 
@@ -499,7 +499,7 @@
 
     .line 599
     :cond_c
-    const v1, 0x7f0a02fc
+    const v1, 0x7f0a0317
 
     if-ne p1, v1, :cond_d
 
@@ -514,7 +514,7 @@
 
     .line 601
     :cond_d
-    const v1, 0x7f0a012b
+    const v1, 0x7f0a0138
 
     if-ne p1, v1, :cond_e
 
@@ -529,7 +529,7 @@
 
     .line 603
     :cond_e
-    const v1, 0x7f0a033a
+    const v1, 0x7f0a035f
 
     if-ne p1, v1, :cond_f
 
@@ -544,7 +544,7 @@
 
     .line 605
     :cond_f
-    const v1, 0x7f0a0528
+    const v1, 0x7f0a0566
 
     if-ne p1, v1, :cond_11
 
@@ -584,7 +584,7 @@
 
     .line 611
     :cond_11
-    const v1, 0x7f0a0422
+    const v1, 0x7f0a044d
 
     if-ne p1, v1, :cond_12
 
@@ -599,7 +599,7 @@
 
     .line 613
     :cond_12
-    const v1, 0x7f0a0376
+    const v1, 0x7f0a039a
 
     if-ne p1, v1, :cond_13
 
@@ -614,7 +614,7 @@
 
     .line 615
     :cond_13
-    const v1, 0x7f0a03bd
+    const v1, 0x7f0a03e5
 
     if-ne p1, v1, :cond_14
 
@@ -629,7 +629,7 @@
 
     .line 617
     :cond_14
-    const v1, 0x7f0a0291
+    const v1, 0x7f0a02a5
 
     if-ne p1, v1, :cond_15
 
@@ -644,7 +644,7 @@
 
     .line 619
     :cond_15
-    const v1, 0x7f0a043e
+    const v1, 0x7f0a046d
 
     if-ne p1, v1, :cond_16
 
@@ -659,7 +659,7 @@
 
     .line 621
     :cond_16
-    const v1, 0x7f0a02df
+    const v1, 0x7f0a02f7
 
     if-ne p1, v1, :cond_17
 
@@ -674,7 +674,7 @@
 
     .line 623
     :cond_17
-    const v1, 0x7f0a032c
+    const v1, 0x7f0a0351
 
     if-ne p1, v1, :cond_18
 
@@ -689,7 +689,7 @@
 
     .line 625
     :cond_18
-    const v1, 0x7f0a0435
+    const v1, 0x7f0a0464
 
     if-ne p1, v1, :cond_19
 
@@ -720,7 +720,7 @@
     move-result-object v0
 
     .line 659
-    const v1, 0x7f0a011d
+    const v1, 0x7f0a012b
 
     invoke-virtual {v0, v1, p2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -813,7 +813,7 @@
 
     .line 401
     :cond_0
-    const v3, 0x7f0a017a
+    const v3, 0x7f0a0187
 
     invoke-virtual {v0, v3}, Lcom/offsec/nethunter/AppNavHomeActivity;->findViewById(I)Landroid/view/View;
 
@@ -824,7 +824,7 @@
     iput-object v3, v0, Lcom/offsec/nethunter/AppNavHomeActivity;->mDrawerLayout:Landroidx/drawerlayout/widget/DrawerLayout;
 
     .line 402
-    const v3, 0x7f0a0369
+    const v3, 0x7f0a038d
 
     invoke-virtual {v0, v3}, Lcom/offsec/nethunter/AppNavHomeActivity;->findViewById(I)Landroid/view/View;
 
@@ -1148,7 +1148,7 @@
     .line 433
     .restart local v5    # "snowfall":Ljava/lang/Boolean;
     :goto_0
-    const v7, 0x7f0a0450
+    const v7, 0x7f0a047f
 
     invoke-virtual {v0, v7}, Lcom/offsec/nethunter/AppNavHomeActivity;->findViewById(I)Landroid/view/View;
 
@@ -1211,7 +1211,7 @@
 
     .line 441
     .local v8, "inflater":Landroid/view/LayoutInflater;
-    const v10, 0x7f0d00dc
+    const v10, 0x7f0d00dd
 
     iget-object v11, v0, Lcom/offsec/nethunter/AppNavHomeActivity;->navigationView:Lcom/google/android/material/navigation/NavigationView;
 
@@ -1228,7 +1228,7 @@
     invoke-virtual {v11, v10}, Lcom/google/android/material/navigation/NavigationView;->addHeaderView(Landroid/view/View;)V
 
     .line 444
-    const v11, 0x7f0a02cb
+    const v11, 0x7f0a02df
 
     invoke-virtual {v10, v11}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -1255,7 +1255,7 @@
 
     .line 449
     .local v12, "buildTime":Ljava/lang/String;
-    const v13, 0x7f0a00e2
+    const v13, 0x7f0a00ea
 
     invoke-virtual {v10, v13}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -1265,7 +1265,7 @@
 
     .line 450
     .local v13, "buildInfo1":Landroid/widget/TextView;
-    const v14, 0x7f0a00e3
+    const v14, 0x7f0a00eb
 
     invoke-virtual {v10, v14}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -1275,7 +1275,7 @@
 
     .line 451
     .local v14, "buildInfo2":Landroid/widget/TextView;
-    const v15, 0x78b35b28
+    const v15, 0x78b46bd1
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1283,7 +1283,7 @@
 
     new-array v9, v9, [Ljava/lang/Object;
 
-    const-string v16, "2025.3-rc1-dev"
+    const-string v16, "2025.4-dev"
 
     aput-object v16, v9, v6
 
@@ -1338,13 +1338,13 @@
     move-result-object v9
 
     .line 459
-    const v15, 0x7f0a036b
+    const v15, 0x7f0a038f
 
     invoke-static {v15}, Lcom/offsec/nethunter/NetHunterFragment;->newInstance(I)Lcom/offsec/nethunter/NetHunterFragment;
 
     move-result-object v15
 
-    const v2, 0x7f0a011d
+    const v2, 0x7f0a012b
 
     invoke-virtual {v9, v2, v15}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -1395,7 +1395,7 @@
 
     move-result-object v9
 
-    const v15, 0x7f0a010e
+    const v15, 0x7f0a011c
 
     const/4 v6, 0x1
 
@@ -1486,13 +1486,13 @@
 
     iget-object v9, v0, Lcom/offsec/nethunter/AppNavHomeActivity;->mDrawerLayout:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    const v15, 0x7f13010e
+    const v15, 0x7f130111
 
     move-object/from16 v16, v2
 
     .end local v2    # "firstMenuItem":Landroid/view/MenuItem;
     .local v16, "firstMenuItem":Landroid/view/MenuItem;
-    const v2, 0x7f13010d
+    const v2, 0x7f130110
 
     invoke-direct {v1, v0, v9, v15, v2}, Landroidx/appcompat/app/ActionBarDrawerToggle;-><init>(Landroid/app/Activity;Landroidx/drawerlayout/widget/DrawerLayout;II)V
 
@@ -1584,7 +1584,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f13018c
+    const v1, 0x7f13018e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1595,7 +1595,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f130247
+    const v2, 0x7f130249
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1606,7 +1606,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f130246
+    const v3, 0x7f130248
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

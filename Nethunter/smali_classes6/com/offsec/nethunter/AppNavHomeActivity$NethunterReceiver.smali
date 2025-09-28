@@ -127,7 +127,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a010e
+    const v1, 0x7f0a011c
 
     if-eqz v0, :cond_1
 
@@ -172,7 +172,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a036b
+    const v1, 0x7f0a038f
 
     if-eq v0, v1, :cond_2
 
@@ -183,7 +183,7 @@
 
     move-result v0
 
-    const v2, 0x7f0a012b
+    const v2, 0x7f0a0138
 
     if-eq v0, v2, :cond_2
 

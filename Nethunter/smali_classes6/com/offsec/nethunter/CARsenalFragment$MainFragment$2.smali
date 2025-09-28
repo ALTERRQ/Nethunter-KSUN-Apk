@@ -34,7 +34,7 @@
     .param p3, "resource"    # I
     .param p4, "objects"    # [Ljava/lang/String;
 
-    .line 1031
+    .line 980
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$MainFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$MainFragment;
 
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
@@ -50,35 +50,35 @@
     .param p2, "convertView"    # Landroid/view/View;
     .param p3, "parent"    # Landroid/view/ViewGroup;
 
-    .line 1040
+    .line 989
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 1041
+    .line 990
     .local v0, "view":Landroid/view/View;
     move-object v1, v0
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 1042
+    .line 991
     .local v1, "tv":Landroid/widget/TextView;
     if-nez p1, :cond_0
 
-    .line 1043
+    .line 992
     const v2, -0x777778
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     goto :goto_0
 
-    .line 1045
+    .line 994
     :cond_0
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1047
+    .line 996
     :goto_0
     return-object v0
 .end method
@@ -87,7 +87,7 @@
     .locals 1
     .param p1, "position"    # I
 
-    .line 1035
+    .line 984
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1

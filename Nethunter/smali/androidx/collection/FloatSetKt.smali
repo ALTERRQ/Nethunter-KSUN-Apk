@@ -190,7 +190,7 @@
 
     move-result v1
 
-    const v2, -0x3361d2af    # -8.2930312E7f
+    const v2, -0x3361d2af    # -8.293031E7f
 
     mul-int v1, v1, v2
 

@@ -20,35 +20,14 @@
 # instance fields
 .field final synthetic this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-.field final synthetic val$emptySubModuleAdapter:Landroid/widget/ArrayAdapter;
-
-.field final synthetic val$modules:[Ljava/lang/String;
-
-.field final synthetic val$subModuleSpinner:Landroid/widget/Spinner;
-
-.field final synthetic val$subModulesMap:Ljava/util/Map;
-
 
 # direct methods
-.method constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;[Ljava/lang/String;Ljava/util/Map;Landroid/widget/Spinner;Landroid/widget/ArrayAdapter;)V
+.method constructor <init>(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;)V
     .locals 0
     .param p1, "this$0"    # Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 2024
+    .line 1902
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
-
-    iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$modules:[Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModulesMap:Ljava/util/Map;
-
-    iput-object p4, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
-
-    iput-object p5, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$emptySubModuleAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +37,7 @@
 
 # virtual methods
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 5
+    .locals 3
     .param p2, "view"    # Landroid/view/View;
     .param p3, "position"    # I
     .param p4, "id"    # J
@@ -72,109 +51,87 @@
         }
     .end annotation
 
-    .line 2027
+    .line 1905
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
-    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$modules:[Ljava/lang/String;
+    const/16 v0, 0x8
 
-    aget-object v0, v0, p3
+    if-lez p3, :cond_2
 
-    .line 2028
-    .local v0, "selectedModule":Ljava/lang/String;
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModulesMap:Ljava/util/Map;
-
-    invoke-interface {v1, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    if-eqz v1, :cond_1
-
-    .line 2029
+    .line 1906
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-    iget-object v4, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModulesMap:Ljava/util/Map;
-
-    invoke-interface {v4, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, [Ljava/lang/String;
-
-    invoke-static {v1, v4}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->access$400(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;[Ljava/lang/String;)Landroid/widget/ArrayAdapter;
+    invoke-static {v1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->access$500(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;)Landroid/widget/Spinner;
 
     move-result-object v1
 
-    .line 2030
-    .local v1, "subAdapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/String;>;"
-    const v4, 0x1090009
+    invoke-virtual {v1}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
 
-    invoke-virtual {v1, v4}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
+    move-result-object v1
 
-    .line 2031
-    iget-object v4, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
+    check-cast v1, Ljava/lang/String;
 
-    invoke-virtual {v4, v1}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    .line 1907
+    .local v1, "selected":Ljava/lang/String;
+    const-string v2, "-"
 
-    .line 2032
-    invoke-virtual {v1}, Landroid/widget/ArrayAdapter;->getCount()I
+    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v4
+    move-result v2
 
-    if-le v4, v3, :cond_0
+    if-nez v2, :cond_1
 
-    .line 2033
-    iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
+    const-string v2, ","
 
-    invoke-virtual {v2, v3}, Landroid/widget/Spinner;->setSelection(I)V
+    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     goto :goto_0
 
-    .line 2035
+    .line 1910
     :cond_0
-    iget-object v3, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-    invoke-virtual {v3, v2}, Landroid/widget/Spinner;->setSelection(I)V
+    invoke-static {v2}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->access$600(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;)Lcom/google/android/material/textfield/TextInputLayout;
 
-    .line 2037
-    .end local v1    # "subAdapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Ljava/lang/String;>;"
-    :goto_0
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setVisibility(I)V
+
     goto :goto_1
 
-    .line 2038
+    .line 1908
     :cond_1
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
+    :goto_0
+    iget-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
 
-    iget-object v4, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$emptySubModuleAdapter:Landroid/widget/ArrayAdapter;
+    invoke-static {v0}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->access$600(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;)Lcom/google/android/material/textfield/TextInputLayout;
 
-    invoke-virtual {v1, v4}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    move-result-object v0
 
-    .line 2039
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$emptySubModuleAdapter:Landroid/widget/ArrayAdapter;
+    const/4 v2, 0x0
 
-    invoke-virtual {v1}, Landroid/widget/ArrayAdapter;->getCount()I
+    invoke-virtual {v0, v2}, Lcom/google/android/material/textfield/TextInputLayout;->setVisibility(I)V
 
-    move-result v1
-
-    if-le v1, v3, :cond_2
-
-    .line 2040
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
-
-    invoke-virtual {v1, v3}, Landroid/widget/Spinner;->setSelection(I)V
-
-    goto :goto_1
-
-    .line 2042
-    :cond_2
-    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->val$subModuleSpinner:Landroid/widget/Spinner;
-
-    invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setSelection(I)V
-
-    .line 2045
+    .line 1912
+    .end local v1    # "selected":Ljava/lang/String;
     :goto_1
+    goto :goto_2
+
+    .line 1913
+    :cond_2
+    iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment$2;->this$0:Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;
+
+    invoke-static {v1}, Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;->access$600(Lcom/offsec/nethunter/CARsenalFragment$CANCARIBOUFragment;)Lcom/google/android/material/textfield/TextInputLayout;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setVisibility(I)V
+
+    .line 1915
+    :goto_2
     return-void
 .end method
 
@@ -188,7 +145,7 @@
         }
     .end annotation
 
-    .line 2047
+    .line 1916
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     return-void
 .end method

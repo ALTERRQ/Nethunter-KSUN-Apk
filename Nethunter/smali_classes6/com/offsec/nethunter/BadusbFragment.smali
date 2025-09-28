@@ -86,7 +86,7 @@
     .param p1, "rootView"    # Landroid/view/View;
 
     .line 74
-    const v0, 0x7f0a02be
+    const v0, 0x7f0a02d0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -287,7 +287,7 @@
     .local v0, "sourceFile":Ljava/lang/String;
     iget-object v1, p0, Lcom/offsec/nethunter/BadusbFragment;->activity:Landroid/app/Activity;
 
-    const v2, 0x7f0a02be
+    const v2, 0x7f0a02d0
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -468,7 +468,7 @@
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 95
-    const v0, 0x7f0a0452
+    const v0, 0x7f0a0481
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -524,7 +524,7 @@
     invoke-direct {p0, v0}, Lcom/offsec/nethunter/BadusbFragment;->loadOptions(Landroid/view/View;)V
 
     .line 59
-    const v1, 0x7f0a050b
+    const v1, 0x7f0a0549
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -560,7 +560,7 @@
 
     .line 105
     .local v0, "id":I
-    const v1, 0x7f0a0491
+    const v1, 0x7f0a04c6
 
     const/4 v2, 0x1
 
@@ -574,7 +574,7 @@
 
     .line 108
     :cond_0
-    const v1, 0x7f0a04a0
+    const v1, 0x7f0a04d5
 
     if-ne v0, v1, :cond_1
 
@@ -586,7 +586,7 @@
 
     .line 111
     :cond_1
-    const v1, 0x7f0a0452
+    const v1, 0x7f0a0481
 
     if-ne v0, v1, :cond_2
 

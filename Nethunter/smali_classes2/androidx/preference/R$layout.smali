@@ -14,41 +14,41 @@
 
 
 # static fields
-.field public static final expand_button:I = 0x7f0d0051
+.field public static final expand_button:I = 0x7f0d0052
 
-.field public static final image_frame:I = 0x7f0d005a
+.field public static final image_frame:I = 0x7f0d005b
 
-.field public static final preference:I = 0x7f0d00c2
+.field public static final preference:I = 0x7f0d00c3
 
-.field public static final preference_category:I = 0x7f0d00c3
+.field public static final preference_category:I = 0x7f0d00c4
 
-.field public static final preference_category_material:I = 0x7f0d00c4
+.field public static final preference_category_material:I = 0x7f0d00c5
 
-.field public static final preference_dialog_edittext:I = 0x7f0d00c5
+.field public static final preference_dialog_edittext:I = 0x7f0d00c6
 
-.field public static final preference_dropdown:I = 0x7f0d00c6
+.field public static final preference_dropdown:I = 0x7f0d00c7
 
-.field public static final preference_dropdown_material:I = 0x7f0d00c7
+.field public static final preference_dropdown_material:I = 0x7f0d00c8
 
-.field public static final preference_information:I = 0x7f0d00c8
+.field public static final preference_information:I = 0x7f0d00c9
 
-.field public static final preference_information_material:I = 0x7f0d00c9
+.field public static final preference_information_material:I = 0x7f0d00ca
 
-.field public static final preference_list_fragment:I = 0x7f0d00ca
+.field public static final preference_list_fragment:I = 0x7f0d00cb
 
-.field public static final preference_material:I = 0x7f0d00cb
+.field public static final preference_material:I = 0x7f0d00cc
 
-.field public static final preference_recyclerview:I = 0x7f0d00cc
+.field public static final preference_recyclerview:I = 0x7f0d00cd
 
-.field public static final preference_widget_checkbox:I = 0x7f0d00cd
+.field public static final preference_widget_checkbox:I = 0x7f0d00ce
 
-.field public static final preference_widget_seekbar:I = 0x7f0d00ce
+.field public static final preference_widget_seekbar:I = 0x7f0d00cf
 
-.field public static final preference_widget_seekbar_material:I = 0x7f0d00cf
+.field public static final preference_widget_seekbar_material:I = 0x7f0d00d0
 
-.field public static final preference_widget_switch:I = 0x7f0d00d0
+.field public static final preference_widget_switch:I = 0x7f0d00d1
 
-.field public static final preference_widget_switch_compat:I = 0x7f0d00d1
+.field public static final preference_widget_switch_compat:I = 0x7f0d00d2
 
 
 # direct methods

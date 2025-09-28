@@ -34,23 +34,23 @@
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "listener"    # Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$OnFileSelectedListener;
 
-    .line 2974
+    .line 3635
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2967
+    .line 3628
     new-instance v0, Lcom/offsec/nethunter/utils/ShellExecuter;
 
     invoke-direct {v0}, Lcom/offsec/nethunter/utils/ShellExecuter;-><init>()V
 
     iput-object v0, p0, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->exe:Lcom/offsec/nethunter/utils/ShellExecuter;
 
-    .line 2975
+    .line 3636
     iput-object p1, p0, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->context:Landroid/content/Context;
 
-    .line 2976
+    .line 3637
     iput-object p2, p0, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->listener:Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$OnFileSelectedListener;
 
-    .line 2977
+    .line 3638
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .locals 4
     .param p1, "path"    # Ljava/lang/String;
 
-    .line 3037
+    .line 3698
     const-string v0, "/"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -69,7 +69,7 @@
 
     return-object p1
 
-    .line 3039
+    .line 3700
     :cond_0
     invoke-virtual {p1, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -94,7 +94,7 @@
     :cond_1
     move-object v0, p1
 
-    .line 3040
+    .line 3701
     .local v0, "newPath":Ljava/lang/String;
     :goto_0
     const/16 v2, 0x2f
@@ -103,11 +103,11 @@
 
     move-result v2
 
-    .line 3041
+    .line 3702
     .local v2, "lastSlash":I
     if-ltz v2, :cond_2
 
-    .line 3042
+    .line 3703
     add-int/lit8 v3, v2, 0x1
 
     invoke-virtual {v0, v1, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -116,11 +116,11 @@
 
     goto :goto_1
 
-    .line 3044
+    .line 3705
     :cond_2
     const-string v0, "/"
 
-    .line 3046
+    .line 3707
     :goto_1
     return-object v0
 .end method
@@ -130,7 +130,7 @@
     .param p0, "dialog"    # Landroid/content/DialogInterface;
     .param p1, "which"    # I
 
-    .line 3006
+    .line 3667
     invoke-interface {p0}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void
@@ -141,23 +141,23 @@
     .param p0, "dialog"    # Landroid/app/AlertDialog;
     .param p1, "d"    # Landroid/content/DialogInterface;
 
-    .line 3011
+    .line 3672
     const/4 v0, -0x2
 
     invoke-virtual {p0, v0}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
-    .line 3012
+    .line 3673
     .local v0, "cancelButton":Landroid/widget/Button;
     if-eqz v0, :cond_0
 
-    .line 3013
+    .line 3674
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 3015
+    .line 3676
     :cond_0
     return-void
 .end method
@@ -176,12 +176,12 @@
         }
     .end annotation
 
-    .line 3021
+    .line 3682
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3022
+    .line 3683
     .local v0, "result":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->exe:Lcom/offsec/nethunter/utils/ShellExecuter;
 
@@ -207,7 +207,7 @@
 
     move-result-object v1
 
-    .line 3024
+    .line 3685
     .local v1, "output":Ljava/lang/String;
     if-eqz v1, :cond_1
 
@@ -217,14 +217,14 @@
 
     if-nez v2, :cond_1
 
-    .line 3025
+    .line 3686
     const-string v2, "\n"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3026
+    .line 3687
     .local v2, "lines":[Ljava/lang/String;
     array-length v3, v2
 
@@ -235,30 +235,30 @@
 
     aget-object v5, v2, v4
 
-    .line 3027
+    .line 3688
     .local v5, "line":Ljava/lang/String;
     invoke-virtual {v5}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 3028
+    .line 3689
     invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
 
     move-result v6
 
     if-nez v6, :cond_0
 
-    .line 3029
+    .line 3690
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3026
+    .line 3687
     .end local v5    # "line":Ljava/lang/String;
     :cond_0
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 3033
+    .line 3694
     .end local v2    # "lines":[Ljava/lang/String;
     :cond_1
     return-object v0
@@ -268,12 +268,12 @@
     .locals 5
     .param p1, "path"    # Ljava/lang/String;
 
-    .line 2985
+    .line 3646
     invoke-direct {p0, p1}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->loadDirectory(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 2987
+    .line 3648
     .local v0, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     const-string v1, "/"
 
@@ -285,12 +285,12 @@
 
     if-nez v1, :cond_0
 
-    .line 2988
+    .line 3649
     const-string v1, ".."
 
     invoke-virtual {v0, v2, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 2991
+    .line 3652
     :cond_0
     new-array v1, v2, [Ljava/lang/String;
 
@@ -300,7 +300,7 @@
 
     check-cast v1, [Ljava/lang/String;
 
-    .line 2993
+    .line 3654
     .local v1, "itemArray":[Ljava/lang/String;
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
@@ -308,20 +308,20 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 2994
+    .line 3655
     .local v2, "builder":Landroid/app/AlertDialog$Builder;
     const-string v3, "Select File"
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 2995
+    .line 3656
     new-instance v3, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$$ExternalSyntheticLambda0;
 
     invoke-direct {v3, p0, v1, p1}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$$ExternalSyntheticLambda0;-><init>(Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;[Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v2, v1, v3}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 3006
+    .line 3667
     new-instance v3, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$$ExternalSyntheticLambda1;
 
     invoke-direct {v3}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$$ExternalSyntheticLambda1;-><init>()V
@@ -330,12 +330,12 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 3008
+    .line 3669
     invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v3
 
-    .line 3010
+    .line 3671
     .local v3, "dialog":Landroid/app/AlertDialog;
     new-instance v4, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$$ExternalSyntheticLambda2;
 
@@ -343,10 +343,10 @@
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
-    .line 3017
+    .line 3678
     invoke-virtual {v3}, Landroid/app/AlertDialog;->show()V
 
-    .line 3018
+    .line 3679
     return-void
 .end method
 
@@ -359,10 +359,10 @@
     .param p3, "dialog"    # Landroid/content/DialogInterface;
     .param p4, "which"    # I
 
-    .line 2996
+    .line 3657
     aget-object v0, p1, p4
 
-    .line 2997
+    .line 3658
     .local v0, "selectedItem":Ljava/lang/String;
     const-string v1, ".."
 
@@ -372,16 +372,16 @@
 
     if-eqz v1, :cond_0
 
-    .line 2998
+    .line 3659
     invoke-direct {p0, p2}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->goUp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2999
+    .line 3660
     .local v1, "parentPath":Ljava/lang/String;
     invoke-direct {p0, v1}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->showDirectory(Ljava/lang/String;)V
 
-    .line 3000
+    .line 3661
     .end local v1    # "parentPath":Ljava/lang/String;
     goto :goto_0
 
@@ -394,7 +394,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 3001
+    .line 3662
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -415,7 +415,7 @@
 
     goto :goto_0
 
-    .line 3003
+    .line 3664
     :cond_1
     iget-object v1, p0, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->listener:Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$OnFileSelectedListener;
 
@@ -437,7 +437,7 @@
 
     invoke-interface {v1, v2}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog$OnFileSelectedListener;->onFileSelected(Ljava/lang/String;)V
 
-    .line 3005
+    .line 3666
     :goto_0
     return-void
 .end method
@@ -445,13 +445,13 @@
 .method public show()V
     .locals 1
 
-    .line 2980
+    .line 3641
     const-string v0, "/"
 
-    .line 2981
+    .line 3642
     .local v0, "currentPath":Ljava/lang/String;
     invoke-direct {p0, v0}, Lcom/offsec/nethunter/CARsenalFragment$RootFileBrowserDialog;->showDirectory(Ljava/lang/String;)V
 
-    .line 2982
+    .line 3643
     return-void
 .end method

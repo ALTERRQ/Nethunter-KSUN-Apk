@@ -125,7 +125,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .line 126
-    const v0, 0x7f0a01f5
+    const v0, 0x7f0a0208
 
     const/4 v1, 0x0
 
@@ -139,7 +139,7 @@
     .param p0, "menu"    # Landroid/view/Menu;
 
     .line 128
-    const v0, 0x7f0a01f5
+    const v0, 0x7f0a0208
 
     const/4 v1, 0x1
 
@@ -361,7 +361,7 @@
     move-result-object v1
 
     .line 263
-    const v2, 0x7f130170
+    const v2, 0x7f130172
 
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/KaliServicesFragment;->getString(I)Ljava/lang/String;
 
@@ -420,7 +420,7 @@
     move-result-object v1
 
     .line 273
-    const v2, 0x7f130171
+    const v2, 0x7f130173
 
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/KaliServicesFragment;->getString(I)Ljava/lang/String;
 
@@ -479,7 +479,7 @@
     move-result-object v1
 
     .line 283
-    const v2, 0x7f13016e
+    const v2, 0x7f130170
 
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/KaliServicesFragment;->getString(I)Ljava/lang/String;
 
@@ -538,7 +538,7 @@
     move-result-object v1
 
     .line 293
-    const v2, 0x7f13016f
+    const v2, 0x7f130171
 
     invoke-virtual {p0, v2}, Lcom/offsec/nethunter/KaliServicesFragment;->getString(I)Ljava/lang/String;
 
@@ -603,7 +603,7 @@
     .line 358
     iget-object v0, p0, Lcom/offsec/nethunter/KaliServicesFragment;->context:Landroid/content/Context;
 
-    const v1, 0x7f130130
+    const v1, 0x7f130133
 
     invoke-virtual {p0, v1}, Lcom/offsec/nethunter/KaliServicesFragment;->getString(I)Ljava/lang/String;
 
@@ -870,7 +870,7 @@
 
     .line 235
     .local v10, "inflater":Landroid/view/LayoutInflater;
-    const v0, 0x7f0d005f
+    const v0, 0x7f0d0060
 
     const/4 v1, 0x0
 
@@ -880,7 +880,7 @@
 
     .line 236
     .local v11, "promptViewAdd":Landroid/view/View;
-    const v0, 0x7f0a01de
+    const v0, 0x7f0a01f1
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -892,7 +892,7 @@
 
     .line 237
     .local v12, "titleEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01dc
+    const v0, 0x7f0a01ef
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -904,7 +904,7 @@
 
     .line 238
     .local v13, "startCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01dd
+    const v0, 0x7f0a01f0
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -916,7 +916,7 @@
 
     .line 239
     .local v14, "stopCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01db
+    const v0, 0x7f0a01ee
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -928,7 +928,7 @@
 
     .line 240
     .local v15, "checkstatusCmdEditText":Landroid/widget/EditText;
-    const v0, 0x7f0a01da
+    const v0, 0x7f0a01ed
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -940,7 +940,7 @@
 
     .line 241
     .local v16, "runOnChrootStartCheckbox":Landroid/widget/CheckBox;
-    const v0, 0x7f0a01e1
+    const v0, 0x7f0a01f4
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -952,7 +952,7 @@
 
     .line 242
     .local v7, "readmeButton1":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01e2
+    const v0, 0x7f0a01f5
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -964,7 +964,7 @@
 
     .line 243
     .local v6, "readmeButton2":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01e3
+    const v0, 0x7f0a01f6
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -976,7 +976,7 @@
 
     .line 244
     .local v5, "readmeButton3":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01e4
+    const v0, 0x7f0a01f7
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -988,7 +988,7 @@
 
     .line 245
     .local v4, "readmeButton4":Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
-    const v0, 0x7f0a01df
+    const v0, 0x7f0a01f2
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1000,7 +1000,7 @@
 
     .line 246
     .local v3, "insertPositions":Landroid/widget/Spinner;
-    const v0, 0x7f0a01e0
+    const v0, 0x7f0a01f3
 
     invoke-virtual {v11, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1080,17 +1080,17 @@
     invoke-virtual {v10, v0}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
     .line 256
-    const v0, 0x7f130299
+    const v0, 0x7f13029b
 
     invoke-virtual {v13, v0}, Landroid/widget/EditText;->setText(I)V
 
     .line 257
-    const v0, 0x7f13029a
+    const v0, 0x7f13029c
 
     invoke-virtual {v14, v0}, Landroid/widget/EditText;->setText(I)V
 
     .line 258
-    const v0, 0x7f130298
+    const v0, 0x7f13029a
 
     invoke-virtual {v15, v0}, Landroid/widget/EditText;->setText(I)V
 
@@ -1273,7 +1273,7 @@
     .line 411
     iget-object v4, v3, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v5, 0x7f0a01fc
+    const v5, 0x7f0a020f
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1442,7 +1442,7 @@
 
     .line 386
     .local v1, "inflater":Landroid/view/LayoutInflater;
-    const v2, 0x7f0d0061
+    const v2, 0x7f0d0062
 
     const/4 v3, 0x0
 
@@ -1454,7 +1454,7 @@
 
     .line 387
     .local v2, "promptViewDelete":Landroid/view/View;
-    const v3, 0x7f0a01e8
+    const v3, 0x7f0a01fb
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1726,7 +1726,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d0063
+    const v2, 0x7f0d0064
 
     invoke-virtual {v8, v2, v0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1734,7 +1734,7 @@
 
     .line 437
     .local v9, "promptViewMove":Landroid/view/View;
-    const v0, 0x7f0a01fa
+    const v0, 0x7f0a020d
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1746,7 +1746,7 @@
 
     .line 438
     .local v10, "titlesBefore":Landroid/widget/Spinner;
-    const v0, 0x7f0a01f9
+    const v0, 0x7f0a020c
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1758,7 +1758,7 @@
 
     .line 439
     .local v11, "titlesAfter":Landroid/widget/Spinner;
-    const v0, 0x7f0a01f8
+    const v0, 0x7f0a020b
 
     invoke-virtual {v9, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2219,7 +2219,7 @@
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 117
-    const v0, 0x7f0a01d6
+    const v0, 0x7f0a01e9
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2305,7 +2305,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 77
-    const v0, 0x7f0d005e
+    const v0, 0x7f0d005f
 
     const/4 v1, 0x0
 
@@ -2360,7 +2360,7 @@
 
     .line 149
     .local v0, "inflater":Landroid/view/LayoutInflater;
-    const v1, 0x7f0d0060
+    const v1, 0x7f0d0061
 
     const/4 v2, 0x0
 
@@ -2370,7 +2370,7 @@
 
     .line 150
     .local v1, "promptView":Landroid/view/View;
-    const v2, 0x7f0a01d8
+    const v2, 0x7f0a01eb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2380,7 +2380,7 @@
 
     .line 151
     .local v2, "titleTextView":Landroid/widget/TextView;
-    const v3, 0x7f0a01d7
+    const v3, 0x7f0a01ea
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2396,7 +2396,7 @@
 
     .line 154
     .local v4, "id":I
-    const v5, 0x7f0a01f4
+    const v5, 0x7f0a0207
 
     const-string v6, "OK"
 
@@ -2413,7 +2413,7 @@
     if-ne v4, v5, :cond_0
 
     .line 155
-    const v5, 0x7f13016d
+    const v5, 0x7f13016f
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -2480,12 +2480,12 @@
     goto :goto_0
 
     :cond_0
-    const v5, 0x7f0a01f6
+    const v5, 0x7f0a0209
 
     if-ne v4, v5, :cond_1
 
     .line 178
-    const v5, 0x7f13016c
+    const v5, 0x7f13016e
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -2549,7 +2549,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x7f0a01f3
+    const v5, 0x7f0a0206
 
     if-ne v4, v5, :cond_2
 
@@ -2680,7 +2680,7 @@
     iput-object v1, p0, Lcom/offsec/nethunter/KaliServicesFragment;->kaliServicesRecyclerViewAdapter:Lcom/offsec/nethunter/RecyclerViewAdapter/KaliServicesRecyclerViewAdapter;
 
     .line 88
-    const v1, 0x7f0a01fb
+    const v1, 0x7f0a020e
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2710,7 +2710,7 @@
     invoke-virtual {v1, v3}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 93
-    const v3, 0x7f0a0201
+    const v3, 0x7f0a0214
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2721,7 +2721,7 @@
     iput-object v3, p0, Lcom/offsec/nethunter/KaliServicesFragment;->refreshButton:Landroid/widget/Button;
 
     .line 94
-    const v3, 0x7f0a01d9
+    const v3, 0x7f0a01ec
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2732,7 +2732,7 @@
     iput-object v3, p0, Lcom/offsec/nethunter/KaliServicesFragment;->addButton:Landroid/widget/Button;
 
     .line 95
-    const v3, 0x7f0a01e7
+    const v3, 0x7f0a01fa
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2743,7 +2743,7 @@
     iput-object v3, p0, Lcom/offsec/nethunter/KaliServicesFragment;->deleteButton:Landroid/widget/Button;
 
     .line 96
-    const v3, 0x7f0a01f7
+    const v3, 0x7f0a020a
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2754,7 +2754,7 @@
     iput-object v3, p0, Lcom/offsec/nethunter/KaliServicesFragment;->moveButton:Landroid/widget/Button;
 
     .line 97
-    const v3, 0x7f0a01e5
+    const v3, 0x7f0a01f8
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2764,7 +2764,7 @@
 
     .line 98
     .local v3, "servicesDesc":Landroid/widget/TextView;
-    const v4, 0x7f0a01e6
+    const v4, 0x7f0a01f9
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

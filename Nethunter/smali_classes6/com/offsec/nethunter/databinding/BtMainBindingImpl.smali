@@ -34,7 +34,7 @@
     .line 17
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00c5
+    const v1, 0x7f0a00d7
 
     const/4 v2, 0x1
 
@@ -43,7 +43,7 @@
     .line 18
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a0168
+    const v1, 0x7f0a0175
 
     const/4 v2, 0x2
 
@@ -52,7 +52,7 @@
     .line 19
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00c2
+    const v1, 0x7f0a00d4
 
     const/4 v2, 0x3
 
@@ -61,7 +61,7 @@
     .line 20
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a02a5
+    const v1, 0x7f0a02b9
 
     const/4 v2, 0x4
 
@@ -70,7 +70,7 @@
     .line 21
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a03e6
+    const v1, 0x7f0a040e
 
     const/4 v2, 0x5
 
@@ -79,7 +79,7 @@
     .line 22
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00b7
+    const v1, 0x7f0a00c9
 
     const/4 v2, 0x6
 
@@ -97,7 +97,7 @@
     .line 24
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a029e
+    const v1, 0x7f0a02b2
 
     const/16 v2, 0x8
 
@@ -106,7 +106,7 @@
     .line 25
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00b8
+    const v1, 0x7f0a00ca
 
     const/16 v2, 0x9
 
@@ -115,7 +115,7 @@
     .line 26
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a04ca
+    const v1, 0x7f0a0504
 
     const/16 v2, 0xa
 
@@ -133,7 +133,7 @@
     .line 28
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a029f
+    const v1, 0x7f0a02b3
 
     const/16 v2, 0xc
 
@@ -142,7 +142,7 @@
     .line 29
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a0143
+    const v1, 0x7f0a0151
 
     const/16 v2, 0xd
 
@@ -151,7 +151,7 @@
     .line 30
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00c6
+    const v1, 0x7f0a00d8
 
     const/16 v2, 0xe
 
@@ -169,7 +169,7 @@
     .line 32
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a02a0
+    const v1, 0x7f0a02b4
 
     const/16 v2, 0x10
 
@@ -178,7 +178,7 @@
     .line 33
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00c1
+    const v1, 0x7f0a00d3
 
     const/16 v2, 0x11
 
@@ -187,7 +187,7 @@
     .line 34
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a04d6
+    const v1, 0x7f0a0510
 
     const/16 v2, 0x12
 
@@ -205,7 +205,7 @@
     .line 36
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a02a1
+    const v1, 0x7f0a02b5
 
     const/16 v2, 0x14
 
@@ -214,7 +214,7 @@
     .line 37
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a02a3
+    const v1, 0x7f0a02b7
 
     const/16 v2, 0x15
 
@@ -223,7 +223,7 @@
     .line 38
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a016d
+    const v1, 0x7f0a017a
 
     const/16 v2, 0x16
 
@@ -232,7 +232,7 @@
     .line 39
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a04ce
+    const v1, 0x7f0a0508
 
     const/16 v2, 0x17
 
@@ -241,7 +241,7 @@
     .line 40
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a00c7
+    const v1, 0x7f0a00d9
 
     const/16 v2, 0x18
 
@@ -250,7 +250,7 @@
     .line 41
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a04cf
+    const v1, 0x7f0a0509
 
     const/16 v2, 0x19
 
@@ -259,7 +259,7 @@
     .line 42
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a048e
+    const v1, 0x7f0a04c3
 
     const/16 v2, 0x1a
 
@@ -268,7 +268,7 @@
     .line 43
     sget-object v0, Lcom/offsec/nethunter/databinding/BtMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0a04be
+    const v1, 0x7f0a04f8
 
     const/16 v2, 0x1b
 
